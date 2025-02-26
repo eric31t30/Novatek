@@ -1,0 +1,138 @@
+.overview-section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Cabin', sans-serif;
+    padding: 0px 20px;
+}
+
+.overview-title-cont{
+    width: 100%;
+    height: 20%;
+    z-index: 5;
+    padding-top: 100px;
+}
+
+.overview-title{
+    font-size: 28px;
+}
+
+.overview-title span{
+    color: #9524C7;
+}
+
+.overview-services-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 255, 255, 0.257);
+    z-index: 5;
+}
+
+.overview-services-card{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    overflow: hidden;
+}
+
+.overview-sevices-text-card-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    flex: .4;
+    color: rgba(0, 0, 0, .8);
+    z-index: 5;
+}
+
+.overview-services-card h3{
+    font-size: 18px;
+    
+    margin-bottom: 20px;
+}
+
+.overview-services-card h3 span{
+   color: #9624c7e0;
+}
+
+.overview-services-card p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.overview-icon-card{
+    width: 100px;
+    height: 100px;
+    z-index: 5;
+    transition: all .5s ease;
+}
+
+.overview-services-card:hover .overview-icon-card{
+    transform: rotate(60deg);
+}
+
+.overview-services-deco-cont{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.overview-services-deco-card{
+    width: 70%;
+    height: 60%;
+    background-color: rgba(21, 106, 241, .15);
+    z-index: 0;
+    border-radius: 20px;
+    transform: rotate(10deg);
+}
+
+.overview-wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+.overview-wave-background svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 204px;
+}
+
+.overview-wave-background .shape-fill {
+    fill: #9524C7;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .overview-wave-background svg {
+        width: calc(152% + 1.3px);
+        height: 158px;
+    }
+}
