@@ -1,0 +1,63 @@
+.stats-counter-section{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(53, 5, 68);
+    background-image: url('/assets/home-section/stats-counter/stats-counter-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Cabin', sans-serif;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+
+.stats-counter-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+.stat-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.stats-counter-amount{
+    font-size: 30px;
+    color: #f169fa;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.stats-counter-title{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+.stats-1-clients{
+    position: relative;
+    left: -30%;
+}
+
+.stats-3-projects{
+    position: relative;
+    left: 30%;
+}
+
+.stat-counter:hover .stats-counter-amount{
+    text-shadow: 0px 0px 20px #f169fa;
+}
