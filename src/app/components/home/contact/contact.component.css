@@ -1,0 +1,14 @@
+.home-contact-section{
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  linear-gradient(to bottom, #8a2be2 20%, #420252);
+    font-family: 'Cabin', sans-serif;
+    padding: 50px 20px;
+    overflow: hidden;
+}
+
