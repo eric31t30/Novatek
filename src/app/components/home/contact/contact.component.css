@@ -1,0 +1,158 @@
+.home-contact-section{
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  linear-gradient(to bottom, #8a2be2 20%, #420252);
+    font-family: 'Cabin', sans-serif;
+    padding: 50px 20px;
+    overflow: hidden;
+}
+
+.home-contact-section-cont{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home-contact-title{
+    position: relative;
+    font-size: 30px;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+    text-shadow: 0px 0px 20px #f169fa;
+}
+
+.home-contact-button{
+    position: relative;
+    left:0px;
+    top: 0px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid;
+    border-top: 3px solid #e58f51;
+    border-right: 3px solid #e58f51;
+    border-left: 3px solid #f169fa;
+    border-bottom: 3px solid #f169fa;
+    color: #f169fa;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 0px rgba(0, 0, 0, .6);
+    transition: all .3s ease;
+}
+
+.home-contact-button:hover{
+    left: 2px;
+    top: -2px;
+    box-shadow: -10px 10px 0px rgba(0, 0, 0, .6);
+}
+
+.home-contact-section-deco-1{
+    position: absolute;
+    left: -50px;
+    bottom: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    filter: blur(30px);
+    z-index: 0;
+    opacity: .4;
+}
+
+.home-contact-section-deco-2{
+    position: absolute;
+    right: -50px;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    filter: blur(30px);
+    z-index: 0;
+    opacity: .2;
+    background-color: rgba(138, 43, 226,1);
+}
+
+.home-contact-section-deco-rocket{
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.home-contact-section-deco-planet{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.home-contact-stars{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 2px white;
+}
+
+.home-contact-star-1{
+    top: 10%;
+    left: 60%;  
+}
+
+.home-contact-star-2{
+    top: 20%;
+    left: 20%;  
+}
+
+.home-contact-star-3{
+    top: 40%;
+    left: 90%;  
+}
+
+.home-contact-star-4{
+    top: 70%;
+    left: 10%;  
+}
+
+.home-contact-star-5{
+    top: 90%;
+    left: 70%;  
+}
+
+.home-contact-star-6{
+    top: 50%;
+    left: 50%;  
+    opacity: .5;
+    box-shadow: 0px 0px 0px 0 white;
+}
+
+.home-contact-star-7{
+    top: 20%;
+    left: 80%;  
+    opacity: .5;
+    box-shadow: 0px 0px 0px 0 white;
+}
+
+.home-contact-star-9{
+    top: 90%;
+    left: 30%;  
+    opacity: .5;
+    box-shadow: 0px 0px 0px 0 white;
+}

@@ -1,0 +1,146 @@
+.testimonials-section{
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(219, 242, 246);
+  font-family: 'Cabin', sans-serif;
+  padding: 40px 20px;
+  padding-bottom: 120px;
+  overflow: hidden;
+  color: black
+  
+}
+
+.testimonials-carousel-cont{
+  height: 250px;
+  width: 100%;
+  margin: 30px 0px;
+  box-shadow: -10px 10px 0px #f069fa5b;
+  border-radius: 20px;
+  z-index: 5;
+}
+
+swiper-container{
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.testimonial-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 30px 35px;
+  z-index: 5;
+}
+
+.testimonial-text{
+  font-size: 16px;
+  opacity: .8;
+  font-weight: 400;
+}
+
+.testimonial-name{
+  font-size: 15px;
+  font-weight: 600;
+  opacity: .7;
+  transition: all .5s linear;
+}
+
+.testimonial-name span{
+  color: #9624c7e0;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+
+.testimonial-background-1{
+  background: url("/assets/home-section/testimonials/carousel-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonial-background-2{
+  background: url("/assets/home-section/testimonials/carousel-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonial-background-3{
+  background: url("/assets/home-section/testimonials/carousel-3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonial-background-4{
+  background: url("/assets/home-section/testimonials/carousel-4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonials-section-background-deco-1{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: .1;
+  left: 10%;
+  bottom: 20%;
+  transform: rotate(60deg);
+  user-select: none;
+  z-index: 0;
+}
+
+.testimonials-section-background-deco-2{
+  position: absolute;
+  left: -70px;
+  top: -70px;
+  width: 200px;
+  height: 200px;
+  opacity: .2;
+  background-image: url("/assets/home-section/testimonials/testimonial-background-2.svg");
+  user-select: none;
+  z-index: 0;
+}
+
+.testimonials-section-background-deco-3{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 200px;
+  height: 200px;
+  opacity: .2;
+  background-image: url("/assets/home-section/testimonials/testimonial-background-2.svg");
+  user-select: none;
+  z-index: 0;
+}
+
+
+.testimonials-wave-cont{
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+}
