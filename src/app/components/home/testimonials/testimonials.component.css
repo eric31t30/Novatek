@@ -9,13 +9,17 @@
   padding: 40px 20px;
   padding-bottom: 120px;
   overflow: hidden;
-  color: black;
+  color: black
+  
 }
 
 .testimonials-carousel-cont{
   height: 250px;
   width: 100%;
   margin: 30px 0px;
+  box-shadow: -10px 10px 0px #f069fa5b;
+  border-radius: 20px;
+  z-index: 5;
 }
 
 swiper-container{
@@ -30,7 +34,7 @@ swiper-slide {
   align-items: center;
   text-align: center;
   border-radius: 20px;
-  
+  cursor: pointer;
 }
 
 .testimonial-content{
@@ -40,20 +44,20 @@ swiper-slide {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 20px 25px;
+  padding: 30px 35px;
   z-index: 5;
 }
 
 .testimonial-text{
-  font-size: 14px;
+  font-size: 16px;
   opacity: .8;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .testimonial-name{
   font-size: 15px;
   font-weight: 600;
-  opacity: .8;
+  opacity: .7;
   transition: all .5s linear;
 }
 
@@ -62,7 +66,6 @@ swiper-slide {
 }
 
 .swiper-pagination-bullet {
-  background-color: rgba(255, 0, 0, 0.695);
   width: 12px;
   height: 12px;
 }
@@ -112,7 +115,10 @@ swiper-slide {
   position: absolute;
   left: -70px;
   top: -70px;
+  width: 200px;
+  height: 200px;
   opacity: .2;
+  background-image: url("/assets/home-section/testimonials/testimonial-background-2.svg");
   user-select: none;
   z-index: 0;
 }
@@ -129,9 +135,12 @@ swiper-slide {
   z-index: 0;
 }
 
+
 .testimonials-wave-cont{
   position: absolute;
   bottom: -10px;
   left: 0px;
   width: 100%;
+  user-select: none;
+  pointer-events: none;
 }
