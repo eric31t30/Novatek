@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(219, 242, 246);
+    background: white ;
     font-family: 'Cabin', sans-serif;
     padding: 0px 20px;
     padding-bottom: 50px;
@@ -22,10 +22,11 @@
 
 .overview-title{
     font-size: 28px;
+    color: #f169fa;
 }
 
 .overview-title span{
-    color: #9524C7;
+    color: #e58f51;
 }
 
 .overview-services-cont{
@@ -41,30 +42,60 @@
 .app-card{
     display: flex;
     justify-content: space-around;
-    margin: 30px 0px;
+    margin: 40px 0px;
 }
 
-.overview-background-shape{
+.overview-section-background-deco-1,
+.overview-section-background-deco-2,
+.overview-section-background-deco-3{
     position: absolute;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+    opacity: .8;
+}
+
+.overview-section-background-deco-1{
+    width: 200px;
+    height: 200px;
+    right: -10%;
+    bottom: 0%;
+}
+
+.overview-section-background-deco-2{
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 40%;
+}
+
+.overview-section-background-deco-3{
     width: 150px;
     height: 150px;
-    z-index: 1;
-    opacity: .1;
-}
-
-.overview-background-shape-1{
-    top: 10%;
-    left: 50%;
-}
-
-.overview-background-shape-2{
-    top: 50%;
     left: 0%;
+    top: 10%;
 }
 
-.overview-background-shape-3{
-    top: 70%;
-    left: 50%;
+.overview-section-background-deco-4,
+.overview-section-background-deco-5{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: .5;
+    background-image: url("/assets/home-section/testimonials/testimonial-background-2.svg"); /*diseño de testimonials*/
+    user-select: none;
+    z-index: 0;
+}
+
+.overview-section-background-deco-4{
+    left: 0%;
+    bottom: 20%;
+}
+
+.overview-section-background-deco-5{
+    right: 0%;
+    top: 20%;
 }
 
 .overview-wave-background {
@@ -88,6 +119,7 @@
 .overview-wave-background .shape-fill {
     fill: #9524C7;
 }
+
 
 /** For mobile devices **/
 @media (max-width: 767px) {
