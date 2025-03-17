@@ -1,0 +1,11 @@
+.join-us-section{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
