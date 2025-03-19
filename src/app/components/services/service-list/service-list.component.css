@@ -1,0 +1,224 @@
+.service-list-section{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: 'Cabin', sans-serif;
+    overflow: hidden;
+}
+
+.hero-header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, .3);
+}
+
+.hero-header-navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.hero-navbar-logo-cont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 5px;
+}
+
+.hero-navbar-logo-text{
+    color: #f169fa;
+    font-size: 24px;
+    font-family: "Exo 2", serif;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.hero-navbar-logo-deco{
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease;
+}
+
+.hero-navbar-logo-cont:hover .hero-navbar-logo-deco{
+    transform: rotate(60deg);
+}
+
+.hero-navbar-menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.service-list-content{
+    margin-top: 60px;
+}
+
+.service-list-title{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin-bottom: 70px;
+    background-color: rgb(10 22 39);
+}
+
+.service-list-title h2{
+    font-size: 34px;
+    z-index: 5;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+    transform: rotate(-5deg);
+}    
+
+.service-list-title img,
+.service .service-divider{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: -40px;
+    left: 0px;
+}
+
+.service-list-title-deco{
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgb(55, 168, 238);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px white, 0px 0px 10px white;
+}
+
+.service-list-title-deco-1{
+    top: 30%;
+    left: 10%;
+}
+
+.service-list-title-deco-2{
+    top: 10%;
+    right: 10%;
+}
+
+.service-list-title-deco-3{
+    bottom: 10%;
+    right: 40%;
+}
+
+.service{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 30px;
+    padding-top: 60px;
+}
+
+.service h2{
+    font-size: 30px;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+    z-index: 5;
+}
+
+.service p{
+    line-height: 1.5;
+    z-index: 5;
+}
+
+.service-img-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.service .service-image{
+    width: 200px;
+    height: 200px;
+}
+
+.service .service-image{
+    transition: all .5s linear;
+    filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0));
+}
+
+.service:hover .service-image{
+    transform: translateY(-10px);
+}
+
+.service-web-development,
+.service-maintenance-support,
+.service-ai{
+    background-color: rgb(10 22 39);
+    color: white;
+}
+
+.service-software-development:hover .service-image{
+    filter: drop-shadow(0px 0px 20px #f169fa);
+}
+
+.service-web-development:hover .service-image{
+    filter: drop-shadow(0px 0px 20px #53ccfc);
+}
+
+.service-analysis:hover .service-image{
+    filter: drop-shadow(0px 0px 20px #2ae070);
+}
+
+.service-maintenance-support:hover .service-image{
+    filter: drop-shadow(0px 0px 20px #e21919);
+}
+
+.service-ui-ux:hover .service-image{
+    filter: drop-shadow(0px 0px 20px #194be2);
+}
+
+.service-ai:hover .service-image{
+    filter: drop-shadow(0px 0px 20px #9c05ca);
+}
+
+.service-deco-background-1,
+.service-deco-background-2{
+    position: absolute;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+    opacity: .4;
+}
+
+.service-deco-background-1{
+    width: 150px;
+    height: 150px;
+    left: 0%;
+    bottom: 10%;
+}
+
+.service-deco-background-2{
+    width: 150px;
+    height: 150px;
+    right: 0%;
+    top: 10%;
+}
