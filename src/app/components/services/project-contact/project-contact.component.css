@@ -10,3 +10,98 @@
     font-family: 'Cabin', sans-serif;
     
 }
+
+.project-contact-content{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px 0px;
+    font-family: "Aeonik-Variable", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.project-contact-content h2{
+    font-size: 26px;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+}
+
+.project-contact-content p{
+    opacity: .8;
+}
+
+.project-contact-content button{
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+    background-color: transparent;
+    border: 2px solid #f169fa;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.project-contact-content:hover button{
+    box-shadow: inset 0px 0px 10px #f169fa;
+}
+
+.project-contact-divider{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: -40px;
+    left: 0px;
+    z-index: 1;
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(29%) sepia(53%) saturate(7095%) hue-rotate(249deg) brightness(100%) contrast(96%);
+}
+
+.project-contact-deco{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 0;
+}
+
+.project-contact-deco-1{
+    left: 5%;
+    bottom: 30%;
+    transform: rotate(30deg);
+}
+
+.project-contact-deco-2{
+    right: 5%;
+    bottom: 5%;
+}
+
+.project-contact-deco-3,
+.project-contact-deco-4,
+.project-contact-deco-5{
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgb(185, 228, 255);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px white, 0px 0px 10px white, 0px 0px 10px white;
+}
+
+.project-contact-deco-3{
+    top: 30%;
+    left: 10%;
+}
+
+.project-contact-deco-4{
+    top: 10%;
+    right: 10%;
+}
+
+.project-contact-deco-5{
+    bottom: 5%;
+    left: 40%;
+}
