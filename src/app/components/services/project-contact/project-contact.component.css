@@ -1,0 +1,12 @@
+.project-contact-section{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F3FF9;
+    padding: 80px 20px;
+    margin-top: 40px;
+    font-family: 'Cabin', sans-serif;
+    
+}
