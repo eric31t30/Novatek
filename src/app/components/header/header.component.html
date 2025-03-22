@@ -1,0 +1,42 @@
+<div>
+    <header class="header" [class.hide-scroll]="hideScroll">
+        <div class="header-content">
+            <div class="header-info">
+                <h1 class="header-logo-text">Novatek</h1>
+                <img class="header-logo-deco" src="/assets/header/logo.svg" alt="logo" draggable="false">
+            </div>
+            
+            
+            <button (click)="activeNavbar()" class="navbar-button" aria-label="Abrir menú">
+                <img src="/assets/home-section/burger-menu-icon.svg" alt="Ícono de menú" draggable="false">
+            </button>
+        </div>
+    </header>
+
+    
+    <nav class="navbar" [class.navbar-active]="navbarActive">
+        <ul class="navbar-list">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+        </ul>
+
+        
+        <ul class="navbar-social">
+            <li><a href="#"><img class="navbar-social-icon" src="/assets/footer/facebook.svg"   alt="Facebook"></a></li>
+            <li><a href="#"><img class="navbar-social-icon" src="/assets/footer/linkedin.svg"   alt="LinkedIn"></a></li>
+            <li><a href="#"><img class="navbar-social-icon" src="/assets/footer/twitter.svg"    alt="Twitter"></a></li>
+            <li><a href="#"><img class="navbar-social-icon" src="/assets/footer/instagram.svg"  alt="Instagram"></a></li>
+        </ul>
+
+        <div class="navbar-deco-background-1"></div>
+        <div class="navbar-deco-background-2"></div>
+
+        
+        <button (click)="activeNavbar()" class="close-navbar-button" aria-label="Cerrar menú">
+            <img src="/assets/header/close.svg" alt="Cerrar menú" draggable="false">
+        </button>
+    </nav>
+</div>
