@@ -9,14 +9,10 @@
     overflow: hidden;
 }
 
-.service-list-content{
-    margin-top: 60px;
-}
-
 .service-list-title{
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +22,8 @@
 }
 
 .service-list-title h2{
+    position: relative;
+    top: 20px;
     font-size: 34px;
     z-index: 5;
     background: linear-gradient(to right, #f169fa, #e58f51);
@@ -54,12 +52,12 @@
 }
 
 .service-list-title-deco-1{
-    top: 30%;
+    top: 40%;
     left: 10%;
 }
 
 .service-list-title-deco-2{
-    top: 10%;
+    top: 30%;
     right: 10%;
 }
 

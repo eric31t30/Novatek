@@ -191,4 +191,5 @@
 
 header.hide-scroll{
     transform: translateY(-100%);
+    box-shadow: none;
 }
