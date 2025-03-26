@@ -1,0 +1,117 @@
+<section class="contact-form-section">
+    
+    <div class="contact-form-content">
+        
+        <div class="contact-form-title">
+            <h2>Contactanos </h2>
+            <p>Póngase en contacto con nosotros a través de las siguientes vías disponibles</p>
+        </div>
+        
+        <div class="contact-form-container">
+            
+            <article class="address-container">
+                <h2>¿Tienes algo en mente?</h2>
+                <p>Diligencia el formulario y uno de nuestros especialistas te contactará.</p>
+                
+                <div class="address">
+                    <img src="/assets/contact-page/clock.svg" alt="icono de horario">
+                    <p>Lunes a Viernes de 7:00 a 20:00</p>
+                </div>
+
+                <div class="address">
+                    <img src="/assets/contact-page/email.svg" alt="icono de correo electronico">
+                    <p>novatek-business&#64;gmail.com</p>
+                </div>
+
+                <div class="address">
+                    <img src="/assets/contact-page/phone.svg" alt="icono de Telefono">
+                    <p>+55 555 555 5555</p>
+                </div>
+
+                <img class="address-deco" src="/assets/contact-page/world.svg" alt="decoracion de mundo">
+            
+            </article>
+            
+            <form class="form-contact">
+                
+                <div class="input-form">
+                    <label for="name">Nombre <span>*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                
+                <div class="input-form">
+                    <label for="last-name">Apellidos <span>*</span></label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Apellidos" required>
+                </div>
+                
+                <div class="input-form">
+                    <label for="phone">Numero de Telefono <span>*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Numero de Telefono" required pattern="[0-9]{7,15}">
+                </div>
+                
+                <div class="input-form">
+                    <label for="company">Nombre de la empresa <span>*</span></label>
+                    <input type="text" id="company" name="company" placeholder="Empresa" required>
+                </div>
+
+                <div class="input-form">
+                    <label for="email">Correo Profesional <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Correo de empresa" required>
+                </div>
+
+                <div class="input-form">
+                    <label for="subject">Motivo del contacto <span>*</span></label>
+                    <select id="subject" name="subject" required>
+                        <option class="select-first" value="" disabled selected>Seleccione un servicio</option>
+                        <option value="desarrollo_software">Desarrollo de Software</option>
+                        <option value="desarrollo_web">Desarrollo Web</option>
+                        <option value="desarrollo_movil">Desarrollo de Aplicaciones Móviles</option>
+                        <option value="diseño_ui_ux">Diseño UI/UX</option>
+                        <option value="consultoria_tech">Consultoría Tecnológica</option>
+                        <option value="automatizacion">Automatización de Procesos</option>
+                        <option value="soporte_tech">Soporte Técnico y Mantenimiento</option>
+                        <option value="seguridad">Ciberseguridad</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="input-form">
+                    <label for="message">Mensaje <span>*</span></label>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Mensaje"></textarea>
+                </div>
+
+                <div class="input-form checkbox-container">
+                    <input type="checkbox" id="privacy" name="privacy" required aria-describedby="privacy-text">
+                    <label for="privacy">
+                        Acepto la <a href="javascript:void(0);">política de privacidad</a>.
+                    </label>
+                </div>
+
+                <div class="input-form">
+                    <button class="form-submit" type="submit">Enviar Mensaje</button>
+                </div>
+                
+            </form>
+        
+        </div>
+
+        <div class="contact-cities-content">
+            <p>por que juntos hacemos el cambio</p>
+
+            <div class="contact-cities">
+                <ul class="contact-cities">
+                    <li><img class="city-icon" src="/assets/contact-page/colombia.svg"   alt="Colombia"        draggable="false"></li>
+                    <li><img class="city-icon" src="/assets/contact-page/chile.svg"      alt="Chile"           draggable="false"></li>
+                    <li><img class="city-icon" src="/assets/contact-page/spain.svg"      alt="España"          draggable="false"></li>
+                    <li><img class="city-icon" src="/assets/contact-page/mexico.svg"     alt="México"          draggable="false"></li>
+                    <li><img class="city-icon" src="/assets/contact-page/argentina.svg"  alt="Argentina"       draggable="false"></li>
+                    <li><img class="city-icon" src="/assets/contact-page/eeuu.svg"       alt="Estados Unidos"  draggable="false"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <img class="contact-section-deco-1" src="/assets/contact-page/circle.svg"   alt="img-deco" draggable="false">
+    <img class="contact-section-deco-2" src="/assets/contact-page/deco.svg"     alt="img-deco" draggable="false">
+
+</section>

@@ -4,11 +4,11 @@ import { HistoryComponent } from '../history/history.component';
 import { MissionVisionComponent } from '../mission-vision/mission-vision.component';
 import { OurTeamComponent } from '../our-team/our-team.component';
 import { JoinUsComponent } from '../join-us/join-us.component';
-import { FooterComponent } from '../../home/footer/footer.component';
+
 
 @Component({
   selector: 'app-about-us',
-  imports: [WhoWeAreComponent, HistoryComponent, MissionVisionComponent, OurTeamComponent, JoinUsComponent, FooterComponent],
+  imports: [WhoWeAreComponent, HistoryComponent, MissionVisionComponent, OurTeamComponent, JoinUsComponent],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'
 })
