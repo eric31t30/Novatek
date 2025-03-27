@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from '../../home/home/home.component';
 import { HeroComponent } from '../hero/hero.component';
+import { OpenJobsComponent } from '../open-jobs/open-jobs.component';
 
 @Component({
   selector: 'app-work-with-us',
-  imports: [HeroComponent],
+  imports: [HeroComponent, OpenJobsComponent],
   templateUrl: './work-with-us.component.html',
   styleUrl: './work-with-us.component.css'
 })
