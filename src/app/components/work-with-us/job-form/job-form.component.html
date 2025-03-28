@@ -1,0 +1,88 @@
+<section class="job-form-section">
+    
+    <div class="job-form-content">
+
+        <div class="job-form-img"><img src="/assets/work-with-us-page/search.svg" alt=""></div>
+
+        <h2>¿No encontraste una posición adecuada para ti?</h2>
+        <p>No te preocupes, completa el siguiente formulario y únete a nuestra bolsa de trabajo.</p>
+
+        <form class="job-form">
+            
+            <div class="input-form">
+                <label for="name">Nombre <span>*</span></label>
+                <input type="text" id="name" name="name" placeholder="Nombre" required>
+            </div>
+
+            <div class="input-form">
+                <label for="last-name">Apellidos <span>*</span></label>
+                <input type="text" id="last-name" name="last-name" placeholder="Apellidos" required>
+            </div>
+            
+            <div class="input-form">
+                <label for="phone">Numero de Telefono <span>*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="Numero de Telefono" required pattern="[0-9]{7,15}">
+            </div>
+
+            <div class="input-form">
+                <label for="email">Correo Electronico<span>*</span></label>
+                <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
+            </div>
+
+            <div class="input-form">
+                <label for="address">Ciudad y Pais de Residencia <span>*</span></label>
+                <input type="text" id="address" name="address" placeholder="Ciudad y Pais" required>
+            </div>
+
+            <div class="input-form input-file-form">
+                <label for="cv">Adjuntar CV <span>*</span></label>
+                <label for="cv" class="custom-file-upload">Seleccionar Archivo</label>
+                <input class="input-file" type="file" id="cv" name="cv" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg" required>
+            </div>
+            
+            <div class="input-form">
+                <label for="linkedin">Perfil de linkedin<span>*</span></label>
+                <input type="text" id="linkedin" name="linkedin" placeholder="Linkedin" required>
+            </div>
+
+            <div class="input-form">
+                <label for="portafolio">Portafolio</label>
+                <input type="text" id="portafolio" name="portafolio" placeholder="portafolio">
+            </div>
+
+            <div class="input-form">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="4" cols="20" placeholder="Mensaje"></textarea>
+            </div>
+
+            <div class="input-form checkbox-container">
+                <div class="input-checkbox">
+                    <input type="checkbox" id="privacy" name="privacy" required aria-describedby="privacy-text">
+                    <label for="privacy">
+                        Acepto la <a href="javascript:void(0);">política de privacidad</a>.
+                    </label>
+                </div>
+                <p>Al enviar este formulario, aceptas que <span>Novatek</span> procese tus datos con 
+                    el fin de gestionar tu solicitud. No compartiremos tu información con terceros sin tu 
+                    consentimiento. Puedes solicitar la modificación o eliminación de tus datos en cualquier momento. 
+                    Para más información, consulta nuestra <a href="javascript:void(0);">política de privacidad.</a>
+                </p>
+            </div>
+
+            <div class="input-form">
+                <button class="form-submit" type="submit">Enviar Mensaje</button>
+            </div>
+        
+        </form>
+
+        <div  class="job-form-notification">
+            <p>Te contactaremos cuando tengamos una oportunidad que se ajuste a tu perfil.</p>
+        </div>
+        
+
+    </div>
+
+    <div class="job-form-deco-background-1"></div>
+    <div class="job-form-deco-background-2"></div>
+
+</section>

@@ -1,0 +1,208 @@
+.job-form-section{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 40px 20px;
+    font-family: 'Cabin', sans-serif;
+    overflow: hidden;
+}
+
+.job-form-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Baloo Thambi 2", system-ui;
+    gap: 30px;
+    text-align: center;
+    z-index: 5;
+}
+
+.job-form-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-form-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.job-form-content h2{
+    font-size: 28px;
+    font-weight: 600;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+}
+
+.job-form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    gap: 40px;
+    border-radius: 25px;
+}
+
+.input-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "Aeonik-Variable", system-ui;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.input-form input{
+    border: none;
+    outline: none;
+    font-family: "Aeonik-Variable", system-ui;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid rgba(0, 0, 0, .6);
+    padding: 5px 12px;
+    border-radius: 10px;
+    transition: all .3s linear;
+}
+
+.input-form label{
+    font-size: 15px;
+    opacity: .7;
+    pointer-events: none;
+    margin-bottom: 5px;
+}
+
+.input-form label span{
+    color: red;
+}
+
+.input-file-form{
+    margin-bottom: 40px;
+}
+
+.input-file-form input{
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+.input-file{
+    position: absolute;
+    top: 30px;
+    background: transparent;
+    appearance: none;
+    opacity: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 1;
+}
+
+.custom-file-upload {
+    position: absolute;
+    top: 30px;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    color: white;
+    height: 40px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 2;
+    text-align: center;
+}
+
+.input-form textarea{
+    font-family: "Aeonik-Variable", system-ui;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .8);
+    resize: vertical;
+    transition: all .3s linear;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, .6);
+}
+
+.input-checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-container label{
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+    opacity: .9;
+}
+
+.checkbox-container p{
+    font-size: 10px;
+    opacity: .8;
+}
+
+.checkbox-container label a,
+.checkbox-container p a{
+   color: #f169fa;
+   cursor: pointer;
+   pointer-events: all;
+}
+
+.input-form .form-submit{
+    background-color: #f169fa;
+    font-family: "Aeonik-Variable", system-ui;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    box-shadow: -5px 7px 1px rgba(0, 0, 0, 0.2);
+    transition: all .2s linear;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.input-form .form-submit:active{
+    scale: .99;
+}
+
+.job-form-notification{
+    font-size: 14px;
+}
+
+.job-form-deco-background-1,
+.job-form-deco-background-2{
+    position: absolute;
+    background: linear-gradient(to right, #f169fa, #e58f51);
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+    opacity: .4;
+}
+
+.job-form-deco-background-1{
+    width: 150px;
+    height: 150px;
+    left: 0%;
+    bottom: 10%;
+}
+
+.job-form-deco-background-2{
+    width: 150px;
+    height: 150px;
+    right: 0%;
+    top: 20%;
+}
