@@ -1,0 +1,12 @@
+.benefits-section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 40px 20px;
+    font-family: 'Cabin', sans-serif;
+    overflow: hidden;
+}
