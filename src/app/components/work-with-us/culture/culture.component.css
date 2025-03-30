@@ -5,7 +5,192 @@
     justify-content: center;
     align-items: center;
     background: #f5f5f5;
-    padding: 40px 20px;
-    font-family: 'Cabin', sans-serif;
+    padding: 40px 0px;
+    padding-bottom: 0px;
+    font-family: "Baloo Thambi 2", system-ui;
     overflow: hidden;
+}
+
+.culture-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.culture-title{
+    font-size: 34px;
+    font-weight: 600;
+    background: linear-gradient(to right, #f169fa 0%, #e58f51);
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+}
+
+.culture-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.culture-info{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px 0px;
+    text-align: start;
+    padding: 50px 20px;
+}
+
+.culture-info-description h3{
+    font-size: 26px;
+    background: linear-gradient(to right, #f169fa 0%, #e58f51);
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+.culture-info-description h3 span{
+    background: none;
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+}
+
+.culture-info img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.culture-info-background{
+    background-color: rgb(10 22 39);
+    color: white;
+}
+
+
+.culture-info-last{
+    padding-bottom: 120px;
+}
+
+.culture-join-us{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px 0px;
+    padding: 120px 30px;
+    background:  linear-gradient(to bottom, #8a2be2 20%, #420252);
+    font-family: "Baloo Thambi 2", system-ui;
+}
+
+.culture-join-us h2{
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(to right, #f169fa 0%, #e58f51);
+    -webkit-background-clip: text;
+    background-clip: var();
+    color: transparent;
+    text-shadow: 0px 0px 20px #f169fa;
+}
+
+.culture-join-us p{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.culture-deco{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 0px 20px white);
+}
+
+.culture-deco-1{
+    left: 10%;
+    top: 10%;
+}
+
+.culture-deco-2{
+    right: 10%;
+    bottom: 10%;
+}
+
+.culture-stars{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 2px white;
+}
+
+.culture-star-1{
+    top: 10%;
+    left: 60%;  
+}
+
+.culture-star-2{
+    top: 20%;
+    left: 20%;  
+}
+
+.culture-star-3{
+    top: 40%;
+    left: 90%;  
+}
+
+.culture-star-4{
+    top: 70%;
+    left: 10%;  
+}
+
+.culture-star-5{
+    top: 90%;
+    left: 70%;  
+}
+
+.culture-star-6{
+    top: 50%;
+    left: 50%;  
+    opacity: .5;
+    box-shadow: 0px 0px 0px 0 white;
+}
+
+.culture-star-7{
+    top: 20%;
+    left: 80%;  
+    opacity: .5;
+    box-shadow: 0px 0px 0px 0 white;
+}
+
+.culture-star-8{
+    top: 90%;
+    left: 30%;  
+    opacity: .5;
+    box-shadow: 0px 0px 0px 0 white;
+}
+
+.culture-deco-divider{
+    position: absolute;
+    display: flex;
+    top: -30px;
+    left: 0px;
+    width: 100%;
+    filter: brightness(0) saturate(100%) invert(37%) sepia(96%) saturate(6677%) hue-rotate(266deg) brightness(90%) contrast(96%);
+    transform: rotate(180deg);
+}
+
+.culture-deco-divider img{
+    width: 100%;
+    height: 30px;
 }
