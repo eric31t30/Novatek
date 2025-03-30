@@ -7,11 +7,12 @@ import { ServicesComponent } from './components/services/services/services.compo
 import { ContactComponent } from './components/contact/contact/contact.component';
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from './components/footer/footer.component';
+import { WorkWithUsComponent } from './components/work-with-us/work-with-us/work-with-us.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HomeComponent, AboutUsComponent, ServicesComponent, ContactComponent, HeaderComponent, FooterComponent],
+  imports: [CommonModule, RouterOutlet, HomeComponent, AboutUsComponent, ServicesComponent, ContactComponent, WorkWithUsComponent,HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   
