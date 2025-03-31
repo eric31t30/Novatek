@@ -36,8 +36,8 @@
     color: white;
 }
 
-.mission-content h3,
-.vision-content h3{
+.mission-content h2,
+.vision-content h2{
     font-size: 25px;
     margin-bottom: 20px;
     border-bottom: 2px solid black;
@@ -46,13 +46,13 @@
     padding-bottom: 10px;
 }
 
-.vision-content h3{
+.vision-content h2{
     border-bottom: 2px solid white;
 }
 
 
-.mission-content:hover h3,
-.vision-content:hover h3{
+.mission-content:hover h2,
+.vision-content:hover h2{
     width: 50%;
 }
 
