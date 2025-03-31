@@ -1,4 +1,4 @@
-.home-contact-section{
+.contact-section{
     position: relative;
     width: 100vw;
     height: 50vh;
@@ -12,7 +12,7 @@
     overflow: hidden;
 }
 
-.home-contact-section-cont{
+.contact-section-content{
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -21,7 +21,7 @@
     height: 100%;
 }
 
-.home-contact-title{
+.contact-title{
     position: relative;
     font-size: 30px;
     background: linear-gradient(to right, #f169fa, #e58f51);
@@ -31,7 +31,7 @@
     text-shadow: 0px 0px 20px #f169fa;
 }
 
-.home-contact-button{
+.contact-button{
     position: relative;
     left:0px;
     top: 0px;
@@ -51,13 +51,13 @@
     transition: all .3s ease;
 }
 
-.home-contact-button:hover{
+.contact-button:hover{
     left: 2px;
     top: -2px;
     box-shadow: -10px 10px 0px rgba(0, 0, 0, .6);
 }
 
-.home-contact-section-deco-1{
+.contact-section-deco-1{
     position: absolute;
     left: -50px;
     bottom: 0px;
@@ -70,7 +70,7 @@
     opacity: .4;
 }
 
-.home-contact-section-deco-2{
+.contact-section-deco-2{
     position: absolute;
     right: -50px;
     top: 50px;
@@ -84,7 +84,7 @@
     background-color: rgba(138, 43, 226,1);
 }
 
-.home-contact-section-deco-rocket{
+.contact-section-deco-rocket{
     position: absolute;
     bottom: -20px;
     left: 30px;
@@ -92,7 +92,7 @@
     height: 40px;
 }
 
-.home-contact-section-deco-planet{
+.contact-section-deco-planet{
     position: absolute;
     top: -10px;
     right: 30px;
@@ -100,7 +100,7 @@
     height: 40px;
 }
 
-.home-contact-stars{
+.contact-stars{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -111,46 +111,46 @@
     box-shadow: 0px 0px 30px 2px white;
 }
 
-.home-contact-star-1{
+.contact-star-1{
     top: 10%;
     left: 60%;  
 }
 
-.home-contact-star-2{
+.contact-star-2{
     top: 20%;
     left: 20%;  
 }
 
-.home-contact-star-3{
+.contact-star-3{
     top: 40%;
     left: 90%;  
 }
 
-.home-contact-star-4{
+.contact-star-4{
     top: 70%;
     left: 10%;  
 }
 
-.home-contact-star-5{
+.contact-star-5{
     top: 90%;
     left: 70%;  
 }
 
-.home-contact-star-6{
+.contact-star-6{
     top: 50%;
     left: 50%;  
     opacity: .5;
     box-shadow: 0px 0px 0px 0 white;
 }
 
-.home-contact-star-7{
+.contact-star-7{
     top: 20%;
     left: 80%;  
     opacity: .5;
     box-shadow: 0px 0px 0px 0 white;
 }
 
-.home-contact-star-9{
+.contact-star-8{
     top: 90%;
     left: 30%;  
     opacity: .5;
