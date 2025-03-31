@@ -39,6 +39,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .benefit{
@@ -59,7 +60,7 @@
     transition: all .5s linear;
 }
 
-.benefit h2{
+.benefit h3{
     font-size: 24px;
     font-weight: 600;
     transition: all .1s linear;
@@ -74,7 +75,7 @@
     scale: 1.1;
 }
 
-.benefit:hover h2{
+.benefit:hover h3{
     color: #f169fa;
 }
 
