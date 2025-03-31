@@ -13,7 +13,7 @@
   
 }
 
-.testimonials-carousel-cont{
+.testimonials-carousel-content{
   height: 250px;
   width: 100%;
   margin: 30px 0px;
@@ -136,7 +136,7 @@ swiper-slide {
 }
 
 
-.testimonials-wave-cont{
+.testimonials-wave-content{
   position: absolute;
   bottom: -10px;
   left: 0px;
