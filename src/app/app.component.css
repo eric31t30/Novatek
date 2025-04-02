@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:host {
+    --primary-color: rgb(241, 105, 250);
+    --secondary-color: rgb(229, 143, 81);
+
+    --background-color-1: rgb(245, 245, 245);
+    --background-color-2: rgb(10 22 39);
+
+    --font-family-1: "Baloo Thambi 2", system-ui;
+    --font-family-2: "Aeonik-Variable", system-ui;
+
+    --text-color-gradient: linear-gradient(to right, rgb(241, 105, 250) 0%, rgb(229, 143, 81) 80%);
+}
