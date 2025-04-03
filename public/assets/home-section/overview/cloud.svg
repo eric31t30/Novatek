@@ -1,7 +1,9 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#9524c7">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"> <path d="M9 13.2222L10.8462 15L15 11M8.4 19C5.41766 19 3 16.6044 3 13.6493C3 11.2001 4.8 8.9375 7.5 8.5C8.34694 6.48637 10.3514 5 12.6893 5C15.684 5 18.1317 7.32251 18.3 10.25C19.8893 10.9449 21 12.6503 21 14.4969C21 16.9839 18.9853 19 16.5 19L8.4 19Z" stroke="#9524c7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
-</svg>
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M300 440.74L361.54 500L500 366.667M280 633.333C180.589 633.333 100 553.48 100 454.977C100 373.337 160 297.917 250 283.333C278.231 216.212 345.047 166.667 422.977 166.667C522.8 166.667 604.39 244.084 610 341.667C662.977 364.83 700 421.677 700 483.23C700 566.13 632.843 633.333 550 633.333H280Z" stroke="url(#paint0_linear_405_21)" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_405_21" x1="400" y1="166.667" x2="400" y2="633.333" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F16BFA"/>
+<stop offset="1" stop-color="#E58F51"/>
+</linearGradient>
+</defs>
+</svg>
