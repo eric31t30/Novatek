@@ -5,12 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(53, 5, 68);
-    background-image: url('/assets/home-section/stats-counter/stats-counter-background.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Cabin', sans-serif;
+    font-family: var(--primary-font);
     padding: 0px 20px;
     overflow: hidden;
 }
@@ -23,6 +18,7 @@
     flex-direction: column;
     width: 100%;
     padding: 40px 0px;
+    z-index: 5;
 }
 
 .stat-counter{
@@ -36,14 +32,14 @@
 
 .stats-counter-amount{
     font-size: 30px;
-    color: #f169fa;
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-weight: 600;
     transition: all .5s ease;
 }
 
 .stats-counter-title{
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     color: white;
 }
@@ -59,5 +55,28 @@
 }
 
 .stat-counter:hover .stats-counter-amount{
-    text-shadow: 0px 0px 20px #f169fa;
+    text-shadow: 0px 0px 20px var(--primary-color);
+}
+
+.stat-counter-background{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/home-section/stats-counter/background-3.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.stat-counter-background span{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
 }
