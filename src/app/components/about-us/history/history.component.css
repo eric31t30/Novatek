@@ -4,12 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f169fa;
-    font-family: 'Cabin', sans-serif;
+    background-color: var(--primary-color);
+    font-family: var(--primary-font);
     padding: 40px 30px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -19,7 +16,6 @@
     left: 0px;
     width: 100%;
     height: 50px;
-    object-fit: contain;
 }
 
 .history-section-content{
@@ -38,12 +34,7 @@
 .history-section-content h2{
     font-size: 30px;
     font-weight: 600;
-    font-style: normal;
-    background: white;
-    -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
-    transform: rotate(-3deg);
+    color: white;
 }
 
 .history-section-content p{
