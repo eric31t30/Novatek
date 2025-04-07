@@ -7,7 +7,7 @@
     background-color: #6F3FF9;
     padding: 80px 20px;
     margin-top: 40px;
-    font-family: 'Cabin', sans-serif;
+    font-family: var(--primary-font);
     
 }
 
@@ -20,15 +20,14 @@
     flex-direction: column;
     text-align: center;
     gap: 20px 0px;
-    font-family: "Aeonik-Variable", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: var(--secondary-font);
 }
 
 .project-contact-content h2{
     font-size: 26px;
-    background: linear-gradient(to right, #f169fa, #e58f51);
+    background: var(--text-color-gradient);
     -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .project-contact-content p{
@@ -40,7 +39,7 @@
     color: white;
     margin-top: 40px;
     background-color: transparent;
-    border: 2px solid #f169fa;
+    border: 2px solid var(--primary-color);
     padding: 10px 30px;
     border-radius: 5px;
     transition: all 1s ease;
@@ -48,7 +47,7 @@
 }
 
 .project-contact-content:hover button{
-    box-shadow: inset 0px 0px 10px #f169fa;
+    box-shadow: inset 0px 0px 10px var(--primary-color);
 }
 
 .project-contact-divider{
