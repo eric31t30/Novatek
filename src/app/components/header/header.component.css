@@ -6,11 +6,11 @@
     top: 0px;
     width: 100%;
     height: 55px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color-1);
     box-shadow: 0px 2px 20px rgba(0, 0, 0, .3);
     z-index: 10;
     transition: all .2s linear;
-    font-family: 'Cabin', sans-serif;
+    font-family: var(--primary-font);
 }
 
 .header-content{
@@ -35,12 +35,10 @@
 
 .header-logo-text{
     position: relative;
-    background: linear-gradient(to right, #f169fa, #e58f51);
+    background: var(--text-color-gradient);
     -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
+    -webkit-text-fill-color: transparent;
     font-size: 28px;
-    font-family: "Baloo Thambi 2", system-ui;
     font-weight: 600;
     border-radius: 5px;
     padding: 5px;
@@ -99,17 +97,19 @@
     position: relative;
     font-size: 22px;
     font-weight: 600;
-    font-family: "Aeonik-Variable", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: linear-gradient(to right, #f169fa, #e58f51);
-    -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
+    font-family: var(--secondary-font);
+    color: white;
     transition: all .5s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .navbar-list li a:hover{
-    font-size: 24px;
+    font-size: 23px;
+    background: var(--text-color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 20px var(--primary-color);
 }
 
 .navbar li a::before{
@@ -118,12 +118,13 @@
     left: 0px;
     bottom: -5px;
     width: 0%;
-    border-bottom: 2px solid #f169fa;
+    border-bottom: 2px solid rgba(255, 255, 255, .9);
     transition: all .5s ease;
 }
 
 .navbar li a:hover::before{
     width: 100%;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .navbar-social{
@@ -166,7 +167,7 @@
 .navbar-deco-background-1,
 .navbar-deco-background-2{
     position: absolute;
-    background: linear-gradient(to right, #f169fa, #e58f51);
+    background: var(--decoration-color-gradient);
     border-radius: 50%;
     filter: blur(40px);
     z-index: 0;
