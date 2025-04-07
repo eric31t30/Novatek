@@ -4,10 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f5f5f5;
+    background: var(--background-color-1);
     padding: 40px 0px;
     margin-top: 30px;
-    font-family: 'Cabin', sans-serif;
+    font-family: var(--primary-font);
     overflow: hidden;
 }
 
@@ -23,12 +23,10 @@
 
 .benefits-title{
     font-size: 34px;
-    font-family: "Baloo Thambi 2", system-ui;
     font-weight: 600;
-    background: linear-gradient(to right, #f169fa 0%, #e58f51);
+    background: var(--text-color-gradient);
     -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
@@ -50,7 +48,6 @@
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
-    font-family: "Baloo Thambi 2", system-ui;
     gap: 30px 0px;
 }
 
@@ -76,7 +73,7 @@
 }
 
 .benefit:hover h3{
-    color: #f169fa;
+    color: var(--primary-color);
 }
 
 
