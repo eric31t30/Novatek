@@ -5,8 +5,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(10 22 39);
-    font-family: 'Cabin', sans-serif;
+    background: var(--background-color-2);
+    font-family: var(--primary-font);
     padding: 50px 40px;
     overflow: hidden;
 }
@@ -32,12 +32,10 @@
 }
 
 .footer-section-logo h2{
-    font-size: 38px;
-    background: linear-gradient(to right, #f169fa, #e58f51 60%);
+    font-size: 42px;
+    background: var(--text-color-gradient);
     -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
-    font-family: "Baloo Thambi 2", system-ui;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-section-logo h2 img{
@@ -48,10 +46,10 @@
 }
 
 .footer-section-logo p{
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     width: 70%;
-    font-family: "Aeonik-Variable", system-ui;
+    font-family: var(--secondary-font);
 
 }
 
@@ -69,18 +67,16 @@ address{
 }
 
 .footer-section-contact h3{
-    font-size: 25px;
-    background: linear-gradient(to right, #f169fa, #e58f51 60%);
+    font-size: 28px;
+    background: var(--text-color-gradient);
     -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-section-contact-data{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
 
 .footer-section-contact-data img{
@@ -91,7 +87,7 @@ address{
 .footer-section-contact-data p{
     color: white;
     padding-left: 10px;
-   
+    font-size: 17px;
 }
 
 .footer-section-pages{
@@ -101,9 +97,12 @@ address{
     flex-direction: column;
     width: 100%;
     color: white;
+    
 }
 
 .footer-section-pages p{
+    font-size: 18px;
+    font-weight: 400;
     margin-bottom: 10px;
     cursor: pointer;
     border-bottom: 2px solid rgba(255, 255, 255, 0);
@@ -121,10 +120,9 @@ address{
 
 .footer-section-pages p span{
     font-weight: 700;
-    background: linear-gradient(to right, #f169fa, #e58f51 60%);
+    background: var(--text-color-gradient);
     -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-section-pages p img{
@@ -150,7 +148,7 @@ address{
 
 .footer-section-social-icon:hover{
     transform: scale(1.1);
-    filter: drop-shadow(0px 0px 5px #e58f51);
+    filter: drop-shadow(0px 0px 5px var(--secondary-color));
 }
 
 .footer-section-copyright{
@@ -169,7 +167,7 @@ address{
 .footer-section-deco-background-1,
 .footer-section-deco-background-2{
     position: absolute;
-    background: linear-gradient(to right, #f169fa, #e58f51);
+    background: var(--decoration-color-gradient);
     border-radius: 50%;
     filter: blur(60px);
     z-index: 0;
