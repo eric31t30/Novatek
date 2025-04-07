@@ -4,9 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #f169fa, #e58f51);
+    background: var(--decoration-color-gradient);
     padding: 40px 20px;
-    font-family: 'Cabin', sans-serif;
+    font-family: var(--primary-font);
     overflow: hidden;
 }
 
@@ -34,7 +34,6 @@
 
 .work-hero-title h2{
     font-size: 32px;
-    font-family: "Baloo Thambi 2", system-ui;
     font-weight: 600;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, .6);
 }
@@ -43,14 +42,14 @@
     font-weight: 400;
 }
 
-.work-hero-background{
+.work-hero-background-separation{
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
     height: 10%;
-    background-color: #f5f5f5;
-    z-index: 0;
+    background-color: var(--background-color-1);
+    z-index: 1;
     clip-path: polygon(0 0, 0% 100%, 100% 100%);
 }
 
@@ -79,4 +78,18 @@
     bottom: 10%;
     right: 20%;
     transform: rotate(-20deg);
+}
+
+.work-hero-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+    opacity: .4;
+    background-image: url("/assets/work-with-us-page/hero/background-hero.svg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: top left;
 }
