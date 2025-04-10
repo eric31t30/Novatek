@@ -1,6 +1,6 @@
 .stats-counter-section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +77,66 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
     pointer-events: none;
+}
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+
+    .stats-counter-amount{
+        font-size: 42px;
+    }
+    
+    .stats-counter-title{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px){
+    .stats-counter-amount{
+        font-size: 46px;
+    }
+    
+    .stats-counter-title{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1280px){
+
+}
+
+@media (min-width: 1920px){
+
+    .stats-counter-content{
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 100px 0px;
+    }
+    
+    .stats-counter-amount{
+        font-size: 52px;
+    }
+    
+    .stats-counter-title{
+        font-size: 26px;
+    }
+
+    .stats-1-clients{
+        position: relative;
+        left: 0%;
+    }
+    
+    .stats-3-projects{
+        position: relative;
+        left: 0%;
+    }
 }
