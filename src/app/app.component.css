@@ -18,3 +18,28 @@
 /* background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
+
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+
+}
+
+@media (min-width: 1024px){
+
+}
+
+@media (min-width: 1280px){
+
+}
+
+@media (min-width: 1920px){
+
+}
