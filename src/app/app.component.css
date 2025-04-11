@@ -14,7 +14,7 @@
     --decoration-color-gradient: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 80%);
 
     --font-size-h2: 3rem;
-    --font-size-h3: 1.4rem;
+    --font-size-h3: 1.5rem;
     --font-size-p: 1rem;
 
 }
@@ -36,16 +36,16 @@
 @media (min-width: 700px){
     :host{
         --font-size-h2: 3.7rem;
-        --font-size-h3: 1.6rem;
-        --font-size-p: 1.2rem
+        --font-size-h3: 1.8rem;
+        --font-size-p: 1.3rem
     }
 }
 
 @media (min-width: 1024px){
     :host{
         --font-size-h2: 4.8rem;
-        --font-size-h3: 2.2rem;
-        --font-size-p: 1.4rem
+        --font-size-h3: 2.3rem;
+        --font-size-p: 1.5rem
     }
 }
 
@@ -56,3 +56,34 @@
 @media (min-width: 1920px){
     
 }
+
+
+
+
+/* 
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+    
+}
+
+@media (min-width: 1024px){
+    
+}
+
+@media (min-width: 1280px){
+    
+}
+
+@media (min-width: 1920px){
+    
+} 
+
+*/
