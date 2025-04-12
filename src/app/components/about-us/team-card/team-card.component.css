@@ -13,6 +13,7 @@
     transition: all .5s ease;
     z-index: 5;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .our-team-card-container .worker-img{
@@ -44,7 +45,7 @@
 }
 
 .our-team-card-info p{
-    font-size: 15px;
+    font-size: var(--font-size-p);
     font-weight: 600;
     opacity: .8;
     text-align: center;
@@ -56,6 +57,12 @@
     position: absolute;
     z-index: 0;
     opacity: .4;
+}
+
+.our-team-card-deco-1 img,
+.our-team-card-deco-2 img,
+.our-team-card-deco-3 img{
+    transition: all .4s ease;
 }
 
 .our-team-card-deco-1{
@@ -97,10 +104,85 @@
 }
 
 .our-team-card-container:hover .worker-img{
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
 
 .our-team-card-container:hover .our-team-card-info h3{
-    transform: scale(1.1);
+    transform: scale(1.06);
 }
+
+.our-team-card-container:hover .our-team-card-deco-1 img,
+.our-team-card-container:hover .our-team-card-deco-2 img,
+.our-team-card-container:hover .our-team-card-deco-3 img{
+    scale: .9;
+}
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+
+    .our-team-card-container{
+        padding: 50px 15px;
+    }
+    
+    .our-team-card-container .worker-img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    .our-team-card-info h3{
+        font-size: var(--font-size-h3);
+    }
+}
+
+@media (min-width: 1024px){
+    
+    .our-team-card-container{
+        padding: 50px 15px;
+    }
+    
+    .our-team-card-container .worker-img{
+        width: 120px;
+        height: 120px;
+       
+    }
+    
+    .our-team-card-info h3{
+        font-size: var(--font-size-h3);
+    }
+}
+
+@media (min-width: 1280px){
+
+    .our-team-card-container .worker-img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .our-team-card-deco-1 img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .our-team-card-deco-2 img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .our-team-card-deco-3 img{
+        width: 90px;
+        height: 90px;
+    }
+    
+}
+
+@media (min-width: 1920px){
+    
+} 
 
