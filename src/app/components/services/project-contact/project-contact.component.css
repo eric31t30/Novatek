@@ -1,6 +1,6 @@
 .project-contact-section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,19 +23,20 @@
     font-family: var(--secondary-font);
 }
 
-.project-contact-content h2{
-    font-size: 26px;
+.project-contact-content h3{
+    font-size: var(--font-size-h3);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .project-contact-content p{
+    font-size: var(--font-size-p);
     opacity: .8;
 }
 
 .project-contact-content button{
-    font-size: 20px;
+    font-size: var(--font-size-p);
     color: white;
     margin-top: 40px;
     background-color: transparent;
@@ -81,7 +82,10 @@
 
 .project-contact-deco-3,
 .project-contact-deco-4,
-.project-contact-deco-5{
+.project-contact-deco-5,
+.project-contact-deco-6,
+.project-contact-deco-7,
+.project-contact-deco-8{
     position: absolute;
     width: 3px;
     height: 3px;
@@ -104,3 +108,90 @@
     bottom: 5%;
     left: 40%;
 }
+
+.project-contact-deco-6{
+    bottom: 25%;
+    right: 20%;
+}
+
+.project-contact-deco-7{
+    bottom: 30%;
+    left: 20%;
+}
+
+.project-contact-deco-8{
+    top: 5%;
+    right: 60%;
+}
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+
+    .project-contact-content{
+        gap: 40px 0px;
+    }
+    
+    .project-contact-content p{
+        width: 80%;
+    }
+
+    .project-contact-deco{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px){
+    .project-contact-section{
+        padding: 100px 20px;
+    }
+
+    .project-contact-content{
+        gap: 20px 0px;
+    }
+
+    .project-contact-content button{
+        padding: 10px 40px;
+    }
+
+    .project-contact-deco{
+        width: 60px;
+        height: 60px;
+    }
+
+    .project-contact-deco-1{
+        left: 5%;
+        bottom: 30%;
+    }
+    
+    .project-contact-deco-2{
+        right: 10%;
+        bottom: 10%;
+    }
+    
+}
+
+@media (min-width: 1280px){
+    .project-contact-deco{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1920px){
+
+    .project-contact-section{
+        padding: 140px 20px;
+    }
+
+    .project-contact-content{
+        gap: 40px 0px;
+    }
+} 
