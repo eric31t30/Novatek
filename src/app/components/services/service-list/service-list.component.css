@@ -1,6 +1,6 @@
 .service-list-section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
 .service-list-title{
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
 .service-list-title h2{
     position: relative;
     top: 20px;
-    font-size: 34px;
+    font-size: calc(var(--font-size-h2) - 1rem);
     z-index: 5;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -101,8 +101,17 @@
     padding-top: 60px;
 }
 
-.service h2{
-    font-size: 30px;
+.service-subcontainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service h3{
+    font-size: calc(var(--font-size-h3) + .5rem);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -110,28 +119,31 @@
 }
 
 .service p{
+    font-size: var(--font-size-p);
     line-height: 1.5;
     z-index: 5;
 }
 
 .service-img-container{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.service .service-image{
+.service-img-container .service-image{
     width: 200px;
     height: 200px;
+    cursor: pointer;
 }
 
-.service .service-image{
+.service-img-container .service-image{
     transition: all .5s linear;
     filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0));
 }
 
-.service:hover .service-image{
+.service-image:hover{
     transform: translateY(-10px);
 }
 
@@ -146,27 +158,27 @@
     margin-bottom: 40px;
 }
 
-.service-software-development:hover .service-image{
+.service-software-development .service-image:hover{
     filter: drop-shadow(0px 0px 20px #f169fa);
 }
 
-.service-web-development:hover .service-image{
+.service-web-development .service-image:hover{
     filter: drop-shadow(0px 0px 20px #53ccfc);
 }
 
-.service-analysis:hover .service-image{
+.service-analysis .service-image:hover{
     filter: drop-shadow(0px 0px 20px #2ae070);
 }
 
-.service-maintenance-support:hover .service-image{
+.service-maintenance-support .service-image:hover {
     filter: drop-shadow(0px 0px 20px #e21919);
 }
 
-.service-ui-ux:hover .service-image{
+.service-ui-ux .service-image:hover{
     filter: drop-shadow(0px 0px 20px #194be2);
 }
 
-.service-ai:hover .service-image{
+.service-ai .service-image:hover{
     filter: drop-shadow(0px 0px 20px #9c05ca);
 }
 
@@ -193,3 +205,92 @@
     right: 0%;
     top: 10%;
 }
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+    
+}
+
+@media (min-width: 700px){
+
+    .service-list-title{
+        height: 25vh;
+    }
+
+    .service p{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .service-img-container{
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    .service{
+        flex-direction: row;
+        align-items: center;
+        padding: 60px 60px;
+    }
+
+    .service-web-development,
+    .service-maintenance-support,
+    .service-ai{
+        flex-direction: row-reverse;
+    }
+
+    .service-subcontainer{
+        width: 100%;
+    }
+
+    .service p{
+        font-size: calc(var(--font-size-p) - .2rem);
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .service-img-container .service-image{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1280px){
+    
+    .service-list-title{
+        height: 40vh;
+    }
+
+    .service-list-title h2{
+        font-size: calc(var(--font-size-h3) + .5rem);
+    }
+
+    .service-web-development,
+    .service-maintenance-support,
+    .service-ai{
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1920px){
+
+    .service{
+        padding: 80px 100px;
+    }
+
+    .service-list-title{
+        height: 35vh;
+    }
+
+    .service-list-title h2{
+        font-size: calc(var(--font-size-h3) + .5rem);
+    }
+
+
+} 
