@@ -1,6 +1,6 @@
 .clients-section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +21,8 @@
     z-index: 5;
 }
 
-.clients-content h2{
-    font-size: 28px;
+.clients-content h3{
+    font-size: var(--font-size-h3);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,7 +39,7 @@
 
 .company-logo{
     width: 110px;
-    height: 110px;
+    height: 80px;
     transition: all .5s ease;
 }
 
@@ -52,13 +52,14 @@
     justify-content: center;
     align-items: center;
     border: 2px solid  var(--primary-color);
-    height: 60px;
-    width: 150px;
+    height: 50px;
+    width: 140px;
     text-align: center;
-    font-size: 16px;
+    font-size: var(--font-size-p);
     font-weight: 600;
     border-radius: 10px;
     padding: 6px;
+    cursor: pointer;
 }
 
 .company-logo-join p{
@@ -84,3 +85,86 @@
     left: -50px;
     bottom: 50px;
 }
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+    
+    .clients-section{
+        padding: 40px 60px;
+    }
+
+    .company-logo{
+        width: 140px;
+        height: 110px;
+    }
+
+    .company-logo-join{
+        height: 70px;
+        width: 180px;
+        padding: 6px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .company-logo{
+        width: 160px;
+        height: 130px;
+    }
+
+}
+
+@media (min-width: 1280px){
+
+    .clients-section{
+        padding: 60px;
+    }
+
+    .clients-companies-content{
+        width: 80%;
+    }
+
+    .company-logo{
+        width: 180px;
+        height: 140px;
+    }
+
+    .clients-background-deco{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .clients-companies-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clients-companies-content > *:last-child {
+        grid-column: 2;
+    }
+    
+}
+
+@media (min-width: 1920px){
+    
+    .clients-section{
+        padding: 70px 60px;
+    }
+    
+    .company-logo{
+        width: 180px;
+        height: 160px;
+    }
+
+    .company-logo-join{
+        height: 80px;
+        width: 200px;
+        padding: 6px;
+    }
+} 
