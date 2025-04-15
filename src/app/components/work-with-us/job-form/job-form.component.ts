@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-job-form',
   imports: [],
   templateUrl: './job-form.component.html',
-  styleUrl: './job-form.component.css'
+  styleUrls: ['../../../styles/form-styles.css', './job-form.component.css',]
 })
 export class JobFormComponent {
 
