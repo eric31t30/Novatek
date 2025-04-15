@@ -1,6 +1,6 @@
 .work-hero-section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,13 +33,15 @@
 }
 
 .work-hero-title h2{
-    font-size: 32px;
+    font-size: var(--font-size-h3);
     font-weight: 600;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, .6);
 }
 
 .work-hero-title p{
+    font-size: calc(var(--font-size-p) - .1rem); 
     font-weight: 400;
+    
 }
 
 .work-hero-background-separation{
@@ -93,3 +95,67 @@
     background-size: cover;
     background-position: top left;
 }
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+    .work-hero-content{
+        margin: 100px 0px;
+        margin-top: 120px;
+    }
+
+    .work-hero-title h2{
+        font-size: calc(var(--font-size-h3) + .3rem);
+    }
+}
+
+@media (min-width: 1024px){
+
+    .work-hero-content{
+        margin: 120px 0px;
+        margin-top: 140px;
+    }
+
+    .work-hero-title h2{
+        font-size: calc(var(--font-size-h3) + .3rem);
+    }
+    
+    .work-hero-title p{
+        font-size: calc(var(--font-size-p)); 
+    }
+    
+    .work-hero-background-deco-1,
+    .work-hero-background-deco-2,
+    .work-hero-background-deco-3{
+        width: 40px;
+        height: 40px;
+    }
+
+    .work-hero-background{
+        opacity: .3;
+    }
+}
+
+@media (min-width: 1280px){
+    .work-hero-background-deco-1,
+    .work-hero-background-deco-2,
+    .work-hero-background-deco-3{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1920px){
+    .work-hero-background{
+        background-image: url("/assets/work-with-us-page/hero/background-hero.svg");
+        background-repeat: repeat;
+        background-size: 700px;
+        background-position: top left;
+    }
+} 
