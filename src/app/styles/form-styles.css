@@ -131,3 +131,40 @@
     scale: .99;
 }
 
+.input-file-form{
+    margin-bottom: 40px;
+}
+
+.input-file-form input{
+    padding: 0px;
+    border: none;
+    border-radius: 0px;
+}
+
+.input-file{
+    position: absolute;
+    top: 30px;
+    background: transparent;
+    appearance: none;
+    opacity: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 1;
+}
+
+.custom-file-upload {
+    position: absolute;
+    top: 30px;
+    background: var(--decoration-color-gradient);
+    color: white;
+    height: 40px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size-p);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 2;
+    text-align: center;
+}
