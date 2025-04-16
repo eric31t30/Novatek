@@ -1,6 +1,6 @@
 .benefits-section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
 }
 
 .benefits-title{
-    font-size: 34px;
+    font-size: var(--font-size-h2);
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -31,12 +31,12 @@
 }
 
 .benefits-list{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     list-style: none;
 }
 
@@ -49,6 +49,7 @@
     text-align: center;
     padding: 40px 20px;
     gap: 30px 0px;
+    cursor: pointer;
 }
 
 .benefit img{
@@ -58,12 +59,13 @@
 }
 
 .benefit h3{
-    font-size: 24px;
+    font-size: var(--font-size-h3);
     font-weight: 600;
     transition: all .1s linear;
 }
 
 .benefit p{
+    font-size: var(--font-size-p);
     font-weight: 600;
     opacity: .8;
 }
@@ -79,7 +81,10 @@
 
 .benefits-background-deco-1,
 .benefits-background-deco-2,
-.benefits-background-deco-3{
+.benefits-background-deco-3,
+.benefits-background-deco-4,
+.benefits-background-deco-5,
+.benefits-background-deco-6{
     position: absolute;
     width: 220px;
     height: 220px;
@@ -89,16 +94,200 @@
 }
 
 .benefits-background-deco-1{
-    left: 0px;
-    top: 5%;
+    left: -20%;
+    top: 15%;
 }
 
 .benefits-background-deco-2{
-    right: 0px;
+    right: 10%;
     bottom: 10%;
+    transform: rotate(100deg);
 }
 
 .benefits-background-deco-3{
     right: 10%;
-    bottom: 40%;
+    bottom: 50%;
 }
+
+.benefits-background-deco-4{
+    left: -10%;
+    bottom: 30%;
+    transform: rotate(260deg);
+}
+
+.benefits-background-deco-5{
+    right: -20%;
+    top: 5%;
+    transform: rotate(320deg);
+}
+
+.benefits-background-deco-6{
+    right: -20%;
+    bottom: 0%;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 399px){
+    .benefits-title{
+        font-size: calc(var(--font-size-h2) - .6rem);
+    }
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+    
+    .benefits-section{
+        padding: 40px 30px;
+    }
+
+    .benefit p{
+        width: 80%;
+    }
+
+    .benefits-background-deco-1{
+        left: -10%;
+    }
+
+    .benefits-background-deco-2{
+        right: 30%;
+        bottom: 10%;
+        transform: rotate(100deg);
+    }
+
+    .benefits-background-deco-5{
+        right: -10%;
+    }
+
+    .benefits-background-deco-6{
+        right: -10%;
+    }
+}
+
+@media (min-width: 1024px){
+    .benefits-section{
+        padding: 80px 30px;
+    }
+
+    .benefits-title{
+        margin-bottom: 60px;
+    }
+
+    .benefit{
+        width: 70%;
+        height: 100%;
+        padding: 80px 20px;
+    }
+
+    .benefit img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .benefit p{
+        font-size: calc(var(--font-size-p) + .5rem);
+    }
+
+    .benefit-1,
+    .benefit-3,
+    .benefit-5{
+        position: relative;
+        left: 120px;
+    }
+
+    .benefit-2,
+    .benefit-4,
+    .benefit-6{
+        position: relative;
+        left: -120px;
+    }
+
+    .benefits-background-deco-1,
+    .benefits-background-deco-2,
+    .benefits-background-deco-3,
+    .benefits-background-deco-4,
+    .benefits-background-deco-5,
+    .benefits-background-deco-6{
+        width: 320px;
+        height: 320px;
+    }
+
+    .benefits-background-deco-5{
+        right: 0%;
+    }
+    
+}
+
+@media (min-width: 1280px){
+
+    .benefits-section{
+        padding: 80px 40px;
+    }
+
+
+    .benefits-list{
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px 0px;
+    }
+    
+    .benefit{
+        width: 40%;
+        padding: 40px 20px;
+    }
+
+    .benefit img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .benefit h3{
+        font-size: calc(var(--font-size-h3) - .2rem);
+    }
+
+    .benefit p{
+        width: 60%;
+        font-size: calc(var(--font-size-p) - .2rem);
+    }
+
+    .benefit-1,
+    .benefit-3,
+    .benefit-5,
+    .benefit-2,
+    .benefit-4,
+    .benefit-6{
+        left: 0px;
+    }
+
+    .benefits-background-deco-1{
+        left: -5%;
+    }
+
+    .benefits-background-deco-2{
+        right: 50%;
+    }
+    
+
+    .benefits-background-deco-3{
+        right: 30%;
+        bottom: 40%;
+    }
+
+    .benefits-background-deco-4{
+        left: 0%;
+        bottom: 30%;
+        transform: rotate(260deg);
+    }
+
+    .benefits-background-deco-6{
+        right: -5%;
+    }
+    
+}
+
+@media (min-width: 1920px){
+    
+} 
