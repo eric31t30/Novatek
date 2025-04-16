@@ -1,6 +1,6 @@
 .culture-section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@
 }
 
 .culture-title{
-    font-size: 34px;
+    font-size: var(--font-size-h2);
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -35,25 +35,42 @@
 }
 
 .culture-info{
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: start;
-    text-align: center;
+    align-items: center;
     flex-direction: column;
     gap: 40px 0px;
     text-align: start;
     padding: 50px 20px;
+    overflow: hidden;
+}
+
+.culture-info-description{
+    z-index: 5;
 }
 
 .culture-info-description h3{
-    font-size: 26px;
+    font-size: var(--font-size-h3);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
 }
 
-.culture-info img{
+.culture-info-description p{
+    font-size: var(--font-size-p);
+}
+
+.culture-info-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+}
+
+.culture-info-image img{
     object-fit: cover;
     width: 100%;
     border-radius: 20px;
@@ -64,14 +81,34 @@
     color: white;
 }
 
-
 .culture-info-last{
     padding-bottom: 120px;
+}
+
+.culture-info-deco-1,
+.culture-info-deco-2{
+    position: absolute;
+    z-index: 0;
+    opacity: .3;
+}
+
+.culture-info-deco-1{
+    left: -20%;
+    bottom: 0%;
+    width: 250px;
+}
+
+.culture-info-deco-2{
+    right: 20px;
+    top: 50px;
+    width: 40px;
+    transform: rotate(-45deg);
 }
 
 .culture-join-us{
     position: relative;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -81,7 +118,7 @@
 }
 
 .culture-join-us h3{
-    font-size: 30px;
+    font-size: var(--font-size-h3);
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -90,7 +127,7 @@
 }
 
 .culture-join-us p{
-    font-size: 16px;
+    font-size: var(--font-size-p);
     color: white;
     text-align: center;
 }
@@ -183,3 +220,149 @@
     width: 100%;
     height: 30px;
 }
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+    .culture-info{
+        padding: 50px;
+    }
+
+    .culture-info-last{
+        padding-bottom: 120px;
+    }
+
+    .culture-info-deco-1{
+        left: -10%;
+    }
+
+    .culture-info-deco-2{
+        right: 60px;
+        width: 50px;
+    }
+    
+}
+
+@media (min-width: 1024px){
+
+    .culture-info-description p{
+        width: 80%;
+    }
+
+    .culture-info-image img{
+        width: 60%;
+    }
+
+    .culture-info-deco-1{
+        left: -10%;
+        bottom: 10%;
+        width: 350px;
+    }
+
+    .culture-join-us p{
+        width: 70%;
+    }
+
+    .culture-deco{
+        width: 70px;
+        height: 70px;
+    }
+    
+    .culture-deco-1{
+        left: 10%;
+        top: 10%;
+    }
+    
+    .culture-deco-2{
+        right: 10%;
+        bottom: 10%;
+    }
+    
+}
+
+@media (min-width: 1280px){
+
+    .culture-title{
+        margin-bottom: 60px;
+    }
+
+    .culture-info{
+        flex-direction: row;
+        text-align: start;
+        padding: 50px 170px;
+    }
+
+    .culture-info-background{
+        flex-direction: row-reverse;
+    }
+
+    .culture-info-description{
+        width: 40%;
+    }
+
+    .culture-info-description p{
+        width: 100%;
+    }
+
+    .culture-info-image{
+        width: 60%;
+        justify-content: end;
+    }
+
+    .culture-info-background .culture-info-image{
+        justify-content: start;
+    }
+
+    .culture-info-image img{
+        width: 80%;
+    }
+
+    .culture-info-last{
+        padding-bottom: 130px;
+    }
+
+    .culture-info-deco-1{
+        left: -10%;
+        bottom: 10%;
+        width: 350px;
+    }
+
+    .culture-join-us{
+        padding: 160px 30px;
+    }
+}
+
+@media (min-width: 1920px){
+
+    .culture-info{
+        padding: 50px 400px;
+    }
+
+    .culture-info-image img{
+        width: 80%;
+    }
+
+    .culture-info-last{
+        padding-bottom: 130px;
+    }
+
+    .culture-info-deco-1{
+        left: -5%;
+        bottom: 10%;
+        width: 350px;
+    }
+
+    .culture-info-deco-2{
+        right: 150px;
+    }
+
+    .culture-join-us p{
+        width: 50%;
+    }
+} 
