@@ -1,6 +1,6 @@
 .footer-section{
     position: relative;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,11 +9,12 @@
     font-family: var(--primary-font);
     padding: 50px 40px;
     overflow: hidden;
+    gap: 40px 0px;
 }
 
 .footer-section-cont{
     position: relative;
-    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,7 +33,7 @@
 }
 
 .footer-section-logo h2{
-    font-size: 42px;
+    font-size: var(--font-size-h2);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -46,11 +47,21 @@
 }
 
 .footer-section-logo p{
-    font-size: 16px;
+    font-size: var(--font-size-p);
     color: white;
     width: 70%;
     font-family: var(--secondary-font);
 
+}
+
+.footer-section-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+    gap: 50px 0px;
 }
 
 address{
@@ -67,7 +78,7 @@ address{
 }
 
 .footer-section-contact h3{
-    font-size: 28px;
+    font-size: var(--font-size-h3);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -79,15 +90,30 @@ address{
     align-items: center;
 }
 
+.footer-section-contact-data-schedule{
+    flex-direction: column;
+}
+
+.schedule-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.schedule{
+    position: relative;
+    left: 15px;
+}
+
 .footer-section-contact-data img{
     width: 20px;
     height: 20px;
 }
 
 .footer-section-contact-data p{
+    font-size: calc(var(--font-size-p) - .1rem);
     color: white;
     padding-left: 10px;
-    font-size: 17px;
 }
 
 .footer-section-pages{
@@ -101,7 +127,7 @@ address{
 }
 
 .footer-section-pages p{
-    font-size: 18px;
+    font-size: var(--font-size-p);
     font-weight: 400;
     margin-bottom: 10px;
     cursor: pointer;
@@ -110,6 +136,7 @@ address{
 }
 
 .footer-section-pages a{
+    font-size: var(--font-size-p);
     text-decoration: none;
     color: white;
 }
@@ -119,6 +146,7 @@ address{
 }
 
 .footer-section-pages p span{
+    font-size: var(--font-size-p);
     font-weight: 700;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -152,16 +180,21 @@ address{
 }
 
 .footer-section-copyright{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
     color: rgba(255, 255, 255, .7);
 }
 
 .footer-section-copyright p{
-    font-size: 12px;
+    font-size: var(--font-size-p);
 }
 
 .footer-section-copyright-message{
     color: rgba(255, 255, 255, .4);
-    font-size: 10px !important;
+    font-size: calc(var(--font-size-p) - .2rem) !important;
 }
 
 .footer-section-deco-background-1,
@@ -187,3 +220,86 @@ address{
     left: 0%;
     top: 10%;
 }
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+    .footer-section{
+        padding: 50px 60px;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .footer-section-cont{
+        gap: 50px 0px;
+    }
+
+    .footer-section-contact-data-schedule{
+        flex-direction: column;
+    }
+    
+    .schedule-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-section-info{
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .footer-section-pages{
+        width: 100%;
+    }
+    
+    .footer-section-social{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 0px 80px;
+    }
+
+    .footer-section-social-icon{
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-section-deco-background-1{
+        width: 200px;
+        height: 200px;
+        right: 0%;
+        bottom: 10%;
+    }
+}
+
+@media (min-width: 1280px){
+
+    .footer-section-pages p img{
+        left: 10px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-section-contact-data img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 1920px){
+    .footer-section{
+        padding: 80px 160px;
+        gap: 60px 0px;
+    }
+    
+} 
