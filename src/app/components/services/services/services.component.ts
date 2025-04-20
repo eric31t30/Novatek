@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ServiceListComponent } from '../service-list/service-list.component';
 import { ClientsComponent } from '../clients/clients.component';
 import { ProjectContactComponent } from '../project-contact/project-contact.component';
+
+import { HeadService } from '../../../services/head.service';
 
 
 @Component({
@@ -10,6 +12,13 @@ import { ProjectContactComponent } from '../project-contact/project-contact.comp
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })
-export class ServicesComponent {
-
+export class ServicesComponent implements OnInit{
+  
+  constructor(private headService: HeadService) {}
+  
+  ngOnInit(): void {
+    this.headService.preloadImages([
+    
+    ]);
+  }
 }
