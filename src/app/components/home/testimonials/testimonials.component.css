@@ -80,29 +80,16 @@ swiper-slide {
   color: #9624c7e0;
 }
 
-.testimonial-background-1{
+.testimonial-background-1,
+.testimonial-background-3{
   background: url("/assets/home-section/testimonials/carousel-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-
-.testimonial-background-2{
-  background: url("/assets/home-section/testimonials/carousel-2.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.testimonial-background-3{
-  background: url("/assets/home-section/testimonials/carousel-3.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
+.testimonial-background-2,
 .testimonial-background-4{
-  background: url("/assets/home-section/testimonials/carousel-4.svg");
+  background: url("/assets/home-section/testimonials/carousel-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
