@@ -23,7 +23,8 @@ export class WorkWithUsComponent implements OnInit{
       '/assets/work-with-us-page/hero/background-hero.svg',
       '/assets/work-with-us-page/hero/hand.svg',
       '/assets/work-with-us-page/hero/suitcase.svg',
-      '/assets/work-with-us-page/hero/computer.svg'
+      '/assets/work-with-us-page/hero/computer.svg',
+      '/assets/work-with-us-page/open-jobs/arrow.svg'
     ]);
   }
 }
