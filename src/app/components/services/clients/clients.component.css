@@ -41,6 +41,7 @@
     width: 110px;
     height: 80px;
     transition: all .5s ease;
+    cursor: pointer;
 }
 
 .company-logo:hover{
