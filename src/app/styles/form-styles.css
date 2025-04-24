@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px 40px;
+    padding: 40px 30px;
     margin-top: 60px;
     gap: 40px;
     border-radius: 25px;
@@ -69,6 +69,7 @@
     appearance: none;
     border: 2px solid rgba(0, 0, 0, .6);
     transition: all .3s linear;
+    cursor: pointer;
 }
 
 .input-form select:focus {
@@ -99,6 +100,11 @@
 }
 
 .checkbox-container{
+    flex-direction: column;
+}
+
+.input-checkbox{
+    display: flex;
     flex-direction: row;
 }
 
@@ -167,4 +173,10 @@
     transition: all 0.3s ease;
     z-index: 2;
     text-align: center;
+}
+
+.field-error{
+    opacity: .6;
+    font-weight: 400;
+    color: red;
 }
