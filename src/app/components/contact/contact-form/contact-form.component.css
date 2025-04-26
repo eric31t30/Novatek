@@ -296,6 +296,11 @@
         width: 80%;
     }
 
+    .split-input-container{
+        flex-direction: row;
+        gap: 0px 20px;
+    }
+
     .contact-cities{
         gap: 0px 60px;
     }
@@ -347,6 +352,11 @@
         padding: 40px 40px;
         width: 50%;
         gap: 30px;
+    }
+
+    .split-input-container{
+        flex-direction: row;
+        gap: 0px 100px;
     }
     
     .input-form,
