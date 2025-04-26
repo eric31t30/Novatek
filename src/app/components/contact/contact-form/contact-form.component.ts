@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -12,6 +12,11 @@ import { CommonModule } from '@angular/common';
 })
 export class ContactFormComponent {
 
+  @ViewChild('successMessage') successMessageRef!: ElementRef<HTMLDivElement>;
+  
+  formSubmitted: boolean = false;
+  success: boolean = false;
+  
   formBuilder = inject(FormBuilder);
 
   contactForm: FormGroup = this.formBuilder.group({
@@ -25,9 +30,6 @@ export class ContactFormComponent {
     checkbox: [false, Validators.requiredTrue],
   })
 
-  formSubmitted: boolean = false;
-  success: boolean = false;
-
   submit() {
     this.formSubmitted = true;
   
@@ -37,8 +39,13 @@ export class ContactFormComponent {
     }
 
     this.success = true
-   
-    console.log('Formulario completado');
+    setTimeout(() => {
+      this.successMessageRef.nativeElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+      });
+    }, 0);
+
   }
   
   hasErrors(field: string, typeError: string) {
