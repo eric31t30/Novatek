@@ -104,7 +104,7 @@
 }
 
 .input-form .form-submit:active{
-    scale: .99;
+    scale: .96;
 }
 
 .job-form-notification{
@@ -133,6 +133,76 @@
     top: 20%;
 }
 
+.form-sent{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    text-align: start;
+    gap: 0px 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 40px;
+    display: flex;
+}
+
+.form-sent-move-active{
+    display: flex;
+    animation: sent-move .5s linear forwards;
+}
+
+@keyframes sent-move {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.form-sent img{
+    width: 30px;
+    height: 30px;
+}
+
+.form-sent p{
+    font-size: var(--font-size-p);
+}
+
+.form-sent .form-sent-contact{
+    font-size: calc(var(--font-size-p) - .2rem);
+    width: 90%;
+    opacity: .8;
+}
+
+.form-sent span{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 0%;
+    height: 100%;
+    border-bottom: 3px solid var(--primary-color);
+    pointer-events: none;
+}
+
+.form-sent-border-active{
+    animation: sent-border 1s linear forwards;
+}
+
+@keyframes sent-border {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 @media (max-width: 399px){
     
 }
@@ -156,10 +226,6 @@
         height: 300px;
     }
 
-    .custom-file-upload {
-        height: 50px;
-    }
-
     .input-checkbox #privacy{
         transform: scale(1.6);
     }
@@ -167,10 +233,24 @@
     .checkbox-container p{
         font-size: calc(var(--font-size-p) - .2rem);
     }
+
+    .form-sent img{
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media (min-width: 1024px){
+
+    .split-input-container{
+        flex-direction: row;
+        gap: 0px 20px;
+    }
     
+    .form-sent img{
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media (min-width: 1280px){
@@ -184,8 +264,9 @@
         height: 350px;
     }
 
-    .custom-file-upload {
-        top: 40px;
+    .split-input-container{
+        flex-direction: row;
+        gap: 0px 100px;
     }
 
     .input-form-button{
@@ -211,6 +292,15 @@
         width: 250px;
         height: 250px;
     }
+
+    .form-sent{
+        padding: 15px 25px;
+    }
+    
+    .form-sent .form-sent-contact{
+        width: 100%;
+    }
+
 
 }
 

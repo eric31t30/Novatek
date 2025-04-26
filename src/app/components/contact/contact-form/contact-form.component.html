@@ -45,39 +45,110 @@
                         </ul>
                     </div>
                 </div>
-            
+
             </article>
             
-            <form class="form-contact">
-                
-                <div class="input-form">
-                    <label for="name">Nombre <span>*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+            <form class="form-contact" [formGroup]="contactForm" (ngSubmit)="submit()">
+
+                <div class="split-input-container">
+                    <div class="input-form split-input">
+                        <label for="name">Nombre <span>*</span></label>
+                        <input  
+                        formControlName="name" 
+                        type="text" id="name" 
+                        name="name" 
+                        placeholder="Nombre" 
+                        required>
+
+                        @if (formSubmitted && hasErrors('name', 'required')) {
+                            <span class="field-error">El nombre es obligatorio</span>
+                        }
+                        @if (formSubmitted && hasErrors('name', 'minlength')) {
+                            <span class="field-error">El nombre debe tener mas de 3 letras</span>
+                        }
+                    </div>
+
+                    <div class="input-form split-input">
+                        <label for="last-name">Apellidos <span>*</span></label>
+                        <input 
+                        formControlName="lastName"
+                        type="text" 
+                        id="last-name" 
+                        name="last-name" 
+                        placeholder="Apellidos" 
+                        required>
+
+                        @if (formSubmitted && hasErrors('lastName', 'required')) {
+                            <span class="field-error">El apellido es obligatorio</span>
+                        }
+                        @if (formSubmitted && hasErrors('lastName', 'minlength')) {
+                            <span class="field-error">El apellido debe tener mas de 3 letras</span>
+                        }
+                    </div>
                 </div>
-                
-                <div class="input-form">
-                    <label for="last-name">Apellidos <span>*</span></label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Apellidos" required>
-                </div>
-                
-                <div class="input-form">
-                    <label for="phone">Número de Teléfono <span>*</span></label>
-                    <input type="tel" id="phone" name="phone" placeholder="Numero de Telefono" required pattern="[0-9]{7,15}">
-                </div>
-                
-                <div class="input-form">
-                    <label for="company">Nombre de la empresa <span>*</span></label>
-                    <input type="text" id="company" name="company" placeholder="Empresa" required>
+
+                <div class="split-input-container">
+                    <div class="input-form split-input">
+                        <label for="phone">Número de Teléfono <span>*</span></label>
+                        <input 
+                        formControlName="phone" 
+                        type="tel" id="phone" 
+                        name="phone" 
+                        placeholder="Numero de Telefono" 
+                        required 
+                        pattern="[0-9]{7,15}">
+
+                        @if (formSubmitted && hasErrors('phone', 'required')) {
+                            <span class="field-error">El numero es obligatorio</span>
+                        }
+                        @if (formSubmitted && hasErrors('phone', 'pattern')) {
+                            <span class="field-error">El número debe tener entre 7 y 15 dígitos, solo números</span>
+                        }
+                    
+                    </div>
+
+                    <div class="input-form split-input">
+                        <label for="company">Nombre de la empresa <span>*</span></label>
+                        <input 
+                        formControlName="company" 
+                        type="text" id="company" 
+                        name="company" 
+                        placeholder="Empresa" 
+                        required>
+
+                        @if (formSubmitted && hasErrors('company', 'required')) {
+                            <span class="field-error">Este campo debe rellenarse</span>
+                        }
+                        @if (formSubmitted && hasErrors('company', 'minlength')) {
+                            <span class="field-error">El nombre de la empresa debe tener mas de 2 letras</span>
+                        }
+                    </div>
                 </div>
 
                 <div class="input-form">
                     <label for="email">Correo electrónico profesional <span>*</span></label>
-                    <input type="email" id="email" name="email" placeholder="Correo de empresa" required>
+                    <input 
+                    formControlName="email" 
+                    type="email" id="email" 
+                    name="email" 
+                    placeholder="Correo de empresa" 
+                    required>
+
+                    @if (formSubmitted && hasErrors('email', 'required')) {
+                        <span class="field-error">Este campo es obligatorio</span>
+                    }
+                    @if (formSubmitted && hasErrors('email', 'email')) {
+                        <span class="field-error">Formato de correo invalido</span>
+                    }
                 </div>
 
                 <div class="input-form">
                     <label for="subject">Motivo del contacto <span>*</span></label>
-                    <select id="subject" name="subject" required>
+                    <select 
+                    id="subject" 
+                    name="subject" 
+                    required 
+                    formControlName="subject">
                         <option class="select-first" value="" disabled selected>Seleccione un servicio</option>
                         <option value="desarrollo_software">Desarrollo de Software</option>
                         <option value="desarrollo_web">Desarrollo Web</option>
@@ -89,18 +160,45 @@
                         <option value="seguridad">Ciberseguridad</option>
                         <option value="otro">Otro</option>
                     </select>
+
+                    @if (formSubmitted && hasErrors('subject', 'required')) {
+                        <span class="field-error">Este campo es obligatorio</span>
+                    }
                 </div>
                 
                 <div class="input-form">
                     <label for="message">Mensaje <span>*</span></label>
-                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Mensaje"></textarea>
+                    <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="4" 
+                    cols="50" 
+                    placeholder="Mensaje" 
+                    formControlName="message"></textarea>
+
+                    @if (formSubmitted && hasErrors('message', 'required')) {
+                        <span class="field-error">Este campo debe rellenarse</span>
+                    }
+                    @if (formSubmitted && hasErrors('message', 'minlength')) {
+                        <span class="field-error">Debe tener al menos 10 caractere</span>
+                    }
                 </div>
 
                 <div class="input-form checkbox-container">
-                    <input type="checkbox" id="privacy" name="privacy" required>
-                    <label for="privacy">
-                        Acepto la <a href="javascript:void(0);">política de privacidad</a>.
-                    </label>
+                    <div class="input-checkbox">
+                        <input 
+                        type="checkbox" id="privacy" 
+                        name="privacy" 
+                        required
+                        formControlName="checkbox">
+                        <label for="privacy">
+                            Acepto la <a href="javascript:void(0);">política de privacidad</a>.
+                        </label>
+                    </div>
+
+                    @if (formSubmitted && hasErrors('checkbox', 'requiredTrue')) {
+                        <span class="field-error">Debe aceptar la política de privacidad</span>
+                    }
                 </div>
 
                 <div class="input-form">
@@ -109,6 +207,18 @@
                 
             </form>
         
+        </div>
+
+        <div class="form-sent" 
+        [class.form-sent-move-active]="success"
+        #successMessage
+        *ngIf="success">
+            <img src="/assets/contact-page/check.svg" alt="check" loading="lazy">
+            <div class="form-sent-text">
+                <p>Formulario enviado existosamente</p>
+                <p class="form-sent-contact">Lo contactaremos lo mas pronto posible</p>
+            </div>
+            <span [class.form-sent-border-active]="success"></span>
         </div>
 
         <div class="contact-cities-content">
