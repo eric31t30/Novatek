@@ -286,7 +286,6 @@
     .form-sent .form-sent-contact{
         font-size: calc(var(--font-size-p) - .2rem);
         width: 100%;
-
     }
     
 }

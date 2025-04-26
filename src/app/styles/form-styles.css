@@ -20,6 +20,18 @@
     font-weight: 600;
 }
 
+.split-input-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px 0px;
+}
+
+.split-input{
+    width: 100%;
+}
+
+
 .input-form,
 .input-form input,
 .input-form select,
@@ -127,52 +139,75 @@
     border: none;
     color: white;
     box-shadow: -5px 7px 1px rgba(0, 0, 0, 0.2);
-    transition: all .2s linear;
+    transition: all .5s linear;
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
 }
 
 .input-form .form-submit:active{
-    scale: .99;
+    scale: .9;
 }
 
 .input-file-form{
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.input-file-container{
+    position: relative;
+    width: 100%;
 }
 
 .input-file-form input{
-    padding: 0px;
     border: none;
     border-radius: 0px;
-}
-
-.input-file{
-    position: absolute;
-    top: 30px;
     background: transparent;
     appearance: none;
     opacity: 0;
-    height: 40px;
     width: 100%;
-    z-index: 1;
+    height: 100%;
+    padding: 10px 10px;
 }
 
-.custom-file-upload {
+.input-file-form input:focus-within{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.custom-file-upload{
     position: absolute;
-    top: 30px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     background: var(--decoration-color-gradient);
     color: white;
-    height: 40px;
-    width: 100%;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: var(--font-size-p);
     font-weight: bold;
-    transition: all 0.3s ease;
-    z-index: 2;
+    border-radius: 5px;
     text-align: center;
+    z-index: 5;
+}
+
+.input-file-pointer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    border-radius: 5px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: all .3s linear;
 }
 
 .field-error{
