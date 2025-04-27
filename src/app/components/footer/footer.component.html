@@ -30,11 +30,40 @@
             </address>
 
             <nav class="footer-section-pages" aria-label="Enlaces del sitio">
-                <p><a href="javascript:void(0);"><span>I</span>nicio <img                 src="/assets/footer/arrow-link.svg" alt="pagina inicio" loading="lazy"></a></p>
-                <p><a href="javascript:void(0);"><span>N</span>osotros <img               src="/assets/footer/arrow-link.svg" alt="pagina nosotros" loading="lazy"></a></p>
-                <p><a href="javascript:void(0);"><span>S</span>ervicios <img              src="/assets/footer/arrow-link.svg" alt="pagina servicios" loading="lazy"></a></p>
-                <p><a href="javascript:void(0);"><span>C</span>ontacto <img               src="/assets/footer/arrow-link.svg" alt="pagina contacto" loading="lazy"></a></p>
-                <p><a href="javascript:void(0);"><span>T</span>rabaja con nosotros <img   src="/assets/footer/arrow-link.svg" alt="pagina trabaja con nosotros" loading="lazy"></a></p>
+                <p><a href="javascript:void(0);" 
+                    [routerLink]="['/Inicio']"                
+                    routerLinkActive="router-link-active">
+                    <span>I</span>nicio 
+                    <img src="/assets/footer/arrow-link.svg" alt="pagina inicio" loading="lazy"></a>
+                </p>
+                
+                <p><a href="javascript:void(0);" 
+                    [routerLink]="['/Nosotros']"              
+                    routerLinkActive="router-link-active">
+                    <span>N</span>osotros 
+                    <img src="/assets/footer/arrow-link.svg" alt="pagina nosotros" loading="lazy"></a>
+                </p>
+                
+                <p><a href="javascript:void(0);" 
+                    [routerLink]="['/Servicios']"             
+                    routerLinkActive="router-link-active">
+                    <span>S</span>ervicios 
+                    <img src="/assets/footer/arrow-link.svg" alt="pagina servicios" loading="lazy"></a>
+                </p>
+                
+                <p><a href="javascript:void(0);" 
+                    [routerLink]="['/Contacto']"              
+                    routerLinkActive="router-link-active">
+                    <span>C</span>ontacto 
+                    <img src="/assets/footer/arrow-link.svg" alt="pagina contacto" loading="lazy"></a>
+                </p>
+                
+                <p><a href="javascript:void(0);" 
+                    [routerLink]="['/Trabaja-con-nosotros']"  
+                    routerLinkActive="router-link-active">
+                    <span>T</span>rabaja con nosotros 
+                    <img src="/assets/footer/arrow-link.svg" alt="pagina trabaja con nosotros" loading="lazy"></a>
+                </p>
             </nav>
 
         </div>
