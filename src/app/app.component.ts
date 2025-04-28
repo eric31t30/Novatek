@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { filter } from 'rxjs';
+import { filter, tap } from 'rxjs';
 
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from './components/footer/footer.component';
@@ -25,5 +25,5 @@ export class AppComponent {
       .subscribe(() => {
         window.scrollTo({ top: 0, behavior: 'instant' });
       });
-  }
+    }
 }

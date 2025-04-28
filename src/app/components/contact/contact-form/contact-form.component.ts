@@ -2,6 +2,7 @@ import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -55,6 +56,20 @@ export class ContactFormComponent {
       return control?.hasError('required') && this.formSubmitted;
     }
     return control?.hasError(typeError) && this.formSubmitted;
+  }
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      const fragment = this.route.snapshot.fragment;
+      if (fragment) {
+        const element = document.getElementById(fragment);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
   }
   
 
