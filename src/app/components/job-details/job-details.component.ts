@@ -1,7 +1,9 @@
-import { Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
+import { HeadService } from '../../services/head.service';
 
 @Component({
   standalone: true,
@@ -10,7 +12,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './job-details.component.html',
   styleUrls: [ '../../styles/form-styles.css', './job-details.component.css']
 })
-export class JobDetailsComponent {
+export class JobDetailsComponent implements OnInit {
 
   @ViewChild('successMessage') successMessageRef!: ElementRef<HTMLDivElement>;
   @ViewChild('invalidForm') invalidFormRef!: ElementRef<HTMLDivElement>;
@@ -20,6 +22,15 @@ export class JobDetailsComponent {
   fileName: string = '';
 
   formBuilder = inject(FormBuilder);
+  headService = inject(HeadService);
+
+  ngOnInit(): void {
+    this.headService.preloadImages([
+      '/assets/job-details/point.svg',
+      '/assets/job-details/deco-1.svg',
+      '/assets/job-details/deco-2.svg',
+    ]);
+  }
 
   offerForm: FormGroup = this.formBuilder.group({
     name:     ['', [Validators.required, Validators.minLength(4)]],
