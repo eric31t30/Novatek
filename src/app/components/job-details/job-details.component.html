@@ -2,6 +2,15 @@
 
     <div class="job-details-content">
 
+        <div class="back-button-container">
+            <a [routerLink]="['/Trabaja-con-nosotros']" routerLinkActive="active" class="back-button">
+                <div class="back-button-img">
+                    <img src="/assets/job-details/back.svg" alt="">
+                </div>
+                <p>Ver otras ofertas</p>
+            </a>
+        </div>
+
         <div class="job-details-header">
             <h2>{{ job?.title }}</h2>
             <div class="job-details-info">
