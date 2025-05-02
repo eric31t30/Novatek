@@ -3,57 +3,28 @@
     <div class="job-details-content">
 
         <div class="job-details-header">
-            <h2>Frontend Developer</h2>
+            <h2>{{ job?.title }}</h2>
             <div class="job-details-info">
-                <p>Junior</p>
+                <p>{{ job?.level }}</p>
                 <p>|</p>
-                <p>Remoto</p>
+                <p>{{ job?.location }}</p>
                 <p>|</p>
-                <p>Full Time</p>
+                <p>{{ job?.type }}</p>
             </div>
         </div>
 
         <div class="job-details-description-container">
             <div class="description">
                 <h3>Descripción</h3>
-                <p>Estamos buscando un Frontend Developer talentoso y 
-                    motivado para unirse a nuestro equipo. Como parte de nuestro equipo de desarrollo web, 
-                    serás responsable de crear experiencias web atractivas y funcionales. Trabajarás 
-                    estrechamente con diseñadores, backend developers y otros miembros del equipo para construir 
-                    interfaces de usuario de alta calidad, optimizadas para rendimiento y accesibilidad.
-                </p>
+                <p>{{ job?.description }}</p>
             </div>
 
             <div class="responsabilities details-container">
                 <h3>Responsabilidades</h3>
                 <ul>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Conocimiento sólido de HTML, CSS y JavaScript.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Experiencia trabajando con frameworks/librerías como React, Angular, o Vue.js.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Conocimiento de herramientas de control de versiones, como Git.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Familiaridad con metodologías ágiles de desarrollo.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Buenas habilidades de comunicación y trabajo en equipo.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Experiencia con el desarrollo de aplicaciones responsivas y accesibles.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Capacidad para aprender rápidamente y adaptarse a nuevas tecnologías.</p>
+                    <li *ngFor="let responsibility of job?.responsabilities">
+                        <img src="/assets/job-details/point.svg" alt="" as="image">
+                        <p>{{ responsibility }}</p>
                     </li>
                 </ul>
             </div>
@@ -61,51 +32,20 @@
             <div class="requirements details-container">
                 <h3>Requisitos</h3>
                 <ul>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Conocimientos sólidos en HTML5, CSS3 y JavaScript (ES6+).</p>
+                    <li *ngFor="let requirement of job?.requirements">
+                        <img src="/assets/job-details/point.svg" alt="" as="image">
+                        <p>{{ requirement }}</p>
                     </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Experiencia o proyectos personales usando frameworks/librerías como React, Angular o Vue.js.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Conocimiento básico de control de versiones con Git y GitHub.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Buena comunicación y disposición para trabajo en equipo.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Capacidad para crear interfaces responsivas y accesibles (uso de media queries y buenas prácticas de accesibilidad).</p>
-                    </li>
+                    
                 </ul>
             </div>
 
             <div class="offer details-container">
                 <h3>¿Que ofrecemos?</h3>
                 <ul>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Un entorno de trabajo flexible y colaborativo. 🧩</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Oportunidades de crecimiento profesional y aprendizaje continuo. 📚</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Proyectos desafiantes en los que podrás aplicar y ampliar tus conocimientos técnicos. 🧠</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Tipo de Contrato:A termino indefinido. 📄</p>
-                    </li>
-                    <li>
-                        <img src="/assets/job-details/point.svg" alt="">
-                        <p>Beneficios competitivos. 💼</p>
+                    <li *ngFor="let benefit of job?.benefits">
+                        <img src="/assets/job-details/point.svg" alt="" as="image">
+                        <p>{{ benefit }}</p>
                     </li>
                 </ul>
             </div>
@@ -290,3 +230,111 @@
     </div>
 
 </section>
+
+<!-- <div class="job-details-header">
+    <h2>Frontend Developer</h2>
+    <div class="job-details-info">
+        <p>Junior</p>
+        <p>|</p>
+        <p>Remoto</p>
+        <p>|</p>
+        <p>Full Time</p>
+    </div>
+</div>
+
+<div class="job-details-description-container">
+    <div class="description">
+        <h3>Descripción</h3>
+        <p>Estamos buscando un Frontend Developer talentoso y 
+            motivado para unirse a nuestro equipo. Como parte de nuestro equipo de desarrollo web, 
+            serás responsable de crear experiencias web atractivas y funcionales. Trabajarás 
+            estrechamente con diseñadores, backend developers y otros miembros del equipo para construir 
+            interfaces de usuario de alta calidad, optimizadas para rendimiento y accesibilidad.
+        </p>
+    </div>
+
+    <div class="responsabilities details-container">
+        <h3>Responsabilidades</h3>
+        <ul>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Conocimiento sólido de HTML, CSS y JavaScript.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Experiencia trabajando con frameworks/librerías como React, Angular, o Vue.js.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Conocimiento de herramientas de control de versiones, como Git.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Familiaridad con metodologías ágiles de desarrollo.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Buenas habilidades de comunicación y trabajo en equipo.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Experiencia con el desarrollo de aplicaciones responsivas y accesibles.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Capacidad para aprender rápidamente y adaptarse a nuevas tecnologías.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="requirements details-container">
+        <h3>Requisitos</h3>
+        <ul>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Conocimientos sólidos en HTML5, CSS3 y JavaScript (ES6+).</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Experiencia o proyectos personales usando frameworks/librerías como React, Angular o Vue.js.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Conocimiento básico de control de versiones con Git y GitHub.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Buena comunicación y disposición para trabajo en equipo.</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Capacidad para crear interfaces responsivas y accesibles (uso de media queries y buenas prácticas de accesibilidad).</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="offer details-container">
+        <h3>¿Que ofrecemos?</h3>
+        <ul>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Un entorno de trabajo flexible y colaborativo. 🧩</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Oportunidades de crecimiento profesional y aprendizaje continuo. 📚</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Proyectos desafiantes en los que podrás aplicar y ampliar tus conocimientos técnicos. 🧠</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Tipo de Contrato:A termino indefinido. 📄</p>
+            </li>
+            <li>
+                <img src="/assets/job-details/point.svg" alt="">
+                <p>Beneficios competitivos. 💼</p>
+            </li>
+        </ul>
+</div> -->

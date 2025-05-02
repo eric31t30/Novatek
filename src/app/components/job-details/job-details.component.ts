@@ -4,6 +4,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { HeadService } from '../../services/head.service';
+import { JOBS } from '../../data/jobs.data';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -20,9 +22,11 @@ export class JobDetailsComponent implements OnInit {
   formSubmitted: boolean = false;
   success: boolean = false;
   fileName: string = '';
+  job: any;
 
   formBuilder = inject(FormBuilder);
   headService = inject(HeadService);
+  route = inject(ActivatedRoute);
 
   ngOnInit(): void {
     this.headService.preloadImages([
@@ -30,6 +34,12 @@ export class JobDetailsComponent implements OnInit {
       '/assets/job-details/deco-1.svg',
       '/assets/job-details/deco-2.svg',
     ]);
+
+    const slug = this.route.snapshot.paramMap.get('slug');
+    console.log(this.route);
+    console.log(JOBS);
+    this.job = JOBS.find(j => j.slug === slug);
+    console.log(this.job);
   }
 
   offerForm: FormGroup = this.formBuilder.group({
