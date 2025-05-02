@@ -12,87 +12,16 @@
 
             <ul class="job-list">
                 
-                <li class="job">
-                    <h3>Frontend Developer</h3>
-                    <p>Junior</p>
-                    <div>
-                        <span>Full-time</span>
-                        <span>Remote</span>
-                    </div>
+                <li class="job" *ngFor="let job of jobs">
+                    <a [routerLink]="['/job-details', job.slug]">
+                        <h3>{{ job.title }}</h3>
+                        <p>{{ job.level }}</p>
+                        <div>
+                            <span>{{ job.type }}</span>
+                            <span>{{ job.location }}</span>
+                        </div>
+                    </a>
                 </li>
-                
-                <li class="job">
-                    <h3>Backend Developer</h3>
-                    <p>Senior</p>
-                    <div>
-                        <span>Full-time</span>
-                        <span>Remote</span>
-                    </div>
-                </li>
-
-                <li class="job">
-                    <h3>UI/UX Designer</h3>
-                    <p>Mid-Level</p>
-                    <div>
-                        <span>Part-time</span>
-                        <span>Hybrid</span>
-                    </div>
-                </li>
-                
-                <li class="job">
-                    <h3>Data Analyst</h3>
-                    <p>Entry-Level</p>
-                    <div>
-                        <span>Full-time</span>
-                        <span>On-site</span>
-                    </div>
-                </li>
-                
-                <li class="job">
-                    <h3>DevOps Engineer</h3>
-                    <p>Senior</p>
-                    <div>
-                        <span>Full-time</span>
-                        <span>Remote</span>
-                    </div>
-                </li>
-                
-                <li class="job">
-                    <h3>Mobile Developer</h3>
-                    <p>Junior</p>
-                    <div>
-                        <span>Contract</span>
-                        <span>Hybrid</span>
-                    </div>
-                </li>
-                
-                <li class="job">
-                    <h3>Product Manager</h3>
-                    <p>Senior</p>
-                    <div>
-                        <span>Full-time</span>
-                        <span>On-site</span>
-                    </div>
-                </li>
-                
-                <li class="job">
-                    <h3>Cybersecurity Analyst</h3>
-                    <p>Mid-Level</p>
-                    <div>
-                        <span>Full-time</span>
-                        <span>Remote</span>
-                    </div>
-                </li>
-                
-                <li class="job">
-                    <h3>QA Tester</h3>
-                    <p>Entry-Level</p>
-                    <div>
-                        <span>Part-time</span>
-                        <span>Remote</span>
-                    </div>
-                </li>
-                
             </ul>
         
         </div>

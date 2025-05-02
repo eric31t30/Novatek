@@ -68,6 +68,11 @@
     cursor: pointer;
 }
 
+.job a{
+    text-decoration: none;
+    color: black;
+}
+
 .job h3{
     font-size: var(--font-size-h3);
     background: var(--text-color-gradient);
