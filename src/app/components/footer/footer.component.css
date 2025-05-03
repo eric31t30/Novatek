@@ -33,7 +33,7 @@
 }
 
 .footer-section-logo h2{
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-big);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,7 +47,7 @@
 }
 
 .footer-section-logo p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     color: white;
     width: 70%;
     font-family: var(--secondary-font);
@@ -78,7 +78,7 @@ address{
 }
 
 .footer-section-contact h3{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -111,7 +111,7 @@ address{
 }
 
 .footer-section-contact-data p{
-    font-size: calc(var(--font-size-p) - .1rem);
+    font-size: calc(var(--font-size-regular) - .1rem);
     color: white;
     padding-left: 10px;
 }
@@ -127,7 +127,7 @@ address{
 }
 
 .footer-section-pages p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: 400;
     margin-bottom: 10px;
     cursor: pointer;
@@ -136,7 +136,7 @@ address{
 }
 
 .footer-section-pages a{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     text-decoration: none;
     color: white;
 }
@@ -146,7 +146,7 @@ address{
 }
 
 .footer-section-pages p span{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: 700;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -189,12 +189,12 @@ address{
 }
 
 .footer-section-copyright p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
 }
 
 .footer-section-copyright-message{
     color: rgba(255, 255, 255, .4);
-    font-size: calc(var(--font-size-p) - .2rem) !important;
+    font-size: var(--font-size-small) !important;
 }
 
 .footer-section-deco-background-1,
