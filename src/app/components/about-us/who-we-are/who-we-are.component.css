@@ -22,7 +22,7 @@
 }
 
 .who-we-are-title{
-    font-size: var(--font-size-h2);
+    font-size: calc(var(--font-size-big) + .5rem);
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -31,13 +31,14 @@
 
 .who-we-are-content h3{
     position: relative;
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     font-weight: 400;
     color: var(--primary-color);
     padding: 5px 15px;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: auto;
 }
 
 .who-we-are-content h3::after{
@@ -51,6 +52,7 @@
     border-left: 2px solid var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     transition: all .5s ease;
+    cursor: auto;
 }
 
 .who-we-are-content h3::before{
@@ -64,6 +66,7 @@
     border-right: 2px solid var(--primary-color);
     border-top: 2px solid var(--primary-color);
     transition: all .5s ease;
+    cursor: auto;
 }
 
 .who-we-are-content h3:hover::before,
@@ -74,7 +77,7 @@
 }
 
 .who-we-are-content p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     color: rgba(0, 0, 0, .8);
     line-height: 1.5;
 }

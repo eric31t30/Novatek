@@ -24,7 +24,7 @@
 
 .join-us-content h2{
     position: relative;
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-big);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -32,7 +32,7 @@
 }
 
 .join-us-content p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
 }
 
 .join-us-content button{
@@ -44,7 +44,7 @@
     outline: none;
     border: 3px solid var(--primary-color);
     color: var(--primary-color);
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: 600;
     padding: 10px;
     border-radius: 10px;
@@ -163,7 +163,7 @@
     .join-us-content button{
         width: 260px;
         padding: 14px;
-        font-size: calc(var(--font-size-p) + 0.5rem);
+        font-size: calc(var(--font-size-regular) + 0.5rem);
     }
 
     .join-us-content button:hover{

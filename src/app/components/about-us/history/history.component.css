@@ -32,13 +32,13 @@
 }
 
 .history-section-content h3{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     font-weight: 600;
     color: white;
 }
 
 .history-section-content p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     color: white;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -119,6 +119,10 @@
 
     .history-section{
         padding: 160px 30px;
+    }
+
+    .history-section-content{
+        width: 50%;
     }
 
     .history-section-icons img{
