@@ -23,7 +23,7 @@
 
 .contact-title{
     position: relative;
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-big);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     background-clip: var();
@@ -227,7 +227,7 @@
     .contact-title{
         margin-bottom: 80px;
     }
-    
+
     .contact-section-deco-rocket{
         width: 90px;
         height: 90px;

@@ -33,7 +33,7 @@
 }
 
 .overview-services-card h3{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     margin-bottom: 10px;
     transition: all .6s ease;
 }
@@ -54,7 +54,7 @@
 }
 
 .overview-services-card p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: 600;
 }
 

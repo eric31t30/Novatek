@@ -22,7 +22,7 @@
 }
 
 .overview-title{
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-big);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,7 +30,7 @@
 }
 
 .overview-title-content p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: 500;
     opacity: .8;
     line-height: 1.5;
@@ -239,7 +239,7 @@
     }
 
     .overview-title-content p{
-        
+
         width: 50%;
         opacity: .8;
     }

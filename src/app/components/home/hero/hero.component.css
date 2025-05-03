@@ -35,7 +35,7 @@
 
 .hero-novatek{
     position: relative;
-    font-size: calc(var(--font-size-h2) + 1rem);
+    font-size: calc(var(--font-size-big) + 1rem);
     font-family: var(--primary-font);
     font-weight: 600;
     background: var(--text-color-gradient);
@@ -47,7 +47,7 @@
 }
 
 .hero-intro{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: 400;
     opacity: .9;
     width: 80%;
@@ -73,7 +73,7 @@
     border-bottom-right-radius: 10px;
     z-index: 2;
     transition: all .2s linear;
-    font-size: calc(var(--font-size-p) - .3rem);
+    font-size: calc(var(--font-size-regular) - .3rem);
 }
 
 .hero-button-deco{
@@ -244,15 +244,15 @@
     }
     
     .hero-novatek{
-        font-size: calc(var(--font-size-h2) + 3rem);
+        font-size: calc(var(--font-size-big) + 3rem);
     }
 
     .hero-intro{
-        font-size: calc(var(--font-size-p) + .2rem);
+        font-size: calc(var(--font-size-regular) + .2rem);
     }
 
     .hero-button{
-        font-size: calc(var(--font-size-p) - .1rem);
+        font-size: calc(var(--font-size-regular) - .1rem);
     }
 
     .hero-background-deco-2,
