@@ -24,19 +24,19 @@
 }
 
 .project-contact-content h3{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .project-contact-content p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     opacity: .8;
 }
 
 .project-contact-content button{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     color: white;
     margin-top: 40px;
     background-color: transparent;
