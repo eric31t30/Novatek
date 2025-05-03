@@ -37,7 +37,7 @@
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     font-weight: 600;
     border-radius: 5px;
     padding: 5px;
@@ -96,7 +96,7 @@
 
 .navbar-list li a{
     position: relative;
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: 600;
     
     color: white;
@@ -198,7 +198,7 @@ header.hide-scroll{
 .navbar-cta{
     display: none;
     position: relative;
-    font-size: calc(var(--font-size-p) - .2rem);
+    font-size: calc(var(--font-size-regular) - .2rem);
     background-color: var(--primary-color);
     border-radius: 5px;
     padding: 5px 20px;
@@ -277,14 +277,14 @@ header.hide-scroll{
     
     .navbar-list li a{
         position: relative;
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular) - .2rem);
         color: black;
         opacity: .7;
         font-weight: 400;
     }
 
     .navbar-list li a:hover{
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular) - .2rem);
         background: var(--text-color-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -325,12 +325,12 @@ header.hide-scroll{
     }
 
     .navbar-list li a{
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular) - .2rem);
         opacity: .7;
     }
 
     .navbar-list li a:hover{
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular) - .2rem);
     }
 
     .navbar li a::before{
@@ -340,7 +340,7 @@ header.hide-scroll{
 
 @media (min-width: 1920px){
     .header-content{
-        justify-content: center;
+        justify-content: space-around;
         padding: 0px 0px;
         gap: 200px;
     }
@@ -350,11 +350,11 @@ header.hide-scroll{
     }
     
     .navbar-list li a{
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular));
     }
 
     .navbar-list li a:hover{
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular));
     }
 
 } 
