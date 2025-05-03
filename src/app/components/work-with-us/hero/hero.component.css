@@ -33,13 +33,13 @@
 }
 
 .work-hero-title h2{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     font-weight: 600;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, .6);
 }
 
 .work-hero-title p{
-    font-size: calc(var(--font-size-p) - .1rem); 
+    font-size: calc(var(--font-size-regular) - .1rem); 
     font-weight: 400;
     
 }
@@ -111,7 +111,7 @@
     }
 
     .work-hero-title h2{
-        font-size: calc(var(--font-size-h3) + .3rem);
+        font-size: calc(var(--font-size-medium) + .3rem);
     }
 }
 
@@ -123,11 +123,11 @@
     }
 
     .work-hero-title h2{
-        font-size: calc(var(--font-size-h3) + .3rem);
+        font-size: calc(var(--font-size-medium) + .3rem);
     }
     
     .work-hero-title p{
-        font-size: calc(var(--font-size-p)); 
+        font-size: var(--font-size-regular); 
     }
     
     .work-hero-background-deco-1,

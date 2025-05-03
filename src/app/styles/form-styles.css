@@ -8,7 +8,7 @@
     gap: 40px;
     border-radius: 25px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     z-index: 5;
 }
 
@@ -36,7 +36,7 @@
 .input-form select,
 .input-form textarea,
 .input-form .form-submit{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
 }
 
 .input-form{
@@ -131,7 +131,7 @@
 }
 
 .checkbox-container label{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     position: relative;
     top: 2px;
     margin-left: 5px;
@@ -139,7 +139,7 @@
 }
 
 .checkbox-container p{
-    font-size: calc(var(--font-size-p) - .1rem);
+    font-size: calc(var(--font-size-regular) - .1rem);
     opacity: .8;
 }
 
@@ -208,7 +208,7 @@
     height: 100%;
     background: var(--decoration-color-gradient);
     color: white;
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: bold;
     border-radius: 5px;
     text-align: center;

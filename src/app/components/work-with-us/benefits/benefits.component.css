@@ -22,7 +22,7 @@
 }
 
 .benefits-title{
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-big);
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -59,13 +59,13 @@
 }
 
 .benefit h3{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     font-weight: 600;
     transition: all .1s linear;
 }
 
 .benefit p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     font-weight: 600;
     opacity: .8;
 }
@@ -129,7 +129,7 @@
 
 @media (max-width: 399px){
     .benefits-title{
-        font-size: calc(var(--font-size-h2) - .6rem);
+        font-size: calc(var(--font-size-big) - .6rem);
     }
 }
 
@@ -187,7 +187,7 @@
     }
 
     .benefit p{
-        font-size: calc(var(--font-size-p) + .5rem);
+        font-size: calc(var(--font-size-regular) + .5rem);
     }
 
     .benefit-1,
@@ -245,12 +245,12 @@
     }
 
     .benefit h3{
-        font-size: calc(var(--font-size-h3) - .2rem);
+        font-size: calc(var(--font-size-medium) - .2rem);
     }
 
     .benefit p{
         width: 60%;
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular) - .2rem);
     }
 
     .benefit-1,
