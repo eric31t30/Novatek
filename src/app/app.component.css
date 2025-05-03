@@ -35,17 +35,23 @@
 
 @media (min-width: 700px){
     :host{
-        --font-size-h2: 3.2rem;
-        --font-size-h3: 2rem;
-        --font-size-p: 1.3rem
+        --font-size-h2: 2.25rem;
+        --font-size-h3: 1.75rem;
+        --font-size-p: 1.125rem;
+
     }
 }
 
 @media (min-width: 1024px){
     :host{
-        --font-size-h2: 3.6rem;
+        /* --font-size-h2: 3.6rem;
         --font-size-h3: 2.5rem;
-        --font-size-p: 1.5rem
+        --font-size-p: 1.5rem; */
+
+        --font-size-h2: 3.2rem;
+        --font-size-h3: 2rem;
+        --font-size-p: 1.3rem;
+
     }
 }
 
