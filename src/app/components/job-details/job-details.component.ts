@@ -38,10 +38,7 @@ export class JobDetailsComponent implements OnInit {
     ]);
 
     const slug = this.route.snapshot.paramMap.get('slug');
-    console.log(this.route);
-    console.log(JOBS);
     this.job = JOBS.find(j => j.slug === slug);
-    console.log(this.job);
   }
 
   offerForm: FormGroup = this.formBuilder.group({
