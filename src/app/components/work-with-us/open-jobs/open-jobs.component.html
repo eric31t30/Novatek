@@ -13,15 +13,23 @@
             <ul class="job-list">
                 
                 <li class="job" *ngFor="let job of jobs">
-                    <a [routerLink]="['/job-details', job.slug]">
+                   
+                    <div class="job-info">
                         <h3>{{ job.title }}</h3>
                         <p>{{ job.level }}</p>
                         <div>
                             <span>{{ job.type }}</span>
                             <span>{{ job.location }}</span>
                         </div>
+                    </div>
+                        
+                    <a [routerLink]="['/job-details', job.slug]">
+                        <p>Ver oferta</p>
+                        <img class="link-arrow-1" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta">
+                        <img class="link-arrow-2" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta">
                     </a>
                 </li>
+            
             </ul>
         
         </div>
@@ -30,3 +38,14 @@
 
 </section>
 
+
+<!-- <li class="job" *ngFor="let job of jobs">
+    <a [routerLink]="['/job-details', job.slug]">
+        <h3>{{ job.title }}</h3>
+        <p>{{ job.level }}</p>
+        <div>
+            <span>{{ job.type }}</span>
+            <span>{{ job.location }}</span>
+        </div>
+    </a>
+</li> -->
