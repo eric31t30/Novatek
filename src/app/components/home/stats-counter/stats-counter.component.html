@@ -1,19 +1,19 @@
-<section class="stats-counter-section">
+<section #countersSection class="stats-counter-section">
     
     <div class="stats-counter-content">
         
         <div class="stats-1-clients stat-counter">
-            <p class="stats-counter-amount"> +70</p>
+            <p class="stats-counter-amount">{{`+` +  clients}}</p>
             <p class="stats-counter-title">Clientes Satisfechos</p>
         </div>
         
         <div class="stats-2-experience stat-counter">
-            <p class="stats-counter-amount">+12</p>
+            <p class="stats-counter-amount">{{`+` +  years}}</p>
             <p class="stats-counter-title">Años en el mercado</p>
         </div>
         
-        <div class="stats-3-projects stat-counter">
-            <p class="stats-counter-amount">+50</p>
+        <div #counter class="stats-3-projects stat-counter">
+            <p class="stats-counter-amount">{{`+` +  projects}}</p>
             <p class="stats-counter-title">Proyectos realizados</p>
         
         </div>
