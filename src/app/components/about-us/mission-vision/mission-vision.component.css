@@ -51,7 +51,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     margin-bottom: 20px;
     padding-bottom: 10px;
     cursor: pointer;
@@ -77,7 +77,7 @@
 
 .mission-content p,
 .vision-content p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     line-height: 1.7;
     opacity: .9;
 }
@@ -127,7 +127,7 @@
 
     .mission-content h3,
     .vision-content h3{
-        font-size: calc(var(--font-size-h3) + 1rem);
+        font-size: calc(var(--font-size-medium) + 1rem);
     }
 
     .mission-content h3::after,
@@ -163,7 +163,7 @@
 
     .mission-content h3,
     .vision-content h3{
-        font-size: calc(var(--font-size-h3) + .2rem);
+        font-size: calc(var(--font-size-medium) + .2rem);
     }
 
     
@@ -178,11 +178,11 @@
 
     .mission-content h3,
     .vision-content h3{
-        font-size: calc(var(--font-size-h3) + 1rem);
+        font-size: calc(var(--font-size-medium) + 1rem);
     }
 
     .mission-content p,
     .vision-content p{
-        font-size: calc(var(--font-size-p) + .2rem);
+        font-size: calc(var(--font-size-regular) + .2rem);
     }
 } 

@@ -21,14 +21,14 @@
 }
 
 .service-list-title h2{
-    font-size: calc(var(--font-size-h2) - 1rem);
+    font-size: calc(var(--font-size-big) - 1rem);
     z-index: 5;
     color: white;
 }    
 
 .service-list-title p{
     width: 80%;
-    font-size: calc(var(--font-size-p) - .1rem); 
+    font-size: calc(var(--font-size-regular) - .1rem); 
     z-index: 5;
     color: white;
 } 
@@ -96,7 +96,7 @@
 }
 
 .service h3{
-    font-size: calc(var(--font-size-h3) + .5rem);
+    font-size: calc(var(--font-size-medium) + .5rem);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -104,7 +104,7 @@
 }
 
 .service p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     line-height: 1.5;
     z-index: 5;
 }
@@ -275,7 +275,7 @@
     }
 
     .service-list-title h2{
-        font-size: calc(var(--font-size-h2) - 1.4rem);
+        font-size: calc(var(--font-size-big) - 1.4rem);
     }    
 
     .service{
@@ -295,7 +295,7 @@
     }
 
     .service p{
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: var(--font-size-regular);
         width: 100%;
         margin-bottom: 30px;
     }
@@ -353,7 +353,7 @@
 
     .service-list-title h2{
         top: 30px;
-        font-size: calc(var(--font-size-h3) + .4rem);
+        font-size: calc(var(--font-size-medium) + .4rem);
     }
 
     .service{

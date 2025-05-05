@@ -35,7 +35,7 @@
 
 .hero-novatek{
     position: relative;
-    font-size: 60px;
+    font-size: calc(var(--font-size-big) + 1rem);
     font-family: var(--primary-font);
     font-weight: 600;
     background: var(--text-color-gradient);
@@ -47,7 +47,7 @@
 }
 
 .hero-intro{
-    font-size: 15px;
+    font-size: var(--font-size-regular);
     font-weight: 400;
     opacity: .9;
     width: 80%;
@@ -73,7 +73,7 @@
     border-bottom-right-radius: 10px;
     z-index: 2;
     transition: all .2s linear;
-    font-size: 13px;
+    font-size: calc(var(--font-size-regular) - .3rem);
 }
 
 .hero-button-deco{
@@ -189,18 +189,9 @@
 
 @media (max-width: 399px){
 
-    .hero-novatek{
-        font-size: 48px;
-    }
-
-    .hero-intro{
-        font-size: 14px;
-    }
-
     .hero-button{
         width: 100px;
         height: 30px;
-        font-size: 14px;
     }
 
     .hero-background-deco-1{
@@ -232,18 +223,9 @@
         padding: 0px 40px;
     }
 
-    .hero-novatek{
-        font-size: 80px;
-    }
-
-    .hero-intro{
-        font-size: 16px;
-    }
-
     .hero-button{
         width: 110px;
         height: 40px;
-        font-size: 15px;
     }
 
     .hero-background-deco-1{
@@ -262,11 +244,15 @@
     }
     
     .hero-novatek{
-        font-size: 80px;
+        font-size: calc(var(--font-size-big) + 3rem);
     }
 
     .hero-intro{
-        font-size: 18px;
+        font-size: calc(var(--font-size-regular) + .2rem);
+    }
+
+    .hero-button{
+        font-size: calc(var(--font-size-regular) - .1rem);
     }
 
     .hero-background-deco-2,
@@ -284,19 +270,10 @@
     .hero-section{
         padding: 0px 60px;
     }
-    
-    .hero-novatek{
-        font-size: 80px;
-    }
-
-    .hero-intro{
-        font-size: 20px;
-    }
 
     .hero-button{
-        width: 140px;
-        height: 50px;
-        font-size: 16px;
+        width: 100px;
+        height: 40px;
     }
     
     .hero-button:hover{
@@ -334,13 +311,8 @@
     .hero-section{
         padding: 0px 200px;
     }
-    
-    .hero-novatek{
-        font-size: 100px;
-    }
 
     .hero-intro{
-        font-size: 22px;
         margin-bottom: 20px;
         opacity: .9;
         width: 70%;
@@ -349,7 +321,6 @@
     .hero-button{
         width: 160px;
         height: 50px;
-        font-size: 18px;
     }
     
     .hero-button:hover{

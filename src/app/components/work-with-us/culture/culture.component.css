@@ -20,7 +20,7 @@
 }
 
 .culture-title{
-    font-size: var(--font-size-h2);
+    font-size: var(--font-size-big);
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -51,7 +51,7 @@
 }
 
 .culture-info-description h3{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,7 +59,7 @@
 }
 
 .culture-info-description p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
 }
 
 .culture-info-image{
@@ -118,7 +118,7 @@
 }
 
 .culture-join-us h3{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
@@ -127,7 +127,7 @@
 }
 
 .culture-join-us p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
     color: white;
     text-align: center;
 }

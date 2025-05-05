@@ -34,11 +34,15 @@
 }
 
 .job-form-content h2{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-medium);
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.dont-worry{
+    font-size: var(--font-size-regular);
 }
 
 .job-form{
@@ -52,7 +56,7 @@
 }
 
 .job-form-notification{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
 }
 
 .job-form-deco-background-1,
@@ -115,11 +119,11 @@
 }
 
 .form-sent p{
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-regular);
 }
 
 .form-sent .form-sent-contact{
-    font-size: calc(var(--font-size-p) - .2rem);
+    font-size: calc(var(--font-size-regular) - .2rem);
     width: 90%;
     opacity: .8;
 }
@@ -175,7 +179,7 @@
     }
 
     .checkbox-container p{
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular) - .2rem);
     }
 
     .form-sent img{
@@ -228,7 +232,7 @@
     .input-form textarea,
     .checkbox-container label,
     .checkbox-container p{
-        font-size: calc(var(--font-size-p) - .2rem);
+        font-size: calc(var(--font-size-regular) - .2rem);
     }
 
     .job-form-deco-background-1,
@@ -258,12 +262,12 @@
     .input-form select,
     .input-form textarea,
     .custom-file-upload{
-        font-size: calc(var(--font-size-p) - .3rem);
+        font-size: calc(var(--font-size-regular) - .2rem);
     }
 
     .checkbox-container label,
     .checkbox-container p{
-        font-size: calc(var(--font-size-p) - .4rem);
+        font-size: calc(var(--font-size-regular) - .3rem);
     }
 
 } 

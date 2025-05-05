@@ -23,6 +23,7 @@
 }
 
 .testimonials-title h2{
+  font-size: var(--font-size-big);
   background: var(--text-color-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -64,13 +65,13 @@ swiper-slide {
 }
 
 .testimonial-text{
-  font-size: 16px;
+  font-size: var(--font-size-medium);
   opacity: .8;
   font-weight: 400;
 }
 
 .testimonial-name{
-  font-size: 15px;
+  font-size: var(--font-size-regular);
   font-weight: 600;
   opacity: .7;
   transition: all .5s linear;
@@ -162,7 +163,6 @@ swiper-slide {
 @media (min-width: 700px){
 
   .testimonials-title h2{
-    font-size: 28px;
     transform: rotate(-2deg);
   }
 
@@ -175,14 +175,6 @@ swiper-slide {
 
   .testimonial-content{
     padding: 30px 70px;
-  }
-
-  .testimonial-text{
-    font-size: 22px;
-  }
-
-  .testimonial-name{
-    font-size: 18px;
   }
 
   .testimonials-section-background-deco-1{
@@ -208,7 +200,6 @@ swiper-slide {
 
 @media (min-width: 1024px){
   .testimonials-title h2{
-    font-size: 32px;
     transform: rotate(-2deg);
   }
 
@@ -225,12 +216,7 @@ swiper-slide {
   }
 
   .testimonial-text{
-    font-size: 26px;
     font-weight: 400;
-  }
-
-  .testimonial-name{
-    font-size: 22px;
   }
 
   .testimonials-section-background-deco-1{
@@ -273,12 +259,7 @@ swiper-slide {
   }
 
   .testimonial-text{
-    font-size: 26px;
     font-weight: 400;
-  }
-
-  .testimonial-name{
-    font-size: 22px;
   }
 
   .testimonial-content{
@@ -289,7 +270,6 @@ swiper-slide {
 @media (min-width: 1920px){
 
   .testimonials-title h2{
-    font-size: 38px;
     transform: rotate(-2deg);
     background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 50%);
     -webkit-background-clip: text;
@@ -298,7 +278,7 @@ swiper-slide {
 
   .testimonials-carousel-content{
     width: 50%;
-    height: 540px;
+    height: 500px;
     margin: 100px 0px;
     margin-bottom: 160px;
     box-shadow: -20px 20px 0px rgba(0, 0, 0, .1);
@@ -309,12 +289,7 @@ swiper-slide {
   }
 
   .testimonial-text{
-    font-size: 30px;
     font-weight: 400;
-  }
-
-  .testimonial-name{
-    font-size: 26px;
   }
 
   .testimonials-section-background-deco-1{

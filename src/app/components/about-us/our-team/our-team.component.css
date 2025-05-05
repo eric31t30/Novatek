@@ -13,7 +13,7 @@
 }
 
 .our-team-section h3{
-    font-size: calc(var(--font-size-h3) + .2rem);
+    font-size: calc(var(--font-size-medium) + .2rem);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -95,7 +95,7 @@
     }
 
     .our-team-section h3{
-        font-size: calc(var(--font-size-h3) + .6rem);
+        font-size: calc(var(--font-size-medium) + .6rem);
     }
     
     .our-team-card{
