@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, inject, OnInit } from '@angular/core';
 import { HeroComponent } from '../hero/hero.component';
 import { OverviewComponent } from '../overview/overview.component';
 import { StatsCounterComponent } from '../stats-counter/stats-counter.component';
@@ -6,8 +6,7 @@ import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { ContactComponent } from '../contact/contact.component';
 
 import { HeadService } from '../../../services/head.service';
-
-import AOS from 'aos';
+import { AOSService } from '../../../services/aos/aos.service';
 
 
 @Component({
@@ -20,6 +19,7 @@ import AOS from 'aos';
 
 export class HomeComponent implements OnInit, AfterViewInit {
   constructor(private headService: HeadService) {}
+  private aosService = inject(AOSService);
 
   ngOnInit(): void {
     this.headService.preloadImages([
@@ -31,11 +31,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    AOS.init({
-      duration: 800,
-      once: true,
+    this.aosService.initAOS({
+      duration: 1000
     });
-    AOS.refresh();
+
+    this.aosService.refreshAOS();
   }
+  
   
 }
