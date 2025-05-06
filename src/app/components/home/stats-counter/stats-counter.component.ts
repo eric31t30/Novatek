@@ -35,7 +35,7 @@ export class StatsCounterComponent implements AfterViewInit {
       this[field]++;
       value++;
       if (value >= final) clearInterval(interval);
-    }, 1500 / final);
+    }, 2000 / final);
   }
   
 }
