@@ -10,4 +10,5 @@ export class TeamCardComponent {
   @Input() teamImg: string = "";
   @Input() name: string = "";
   @Input() position: string = ""; 
+  @Input() delay: string = ""; 
 }
