@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, inject, OnInit } from '@angular/core';
 import { HomeComponent } from '../../home/home/home.component';
 import { HeroComponent } from '../hero/hero.component';
 import { OpenJobsComponent } from '../open-jobs/open-jobs.component';
@@ -7,6 +7,7 @@ import { BenefitsComponent } from "../benefits/benefits.component";
 import { CultureComponent } from '../culture/culture.component';
 
 import { HeadService } from '../../../services/head.service';
+import { AOSService } from '../../../services/aos/aos.service';
 
 @Component({
   selector: 'app-work-with-us',
@@ -14,9 +15,10 @@ import { HeadService } from '../../../services/head.service';
   templateUrl: './work-with-us.component.html',
   styleUrl: './work-with-us.component.css'
 })
-export class WorkWithUsComponent implements OnInit{
+export class WorkWithUsComponent implements OnInit, AfterViewInit{
 
   constructor(private headService: HeadService) {}
+  private aosService = inject(AOSService)
     
   ngOnInit(): void {
     this.headService.preloadImages([
@@ -26,5 +28,12 @@ export class WorkWithUsComponent implements OnInit{
       '/assets/work-with-us-page/hero/computer.svg',
       '/assets/work-with-us-page/open-jobs/arrow.svg'
     ]);
+  }
+
+  ngAfterViewInit(): void {
+    this.aosService.initAOS({
+      offset: 170,
+    });
+    this.aosService.refreshAOS();
   }
 }
