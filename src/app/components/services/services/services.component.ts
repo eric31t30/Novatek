@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, inject, OnInit } from '@angular/core';
 import { ServiceListComponent } from '../service-list/service-list.component';
 import { ClientsComponent } from '../clients/clients.component';
 import { ProjectContactComponent } from '../project-contact/project-contact.component';
 
 import { HeadService } from '../../../services/head.service';
+import { AOSService } from '../../../services/aos/aos.service';
 
 
 @Component({
@@ -12,7 +13,7 @@ import { HeadService } from '../../../services/head.service';
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })
-export class ServicesComponent implements OnInit{
+export class ServicesComponent implements OnInit, AfterViewInit{
   
   constructor(private headService: HeadService) {}
   
@@ -25,5 +26,15 @@ export class ServicesComponent implements OnInit{
       'assets/services-page/service-list/web.svg',
       '/assets/services-page/service-list/services-deco-2.svg',
     ]);
+  }
+
+  private aosServices = inject(AOSService);
+
+  ngAfterViewInit(): void {
+    this.aosServices.initAOS({
+      offset: 120,
+    });
+
+    this.aosServices.refreshAOS();
   }
 }

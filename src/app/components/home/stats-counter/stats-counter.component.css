@@ -82,15 +82,21 @@
 }
 
 @media (max-width: 399px){
-    
+    .stats-counter-amount {
+        font-size: calc(var(--font-size-big) - .7rem);
+    }
 }
 
 @media (min-width: 400px){
-
+    .stats-counter-amount {
+        font-size: calc(var(--font-size-big) - .7rem);
+    }
 }
 
 @media (min-width: 700px){
-
+    .stats-counter-amount {
+        font-size: var(--font-size-big);
+    }
 
 }
 
