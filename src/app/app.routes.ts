@@ -37,4 +37,9 @@ export const routes: Routes = [
       loadComponent: () =>
         import('./components/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent),
     },
+    {
+      path: 'Terminos-y-condiciones',
+      loadComponent: () =>
+        import('./components/terms-and-conditions/terms-and-conditions.component').then(m => m.TermsAndConditionsComponent),
+    },
 ];
