@@ -54,6 +54,12 @@
     list-style: none;
 }
 
+.note{
+    font-size: var(--font-size-small);
+    font-style: auto;
+    opacity: .6;
+}
+
 @media (max-width: 399px){
     
 }
