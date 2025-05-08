@@ -123,13 +123,19 @@ address{
     flex-direction: column;
     width: 100%;
     color: white;
-    
+    gap: 10px 0px;
+}
+
+.footer-section-pages h3{
+    font-size: var(--font-size-medium);
+    background: var(--text-color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-section-pages p{
     font-size: var(--font-size-regular);
     font-weight: 400;
-    margin-bottom: 10px;
     cursor: pointer;
     border-bottom: 2px solid rgba(255, 255, 255, 0);
     transition: all .3s ease;

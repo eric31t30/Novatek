@@ -32,4 +32,9 @@ export const routes: Routes = [
       loadComponent: () =>
         import('./components/job-details/job-details.component').then(m => m.JobDetailsComponent),
     },
+    {
+      path: 'Politica-de-privacidad',
+      loadComponent: () =>
+        import('./components/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent),
+    },
 ];
