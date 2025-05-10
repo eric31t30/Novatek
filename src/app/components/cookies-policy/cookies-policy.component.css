@@ -1,0 +1,106 @@
+.cookies-policy{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-1);
+    padding: 40px 30px;
+    padding-bottom: 80px;
+    font-family: var(--primary-font);
+    overflow: hidden;
+}
+
+.cookies-policy-content{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 20px 0px;
+}
+
+.cookies-policy .separator{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px dashed rgba(0, 0, 0, .5);
+    margin: 20px 0px;
+}
+
+.cookies-policy h2{
+    font-size: var(--font-size-big);
+    background: var(--text-color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cookies-policy h3{
+    font-size: calc(var(--font-size-regular) + .3rem);
+    background: var(--text-color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cookies-policy p{
+    font-size: var(--font-size-regular);
+    opacity: .8;
+}
+
+.cookies-policy ul{
+    font-size: var(--font-size-regular);
+    opacity: .8;
+    list-style: none;
+}
+
+.note{
+    font-size: var(--font-size-small);
+    font-style: auto;
+    opacity: .7;
+}
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+    .cookies-policy-content{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px){
+    .cookies-policy h3{
+        background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 25%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .note{
+        font-size: calc(var(--font-size-small) + .1rem);
+    }
+}
+
+@media (min-width: 1280px){
+
+    .cookies-policy-content{
+        width: 60%;
+        margin-top: 120px;
+        gap: 60px 0px;
+    }
+
+    .cookies-policy .separator{
+        margin: 0px 0px;
+    }
+
+    
+}
+
+@media (min-width: 1920px){
+    
+} 
