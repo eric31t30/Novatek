@@ -11,7 +11,7 @@ import { CookiesPolicyComponent } from './components/cookies-policy/cookies-poli
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, CookiesComponent, CookiesPolicyComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, CookiesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   
