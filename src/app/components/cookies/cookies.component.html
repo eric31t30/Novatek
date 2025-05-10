@@ -1,0 +1,22 @@
+<div class="cookies" *ngIf="showCookiesBanner" [class.hide-banner]="hideBanner" [class.show-banner]="showBanner">
+    <div class="cookies-content">
+        <h2>Este sitio utiliza cookies</h2>
+        <p>Utilizamos cookies para mejorar tu experiencia de navegación y analizar el uso de nuestro sitio. 
+            Aunque no usamos cookies publicitarias, creemos importante informarte sobre su uso. Al continuar 
+            navegando, aceptas nuestra política de cookies.
+        </p>
+
+        <div class="cookies-buttons">
+            <button (click)="handleCookies('accepted')">Aceptar</button>
+            <button (click)="handleCookies('rejected')">Rechazar</button>
+            <a href="">Mas informacion</a>
+        </div>
+    </div>
+
+    <div class="cookie-img">
+        <img src="/assets/cookies/cookie.svg" alt="">
+    </div>
+    <div class="cookie-border">
+       <span></span> 
+    </div>
+</div>
