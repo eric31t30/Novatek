@@ -21,7 +21,7 @@
 }
 
 .service-list-title h2{
-    font-size: calc(var(--font-size-big) - 1rem);
+    font-size: calc(var(--font-size-medium) + .5rem);
     z-index: 5;
     color: white;
 }    
@@ -93,6 +93,7 @@
     align-items: start;
     flex-direction: column;
     gap: 20px;
+    z-index: 5;
 }
 
 .service h3{
@@ -115,6 +116,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    z-index: 1;
 }
 
 .service-img-container .service-image{
@@ -199,7 +201,7 @@
     left: -50px;
     bottom: 0px;
     z-index: 0;
-    opacity: .3;
+    opacity: .2;
 }
 
 .service-web-development .service-deco-background-3,
@@ -235,7 +237,7 @@
 
     .service p{
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
     .service-img-container{
@@ -265,7 +267,7 @@
         padding-top: 150px;
         gap: 20px;
     }
-
+    
     .service-list-title p{
         width: 70%;
     }
@@ -275,7 +277,7 @@
     }
 
     .service-list-title h2{
-        font-size: calc(var(--font-size-big) - 1.4rem);
+        font-size: calc(var(--font-size-big) - .6rem);
     }    
 
     .service{
