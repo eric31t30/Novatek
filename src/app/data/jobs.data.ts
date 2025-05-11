@@ -3,8 +3,8 @@ export const JOBS = [
         title: 'Frontend Developer',
         slug: 'frontend-developer',
         level: 'Junior',
-        type: 'Full-time',
-        location: 'Remote',
+        type: 'Tiempo completo',
+        location: 'Remoto',
         description: `Estamos buscando un Frontend Developer talentoso y motivado para unirse a nuestro equipo. 
         Como parte de nuestro equipo de desarrollo web, serás responsable de crear experiencias web atractivas y 
         funcionales. Trabajarás estrechamente con diseñadores, backend developers y otros miembros del equipo para 
@@ -40,8 +40,8 @@ export const JOBS = [
         title: 'Backend Developer',
         slug: 'backend-developer',
         level: 'Senior',
-        type: 'Full-time',
-        location: 'Remote',
+        type: 'Tiempo completo',
+        location: 'Remoto',
         description: `Estamos en búsqueda de un Backend Developer Senior con pasión por la arquitectura de software y el desarrollo de soluciones robustas y escalables. 
         Formarás parte de un equipo multidisciplinario donde colaborarás en el diseño, implementación y mantenimiento de servicios backend que impulsan nuestras aplicaciones. 
         Buscamos a alguien con una mentalidad proactiva, orientada a la resolución de problemas y con experiencia en entornos de desarrollo ágiles.`,
@@ -75,9 +75,9 @@ export const JOBS = [
     {
         title: 'UX/UI Designer',
         slug: 'ux-ui-designer',
-        level: 'Mid-level',
-        type: 'Part-time',
-        location: 'Hybrid',
+        level: 'Semi senior',
+        type: 'Medio tiempo',
+        location: 'Híbrido',
         description: `Buscamos un UX/UI Designer creativo y orientado a los detalles para trabajar en el diseño de interfaces intuitivas, atractivas y funcionales. 
         Colaborarás con equipos de desarrollo y producto para traducir requerimientos en experiencias centradas en el usuario. 
         El rol es ideal para alguien con sensibilidad estética, pensamiento analítico y enfoque en la experiencia de usuario.`,
@@ -111,9 +111,9 @@ export const JOBS = [
     {
         title: 'Data analyst',
         slug: 'data-analyst',
-        level: 'Entry-level',
-        type: 'Full-time',
-        location: 'On-site',
+        level: 'Nivel inicial',
+        type: 'Tiempo completo',
+        location: 'Presencial',
         description: `Estamos buscando un Data Analyst entusiasta y detallista para unirse a nuestro equipo. 
         Este rol es ideal para alguien que esté comenzando su carrera en análisis de datos y quiera crecer profesionalmente 
         en un entorno colaborativo. Ayudarás a transformar datos en insights accionables para apoyar decisiones estratégicas en distintas áreas.`,
@@ -147,8 +147,8 @@ export const JOBS = [
         title: 'DevOps Engineer',
         slug: 'devops-engineer',
         level: 'Senior',
-        type: 'Full-time',
-        location: 'Remote',
+        type: 'Tiempo completo',
+        location: 'Remoto',
         description: `Estamos en búsqueda de un DevOps Engineer con experiencia para optimizar y mantener nuestras infraestructuras de desarrollo, integración y despliegue. 
         Serás responsable de garantizar la disponibilidad, seguridad y escalabilidad de nuestras plataformas en un entorno dinámico y ágil. Trabajarás junto a equipos de desarrollo 
         y operaciones para automatizar procesos y mejorar la eficiencia en todo el ciclo de vida del software.`,
@@ -182,8 +182,8 @@ export const JOBS = [
         title: 'Mobile Developer',
         slug: 'mobile-developer',
         level: 'Junior',
-        type: 'Contract',
-        location: 'Hybrid',
+        type: 'Por contrato',
+        location: 'Híbrido',
         description: `Buscamos un Mobile Developer con iniciativa y pasión por crear experiencias móviles fluidas y atractivas. 
         Como desarrollador junior, colaborarás en el diseño, desarrollo y mantenimiento de aplicaciones móviles en plataformas iOS y Android, 
         trabajando junto a diseñadores y desarrolladores para lanzar productos de alta calidad.`,
@@ -213,8 +213,8 @@ export const JOBS = [
         title: 'Project Manager',
         slug: 'project-manager',
         level: 'Senior',
-        type: 'Full-time',
-        location: 'On-site',
+        type: 'Tiempo completo',
+        location: 'Presencial',
         description: `Estamos en búsqueda de un Project Manager con experiencia para liderar proyectos tecnológicos de principio a fin. 
         Serás responsable de coordinar equipos multidisciplinarios, asegurar el cumplimiento de plazos y objetivos, y mantener una comunicación fluida con todas las partes interesadas. 
         Tu liderazgo será clave para garantizar el éxito de los entregables y la satisfacción del cliente.`,
@@ -243,9 +243,9 @@ export const JOBS = [
     {
         title: 'Cibersecurity Analyst',
         slug: 'cibersecurity-analyst',
-        level: 'Mid-level',
-        type: 'Full-time',
-        location: 'Remote',
+        level: 'Semi senior',
+        type: 'Tiempo completo',
+        location: 'Remoto',
         description: `Buscamos un Cibersecurity Analyst con experiencia en detección y prevención de amenazas para proteger la infraestructura digital de nuestra empresa. 
         Serás responsable de analizar vulnerabilidades, implementar controles de seguridad y responder a incidentes. Tu rol será fundamental para mantener la integridad, confidencialidad y disponibilidad de nuestros sistemas.`,
         responsabilities: [
@@ -273,9 +273,9 @@ export const JOBS = [
     {
         title: 'QA Tester',
         slug: 'qa-tester',
-        level: 'Entry-level',
-        type: 'Part-time',
-        location: 'Remote',
+        level: 'Nivel inicial',
+        type: 'Medio tiempo',
+        location: 'Remoto',
         description: `Estamos buscando un QA Tester altamente motivado para asegurar la calidad de nuestras aplicaciones. 
         Serás responsable de ejecutar pruebas manuales, reportar errores y colaborar con el equipo de desarrollo para garantizar 
         que nuestras soluciones funcionen correctamente antes del lanzamiento.`,

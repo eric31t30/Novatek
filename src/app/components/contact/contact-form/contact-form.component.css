@@ -29,7 +29,7 @@
     width: 100%;
     gap: 5px;
     margin: 60px 0px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     z-index: 5;
 }
 
@@ -292,14 +292,20 @@
 }
 
 @media (min-width: 1024px){
+
+    .contact-form-title{
+        margin: 80px 0px;
+        margin-bottom: 60px;
+    }
+
     .form-contact{
-        padding: 40px 60px;
-        width: 80%;
+        padding: 40px 40px;
+        width: 90%;
     }
 
     .split-input-container{
         flex-direction: row;
-        gap: 0px 20px;
+        gap: 0px 40px;
     }
 
     .contact-cities{
@@ -324,7 +330,7 @@
 @media (min-width: 1280px){
 
     .contact-form-section{
-        padding: 40px 120px;
+        padding: 40px 90px;
         padding-bottom: 160px;
     }
 
@@ -356,14 +362,24 @@
     }
 
     .split-input-container{
+        justify-content: space-between;
         flex-direction: row;
-        gap: 0px 100px;
+        gap: 0px 10px;
+        width: 100%;
+    }
+
+    .split-input{
+        width: 45%;
     }
     
     .input-form,
     .input-form input,
     .input-form select,
     .input-form textarea{
+        font-size: calc(var(--font-size-regular) - .2rem);
+    }
+
+    .input-form label{
         font-size: calc(var(--font-size-regular) - .2rem);
     }
 

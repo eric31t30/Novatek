@@ -255,12 +255,18 @@
 
 @media (min-width: 1024px){
 
+    .culture-info-description h3{
+        background: linear-gradient(to right, var(--primary-color) 0%, var(--secondary-color) 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .culture-info-description p{
         width: 80%;
     }
 
     .culture-info-image img{
-        width: 60%;
+        width: 50%;
     }
 
     .culture-info-deco-1{
@@ -308,6 +314,12 @@
 
     .culture-info-description{
         width: 40%;
+    }
+
+    .culture-info-description h3{
+        background: var(--text-color-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .culture-info-description p{

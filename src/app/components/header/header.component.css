@@ -98,7 +98,6 @@
     position: relative;
     font-size: var(--font-size-regular);
     font-weight: 600;
-    
     color: white;
     transition: all .5s ease;
     cursor: pointer;
@@ -106,7 +105,6 @@
 }
 
 .navbar-list li a:hover{
-    font-size: 23px;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -237,7 +235,34 @@ header.hide-scroll{
     
     .header-content{
         justify-content: space-between;
-        padding: 0px 40px;
+        padding: 10px 40px;
+    }
+
+    .navbar{
+       padding: 80px 20px;
+       padding-left: 50px;
+    }
+
+    .navbar-button img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .header-logo-text{
+        font-size: calc(var(--font-size-medium) + .2rem) ;
+    }
+
+    .navbar-list li a{
+        font-size: calc(var(--font-size-regular) + .6rem) ;
+    }
+
+    .navbar-social{
+        margin-top: 0px;
+    }
+
+    .navbar-social-icon{
+        width: 38px;
+        height: 38px;
     }
     
     .navbar-active{
@@ -250,7 +275,7 @@ header.hide-scroll{
 
     .header-content{
         justify-content: space-around;
-        padding: 0px 0px;
+        padding: 10px 0px;
     }
     
     .navbar-resolution{
@@ -277,14 +302,13 @@ header.hide-scroll{
     
     .navbar-list li a{
         position: relative;
-        font-size: calc(var(--font-size-regular) - .2rem);
+        font-size: calc(var(--font-size-regular) + .1rem);
         color: black;
         opacity: .7;
         font-weight: 400;
     }
 
     .navbar-list li a:hover{
-        font-size: calc(var(--font-size-regular) - .2rem);
         background: var(--text-color-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
