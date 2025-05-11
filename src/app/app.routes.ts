@@ -42,4 +42,9 @@ export const routes: Routes = [
       loadComponent: () =>
         import('./components/terms-and-conditions/terms-and-conditions.component').then(m => m.TermsAndConditionsComponent),
     },
+    {
+      path: 'Politica-de-cookies',
+      loadComponent: () =>
+        import('./components/terms-and-conditions/terms-and-conditions.component').then(m => m.TermsAndConditionsComponent),
+    },
 ];

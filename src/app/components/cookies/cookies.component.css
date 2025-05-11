@@ -47,6 +47,7 @@
 }
 
 .cookies-buttons button{
+    position: relative;
     font-size: var(--font-size-regular);
     font-family: var(--primary-font);
     background: var(--primary-color);
@@ -56,6 +57,7 @@
     padding: 3px 15px;
     cursor: pointer;
     transition: all .3s linear;
+    overflow: hidden;
 }
 
 .cookies-buttons a{
@@ -66,6 +68,21 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.cookies-buttons span{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: var(--background-color-1);
+    opacity: .1;
+    transition: all .3s linear;
+}
+
+.cookies-buttons button:hover span{
+    width: 100%;
 }
 
 

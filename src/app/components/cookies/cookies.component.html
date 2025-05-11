@@ -7,9 +7,15 @@
         </p>
 
         <div class="cookies-buttons">
-            <button (click)="handleCookies('accepted')">Aceptar</button>
-            <button (click)="handleCookies('rejected')">Rechazar</button>
-            <a href="">Mas informacion</a>
+            <button (click)="handleCookies('accepted')">
+                Aceptar
+                <span></span>
+            </button>
+            <button (click)="handleCookies('rejected')">
+                Rechazar
+                <span></span>
+            </button>
+            <a [routerLink]="['/Politica-de-cookies']" routerLinkActive="router-link-active">Mas informacion</a>
         </div>
     </div>
 
