@@ -74,6 +74,7 @@
     opacity: .7;
     pointer-events: none;
     margin-bottom: 5px;
+    font-size: var(--font-size-regular);
 }
 
 .input-form label span{
