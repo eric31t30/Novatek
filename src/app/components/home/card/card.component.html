@@ -1,14 +1,13 @@
 <div class="overview-services-card">
-    <img loading="lazy" class="overview-icon-card" [src]="icon" alt="icon-card">
+    
+    <div class="overview-icon-card">
+        <img [src]="icon" alt="icon-card" loading="lazy">
+    </div>
+
 
     <div class="overview-sevices-text-card-cont">
         <h3>{{ title }} <span>{{ titleColor }}</span></h3>
         <p>{{ description }}</p>
-    </div>
-   
-    
-    <div class="overview-services-deco-cont">
-        <span class="overview-services-deco-card"></span>
     </div>
 
 </div>

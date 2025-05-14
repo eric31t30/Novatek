@@ -1,6 +1,136 @@
 .overview-services-card{
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: var(--background-color-1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+    border-radius: 20px;
+    padding: 20px 30px;
+    margin: 40px 0px;
+    gap: 15px;
+    transition: all .5s ease;
+}
+
+.overview-services-card:hover{
+    background-color: rgb(41, 43, 49);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+
+.overview-services-card:hover p{
+    color: var(--background-color-1);
+}
+
+.overview-services-card:hover .overview-icon-card{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.overview-icon-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, .07);
+    border-radius: 50%;
+}
+
+.overview-icon-card img{
+    width: 35px;
+    height: 35px;
+    transition: all .5s ease;
+    margin: 12px;
+}
+
+.overview-sevices-text-card-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.overview-sevices-text-card-cont h3{
+    font-size: calc(var(--font-size-medium) - .3rem);
+    background: var(--text-color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.overview-sevices-text-card-cont p{
+    font-size: calc(var(--font-size-regular) - .1rem);
+    width: 100%;
+    color: rgba(0, 0, 0, .8);
+    transition: all .5s ease;
+}
+
+
+@media (max-width: 399px){
+
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+
+    .overview-services-card{
+        padding: 30px 40px;
+        gap: 20px;
+    }
+
+    .overview-sevices-text-card-cont{
+        gap: 10px;
+    }
+
+    .overview-sevices-text-card-cont p{
+        font-size: var(--font-size-regular);
+    }
+
+    .overview-icon-card img{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media (min-width: 1024px){
+    
+    .overview-services-card{
+        padding: 30px 10px;
+    }
+
+    .overview-sevices-text-card-cont,
+    .overview-icon-card {
+        margin: 0px 20px;
+    }
+}
+
+@media (min-width: 1280px){
+
+    .overview-services-card{
+        padding: 0px 20px;
+        margin: 40px 0px
+    }
+
+    .overview-sevices-text-card-cont h3{
+        font-size: calc(var(--font-size-medium) - .4rem);
+    }
+
+    .overview-sevices-text-card-cont p{
+        font-size: calc(var(--font-size-regular) - .2rem);
+    }
+}
+
+@media (min-width: 1920px){
+
+}
+
+
+/* .overview-services-card{
+    position: relative;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
@@ -94,46 +224,4 @@
 
 .overview-services-card:hover .overview-services-deco-card{
     transform: rotate(10deg) scale(1.1);
-}
-
-@media (max-width: 399px){
-
-}
-
-@media (min-width: 400px){
-
-}
-
-@media (min-width: 700px){
-
-    .overview-services-card{
-        min-height: 440px;
-        padding: 30px 40px;
-        justify-content: space-evenly;
-    }
-
-    .overview-icon-card{
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media (min-width: 1024px){
-    
-    .overview-services-card{
-        max-height: 400px;
-        padding: 30px 40px;
-        justify-content: space-evenly;
-    }
-}
-
-@media (min-width: 1280px){
-
-}
-
-@media (min-width: 1920px){
-
-    .overview-services-card{
-        min-height: 450px;
-    }
-}
+} */
