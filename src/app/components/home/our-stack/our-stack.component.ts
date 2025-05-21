@@ -8,40 +8,26 @@ import 'swiper/css/effect-fade';
 Swiper.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 @Component({
-  selector: 'app-testimonials',
+  selector: 'app-our-stack',
   imports: [CommonModule],
-  templateUrl: './testimonials.component.html',
-  styleUrl: './testimonials.component.css',
+  templateUrl: './our-stack.component.html',
+  styleUrl: './our-stack.component.css'
 })
+export class OurStackComponent implements AfterViewInit{
 
-export class TestimonialsComponent implements AfterViewInit {
-  
   @ViewChild('swiperContainer') swiperContainer!: ElementRef;
-  @ViewChild('prevBtn') prevBtn!: ElementRef;
-  @ViewChild('nextBtn') nextBtn!: ElementRef;
-  
-  swiper?: Swiper;
 
+  swiper?: Swiper;
+  
   ngAfterViewInit(): void {
     this.swiper = new Swiper(this.swiperContainer.nativeElement, {
       slidesPerView: 1,
       spaceBetween: 10,
-      navigation: {
-        nextEl: this.nextBtn.nativeElement,
-        prevEl: this.prevBtn.nativeElement,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      effect: 'fade',
-      fadeEffect: {
-        crossFade: true
-      },
       autoplay: {
         delay: 7000,
         disableOnInteraction: false
       }
     });
   }
+
 }

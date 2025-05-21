@@ -1,0 +1,11 @@
+.our-stack-section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    overflow: hidden;
+    padding: 60px 40px;
+    padding-top: 100px;
+}

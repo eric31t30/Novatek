@@ -7,11 +7,12 @@ import { ContactComponent } from '../contact/contact.component';
 
 import { HeadService } from '../../../services/head.service';
 import { AOSService } from '../../../services/aos/aos.service';
+import { OurStackComponent } from '../our-stack/our-stack.component';
 
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, OverviewComponent, StatsCounterComponent, TestimonialsComponent, ContactComponent],
+  imports: [HeroComponent, OverviewComponent, StatsCounterComponent, TestimonialsComponent, ContactComponent, OurStackComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   standalone: true
