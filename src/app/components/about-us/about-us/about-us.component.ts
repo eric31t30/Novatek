@@ -27,7 +27,6 @@ export class AboutUsComponent implements OnInit{
       '/assets/about-us-page/who-we-are/img-1.jpg',
       '/assets/about-us-page/who-we-are/img-2.jpg',
       '/assets/about-us-page/who-we-are/img-3.jpg',
-      '/assets/about-us-page/who-we-are/img-4.jpg'
     ]);
   }
 
