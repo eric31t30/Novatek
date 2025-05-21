@@ -1,61 +1,50 @@
 <section class="testimonials-section" >
 
-  <div class="testimonials-title">
-    <h2>¡Mira los testimonios de nuestros clientes!</h2>
-  </div>
-
-  <div class="testimonials-carousel-content">
-    <swiper-container 
-      [spaceBetween]="50"
-      [pagination]="{ clickable: true }"
-      class="swiper"
-      effect="fade"
+  <div class="container-swiper"  data-aos="fade-up">
+    
+    <div class="swiper" #swiperContainer>
       
-      [style]="{
-        '--swiper-pagination-bullet-width': '24px',
-        '--swiper-pagination-bullet-height': '8px',
-        '--swiper-pagination-bullet-horizontal-gap': '8px',
-        '--swiper-pagination-bullet-border-radius': '5px'
-      }"
-    >
-      
-    <swiper-slide class="testimonial-background-1">
-        <div class="testimonial-content">
-          <p class="testimonial-text">“optimizamos nuestros procesos con una solución ágil y eficiente. Su equipo siempre estuvo atento a nuestras necesidades.”</p>
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <img src="/assets/home-section/testimonials/marks.svg" alt="comillas de testimonio" loading="lazy">
+          <p class="testimonial-text">“Logramos optimizar nuestros procesos internos gracias a una solución ágil, eficiente y totalmente adaptada a nuestras necesidades específicas. El equipo de soporte siempre estuvo disponible para resolver dudas y proponer mejoras, lo que hizo que la implementación fuera fluida y sin contratiempos.”</p>
           <h3 class="testimonial-name"><span>Andrés Muñoz</span> - Gerente de Operaciones</h3>
         </div>
-      </swiper-slide>
-  
-      <swiper-slide class="testimonial-background-2">
-        <div class="testimonial-content">
-          <p class="testimonial-text">“Un sistema intuitivo y escalable. La plataforma ha mejorado significativamente la experiencia de nuestros clientes.”</p>
+        
+        <div class="swiper-slide">
+          <img src="/assets/home-section/testimonials/marks.svg" alt="comillas de testimonio" loading="lazy">
+          <p class="testimonial-text">“Implementar esta plataforma ha sido una de las mejores decisiones estratégicas que hemos tomado. El sistema es intuitivo, escalable y ha permitido que nuestros clientes disfruten de una experiencia digital más fluida y satisfactoria, aumentando así su nivel de fidelización.”</p>
           <h3 class="testimonial-name"><span>Sofía Ramírez</span> - CEO</h3>
         </div>
-      </swiper-slide>
-  
-      <swiper-slide class="testimonial-background-3">
-        <div class="testimonial-content">
-          <p class="testimonial-text">“Desde que implementamos su software, nuestra productividad aumentó un 40%. Su soporte técnico es rápido y eficiente.”</p>
+        
+        <div class="swiper-slide">
+          <img src="/assets/home-section/testimonials/marks.svg" alt="comillas de testimonio" loading="lazy">
+          <p class="testimonial-text">“Desde que implementamos su software, hemos notado un aumento del 40% en nuestra productividad. El equipo técnico respondió con rapidez a cada requerimiento y nos brindó acompañamiento constante, lo que permitió que cada departamento se adaptara rápidamente a las nuevas herramientas.”</p>
           <h3 class="testimonial-name"><span>Leonardo Torres</span> - Director de TI</h3>
         </div>
-      </swiper-slide>
-  
-      <swiper-slide class="testimonial-background-4">
-        <div class="testimonial-content">
-          <p class="testimonial-text">“Logramos automatizar procesos y reducir costos gracias a su tecnología. Sus soluciones nos ayudaron a mejorar la eficiencia operativa.”</p>
+        
+        <div class="swiper-slide">
+          <img src="/assets/home-section/testimonials/marks.svg" alt="comillas de testimonio" loading="lazy">
+          <p class="testimonial-text">“Gracias a su tecnología, pudimos automatizar procesos clave y reducir significativamente nuestros costos operativos. La solución se integró perfectamente con nuestros sistemas existentes y nos brindó datos útiles para tomar decisiones más informadas y estratégicas.”</p>
           <h3 class="testimonial-name"><span>Natalia Pérez</span> - CTO</h3>
         </div>
-      </swiper-slide>
-    </swiper-container>
-  </div>
-  
-  
-  <svg class="testimonials-section-background-deco-1" xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="none" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs"><path fill="rgba(0, 0, 1, 1)" fill-rule="evenodd" d="M3 5a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM3 12a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zM3 19a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm7 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" clip-rule="evenodd"></path></svg>
-  <div class="testimonials-section-background-deco-2"></div>
-  <div class="testimonials-section-background-deco-3"></div>
+        
+      
+      
+    </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+    <div class="container-swiper-buttons">
+      <div class="swiper-button-prev" #prevBtn data-aos="fade-up" data-aos-delay="300"></div>
+      <div class="swiper-button-next" #nextBtn data-aos="fade-up" data-aos-delay="300"></div>
+    </div>
 
-  <div class="testimonials-wave-content">
-    <svg id="visual" viewBox="0 0 540 960" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 813L12.8 812.7C25.7 812.3 51.3 811.7 77 815.5C102.7 819.3 128.3 827.7 154 829.5C179.7 831.3 205.3 826.7 231.2 829.7C257 832.7 283 843.3 308.8 841.7C334.7 840 360.3 826 386 821.7C411.7 817.3 437.3 822.7 463 824.3C488.7 826 514.3 824 527.2 823L540 822L540 961L527.2 961C514.3 961 488.7 961 463 961C437.3 961 411.7 961 386 961C360.3 961 334.7 961 308.8 961C283 961 257 961 231.2 961C205.3 961 179.7 961 154 961C128.3 961 102.7 961 77 961C51.3 961 25.7 961 12.8 961L0 961Z" fill="rgba(155, 85, 210, .1)"></path><path d="M0 825L12.8 831C25.7 837 51.3 849 77 848.5C102.7 848 128.3 835 154 836.2C179.7 837.3 205.3 852.7 231.2 856.5C257 860.3 283 852.7 308.8 854.3C334.7 856 360.3 867 386 865.3C411.7 863.7 437.3 849.3 463 849.7C488.7 850 514.3 865 527.2 872.5L540 880L540 961L527.2 961C514.3 961 488.7 961 463 961C437.3 961 411.7 961 386 961C360.3 961 334.7 961 308.8 961C283 961 257 961 231.2 961C205.3 961 179.7 961 154 961C128.3 961 102.7 961 77 961C51.3 961 25.7 961 12.8 961L0 961Z" fill="rgba(195, 185, 220, 1)"></path><path d="M0 886L12.8 884.3C25.7 882.7 51.3 879.3 77 874.5C102.7 869.7 128.3 863.3 154 866.3C179.7 869.3 205.3 881.7 231.2 888.8C257 896 283 898 308.8 896.5C334.7 895 360.3 890 386 885.7C411.7 881.3 437.3 877.7 463 872C488.7 866.3 514.3 858.7 527.2 854.8L540 851L540 961L527.2 961C514.3 961 488.7 961 463 961C437.3 961 411.7 961 386 961C360.3 961 334.7 961 308.8 961C283 961 257 961 231.2 961C205.3 961 179.7 961 154 961C128.3 961 102.7 961 77 961C51.3 961 25.7 961 12.8 961L0 961Z" fill="rgba(172, 128, 195, 1)"></path><path d="M0 906L12.8 908.7C25.7 911.3 51.3 916.7 77 914C102.7 911.3 128.3 900.7 154 895.3C179.7 890 205.3 890 231.2 894.7C257 899.3 283 908.7 308.8 913C334.7 917.3 360.3 916.7 386 911.5C411.7 906.3 437.3 896.7 463 895C488.7 893.3 514.3 899.7 527.2 902.8L540 906L540 961L527.2 961C514.3 961 488.7 961 463 961C437.3 961 411.7 961 386 961C360.3 961 334.7 961 308.8 961C283 961 257 961 231.2 961C205.3 961 179.7 961 154 961C128.3 961 102.7 961 77 961C51.3 961 25.7 961 12.8 961L0 961Z" fill="rgba(155, 85, 210, 1)"></path><path d="M0 913L12.8 914.5C25.7 916 51.3 919 77 922.3C102.7 925.7 128.3 929.3 154 932C179.7 934.7 205.3 936.3 231.2 936.5C257 936.7 283 935.3 308.8 932.5C334.7 929.7 360.3 925.3 386 925.5C411.7 925.7 437.3 930.3 463 928.8C488.7 927.3 514.3 919.7 527.2 915.8L540 912L540 961L527.2 961C514.3 961 488.7 961 463 961C437.3 961 411.7 961 386 961C360.3 961 334.7 961 308.8 961C283 961 257 961 231.2 961C205.3 961 179.7 961 154 961C128.3 961 102.7 961 77 961C51.3 961 25.7 961 12.8 961L0 961Z" fill="rgba(138, 43, 226,1)"></path></svg>
   </div>
-  
+
+  <img class="testimonials-deco-1" src="/assets/home-section/testimonials/deco-1.svg" alt="" loading="lazy">
+  <img class="testimonials-deco-2" src="/assets/home-section/testimonials/deco-2.svg" alt="" loading="lazy">
+  <img class="testimonials-deco-3" src="/assets/home-section/testimonials/deco-3.svg" alt="" loading="lazy">
+  <img class="testimonials-deco-4" src="/assets/home-section/testimonials/deco-4.svg" alt="" loading="lazy">
 </section>

@@ -8,65 +8,6 @@
     overflow: hidden;
 }
 
-.service-list-title{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    padding: 80px 20px;
-    background: var(--background-color-2);
-    gap: 20px;
-}
-
-.service-list-title h2{
-    font-size: calc(var(--font-size-medium) + .5rem);
-    z-index: 5;
-    color: white;
-}    
-
-.service-list-title p{
-    width: 80%;
-    font-size: calc(var(--font-size-regular) - .1rem); 
-    z-index: 5;
-    color: white;
-} 
-
-.service-list-title img{
-    position: relative;
-    left: 25%;
-    width: 20px;
-    height: 20px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-} 
-
-.service-title-background{
-    opacity: .1;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 100%;
-    background-image: url('/assets/services-page/service-list/background-2.svg');
-    background-repeat: repeat;
-    background-size: 100%;
-    pointer-events: none;
-
-}
-
-.service-title-separation{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 10%;
-    background-color: var(--background-color-1);
-    z-index: 1;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    pointer-events: none;
-}
-
 .service{
     position: relative;
     display: flex;
@@ -224,17 +165,6 @@
 
 @media (min-width: 700px){
 
-    .service-list-title{
-        padding: 100px 20px;
-        padding-top: 120px;
-        gap: 20px;
-    }
-
-    .service-list-title img{
-        width: 25px;
-        height: 25px;
-    }
-
     .service p{
         width: 100%;
         margin-bottom: 0px;
@@ -260,25 +190,7 @@
 
 }
 
-@media (min-width: 1024px){
-
-    .service-list-title{
-        padding: 100px 50px;
-        padding-top: 150px;
-        gap: 20px;
-    }
-    
-    .service-list-title p{
-        width: 70%;
-    }
-
-    .service-list-title img{
-        left: 20%;
-    }
-
-    .service-list-title h2{
-        font-size: calc(var(--font-size-big) - .6rem);
-    }    
+@media (min-width: 1024px){  
 
     .service{
         flex-direction: row;
@@ -328,11 +240,6 @@
 }
 
 @media (min-width: 1280px){
-    
-    
-    .service-list-title h2{
-        top: 30px;
-    }
 
     .service-web-development,
     .service-maintenance-support,
@@ -342,21 +249,6 @@
 }
 
 @media (min-width: 1920px){
-
-    .service-list-title{
-        padding: 120px 100px;
-        padding-top: 160px;
-        gap: 20px;
-    }
-
-    .service-list-title p{
-        width: 50%;
-    }
-
-    .service-list-title h2{
-        top: 30px;
-        font-size: calc(var(--font-size-medium) + .4rem);
-    }
 
     .service{
         padding: 80px 20%;

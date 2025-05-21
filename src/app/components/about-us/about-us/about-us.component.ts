@@ -24,6 +24,9 @@ export class AboutUsComponent implements OnInit{
     this.headService.preloadImages([
       '/assets/about-us-page/who-we-are/deco-1.svg',
       '/assets/about-us-page/who-we-are/world.svg',
+      '/assets/about-us-page/who-we-are/img-1.jpg',
+      '/assets/about-us-page/who-we-are/img-2.jpg',
+      '/assets/about-us-page/who-we-are/img-3.jpg',
     ]);
   }
 
