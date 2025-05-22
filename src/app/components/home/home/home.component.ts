@@ -2,17 +2,18 @@ import { AfterViewInit, Component, inject, OnInit } from '@angular/core';
 import { HeroComponent } from '../hero/hero.component';
 import { OverviewComponent } from '../overview/overview.component';
 import { StatsCounterComponent } from '../stats-counter/stats-counter.component';
+import { OurStackComponent } from '../our-stack/our-stack.component';
 import { TestimonialsComponent } from '../testimonials/testimonials.component';
 import { ContactComponent } from '../contact/contact.component';
 
 import { HeadService } from '../../../services/head.service';
 import { AOSService } from '../../../services/aos/aos.service';
-import { OurStackComponent } from '../our-stack/our-stack.component';
+
 
 
 @Component({
   selector: 'app-home',
-  imports: [HeroComponent, OverviewComponent, StatsCounterComponent, TestimonialsComponent, ContactComponent, OurStackComponent],
+  imports: [HeroComponent, OverviewComponent, StatsCounterComponent, OurStackComponent, TestimonialsComponent, ContactComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   standalone: true
