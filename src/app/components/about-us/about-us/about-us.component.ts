@@ -7,11 +7,12 @@ import { JoinUsComponent } from '../join-us/join-us.component';
 
 import { HeadService } from '../../../services/head.service';
 import { AOSService } from '../../../services/aos/aos.service';
+import { OurValuesComponent } from '../our-values/our-values.component';
 
 
 @Component({
   selector: 'app-about-us',
-  imports: [WhoWeAreComponent, HistoryComponent, MissionVisionComponent, OurTeamComponent, JoinUsComponent],
+  imports: [WhoWeAreComponent, OurValuesComponent, HistoryComponent, MissionVisionComponent, OurTeamComponent, JoinUsComponent],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'
 })
