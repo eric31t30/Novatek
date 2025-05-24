@@ -6,11 +6,12 @@ import { ProjectContactComponent } from '../project-contact/project-contact.comp
 import { HeadService } from '../../../services/head.service';
 import { AOSService } from '../../../services/aos/aos.service';
 import { HeroComponent } from '../../services/hero/hero.component';
+import { OurProcessComponent } from '../our-process/our-process.component';
 
 
 @Component({
   selector: 'app-services',
-  imports: [ HeroComponent ,ServiceListComponent, ClientsComponent, ProjectContactComponent],
+  imports: [ HeroComponent ,ServiceListComponent, OurProcessComponent, ClientsComponent, ProjectContactComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'
 })

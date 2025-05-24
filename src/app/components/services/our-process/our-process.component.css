@@ -1,0 +1,11 @@
+.our-process-section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    background-color: var(--background-color-2);
+    font-family: var(--primary-font);
+    overflow: hidden;
+}
