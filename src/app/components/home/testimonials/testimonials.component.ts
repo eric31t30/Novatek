@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import 'swiper/css/bundle';
 import Swiper from 'swiper';
