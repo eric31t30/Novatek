@@ -25,9 +25,14 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.headService.preloadImages([
-      '/assets/home-section/hero/hero-background.svg',
-      '/assets/home-section/hero/background-deco.svg',
-      '/assets/home-section/hero/wave-divider-2.svg'
+      '/assets/home-section/hero/thunder.svg',
+      '/assets/home-section/hero/arrow.svg',
+      '/assets/home-section/hero/target.svg',
+      '/assets/home-section/hero/light-bulb.svg',
+      '/assets/home-section/hero/forms.svg',
+      '/assets/home-section/hero/rocket.svg',
+      '/assets/home-section/hero/global.svg',
+      '/assets/home-section/hero/cpu.svg',
     ]);
 
   }
