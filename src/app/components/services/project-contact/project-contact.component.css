@@ -13,6 +13,15 @@
 
 .project-contact-content{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.project-contact-title{
+    width: 100%;
     color: white;
     display: flex;
     justify-content: center;
@@ -23,19 +32,19 @@
     font-family: var(--secondary-font);
 }
 
-.project-contact-content h3{
+.project-contact-title h3{
     font-size: var(--font-size-medium);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.project-contact-content p{
+.project-contact-title p{
     font-size: var(--font-size-regular);
     opacity: .8;
 }
 
-.project-contact-content button{
+.project-contact-title button{
     font-size: var(--font-size-regular);
     color: white;
     margin-top: 40px;
@@ -47,15 +56,15 @@
     cursor: pointer;
 }
 
-.project-contact-content:hover button{
+.project-contact-title:hover button{
     box-shadow: inset 0px 0px 10px var(--primary-color);
 }
 
 .project-contact-divider{
     position: absolute;
     width: 100%;
-    height: 40px;
-    top: -40px;
+    height: 60px;
+    top: -60px;
     left: 0px;
     z-index: 1;
     transform: rotate(180deg);
@@ -134,11 +143,11 @@
 
 @media (min-width: 700px){
 
-    .project-contact-content{
+    .project-contact-title{
         gap: 40px 0px;
     }
     
-    .project-contact-content p{
+    .project-contact-title p{
         width: 80%;
     }
 
@@ -149,15 +158,17 @@
 }
 
 @media (min-width: 1024px){
+    
     .project-contact-section{
         padding: 100px 20px;
     }
 
-    .project-contact-content{
+    .project-contact-title{
         gap: 20px 0px;
     }
+    
 
-    .project-contact-content button{
+    .project-contact-title button{
         padding: 10px 40px;
     }
 
@@ -191,7 +202,7 @@
         padding: 140px 20px;
     }
 
-    .project-contact-content{
+    .project-contact-title{
         gap: 40px 0px;
     }
 } 
