@@ -52,27 +52,7 @@
     cursor: pointer;
 }
 
-.overview-section-background-deco-1,
-.overview-section-background-deco-2{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    opacity: .5;
-   user-select: none;
-    z-index: 0;
-}
-
 .overview-section-background-deco-1{
-    left: 0%;
-    bottom: 20%;
-}
-
-.overview-section-background-deco-2{
-    right: 0%;
-    top: 20%;
-}
-
-.overview-section-background-deco-3{
     position: absolute;
     bottom: -50px;
     right: -100px;
@@ -83,46 +63,45 @@
     z-index: 0;
 }
 
-.overview-section-background-deco-3 img{
+.overview-section-background-deco-1 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-
-/* wave */
-
-.overview-wave-background {
+.overview-section-background-deco-2,
+.overview-section-background-deco-3,
+.overview-section-background-deco-4{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    z-index: 1;
+    opacity: .5;
+    user-select: none;
+    z-index: 0;
 }
 
-.overview-wave-background svg {
-    position: relative;
-    display: block;
-    width: calc(126% + 1.3px);
-    height: 204px;
+.overview-section-background-deco-2{
+    top: 100px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(30deg);
 }
 
-.overview-wave-background .shape-fill {
-    filter: brightness(0) saturate(100%) invert(71%) sepia(93%) saturate(3523%) hue-rotate(260deg) brightness(100%) contrast(96%);
+.overview-section-background-deco-3{
+    top: 40%;
+    right: -5px;
+    width: 70px;
+    height: 70px;
+    transform: rotate(0deg);
 }
 
-
-/** For mobile devices **/
-@media (max-width: 767px) {
-    .overview-wave-background svg {
-        width: calc(152% + 1.3px);
-        height: 158px;
-    }
+.overview-section-background-deco-4{
+    bottom: 500px;
+    left: -5px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(120deg);
 }
+
 
 @media (max-width: 399px){
     
@@ -138,18 +117,35 @@
         height: 350px;
     }
 
-    .overview-section-background-deco-1,
-    .overview-section-background-deco-2{
-        width: 400px;
-        height: 400px;
-        opacity: .3;
-    }
-
-    .overview-section-background-deco-3{
+    .overview-section-background-deco-1{
         bottom: -50px;
         right: -100px;
         width: 800px;
         height: 800px;
+    }
+
+    .overview-section-background-deco-2{
+        top: 50px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        transform: rotate(50deg);
+    }
+    
+    .overview-section-background-deco-3{
+        top: 40%;
+        right: -20px;
+        width: 120px;
+        height: 120px;
+        transform: rotate(-120deg);
+    }
+    
+    .overview-section-background-deco-4{
+        bottom: 800px;
+        left: -35px;
+        width: 160px;
+        height: 160px;
+        transform: rotate(120deg);
     }
 }
 
@@ -182,6 +178,30 @@
         width: 45%;
         height: 400px;
     }
+
+    .overview-section-background-deco-2{
+        top: 50px;
+        left: 20px;
+        width: 80px;
+        height: 80px;
+        transform: rotate(50deg);
+    }
+    
+    .overview-section-background-deco-3{
+        top: 20%;
+        right: -20px;
+        width: 120px;
+        height: 120px;
+        transform: rotate(-120deg);
+    }
+    
+    .overview-section-background-deco-4{
+        bottom: 300px;
+        left: -35px;
+        width: 160px;
+        height: 160px;
+        transform: rotate(120deg);
+    }
 }
 
 @media (min-width: 1280px){
@@ -201,14 +221,7 @@
         height: 350px;
     }
 
-    .overview-section-background-deco-1,
-    .overview-section-background-deco-2{
-        width: 260px;
-        height: 260px;
-        opacity: .4;
-    }
-
-    .overview-section-background-deco-3{
+    .overview-section-background-deco-1{
         bottom: -50px;
         right: -150px;
         width: 1000px;
@@ -244,11 +257,4 @@
         width: 30%;
         height: 350px;
     }
-
-    .overview-section-background-deco-1,
-    .overview-section-background-deco-2{
-        width: 400px;
-        height: 400px;
-    }
-
 }

@@ -6,6 +6,7 @@
     align-items: center;
     background-color: var(--background-color-1);
     padding: 40px 20px;
+    padding-bottom: 80px;
     font-family: var(--primary-font);
     overflow: hidden;
 }
@@ -99,8 +100,9 @@
     
     .clients-section{
         padding: 40px 60px;
+        padding-bottom: 80px;
     }
-
+    
     .company-logo{
         width: 140px;
         height: 110px;
@@ -126,6 +128,7 @@
 
     .clients-section{
         padding: 60px;
+        padding-bottom: 100px;
     }
 
     .clients-companies-content{
@@ -156,6 +159,7 @@
     
     .clients-section{
         padding: 70px 60px;
+        padding-bottom: 120px;
     }
     
     .company-logo{

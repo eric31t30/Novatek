@@ -21,14 +21,11 @@ export class ServicesComponent implements OnInit, AfterViewInit{
   
   ngOnInit(): void {
     this.headService.preloadImages([
-      '/assets/services-page/hero/img-1.jpg',
-      '/assets/services-page/hero/img-2.jpg',
-      '/assets/services-page/hero/img-3.jpg',
-      '/assets/services-page/hero/Circle.svg',
+      '/assets/services-page/hero/arrow.svg',
+      '/assets/services-page/hero/pc.svg',
       '/assets/services-page/hero/Ribbon.svg',
       '/assets/services-page/hero/deco-1.svg',
-      'assets/services-page/service-list/web.svg',
-      '/assets/services-page/service-list/services-deco-2.svg'
+      '/assets/services-page/hero/space.svg',
     ]);
   }
 
