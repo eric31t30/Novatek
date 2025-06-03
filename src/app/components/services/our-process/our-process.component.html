@@ -1,43 +1,42 @@
 <section class="our-process-section">
 
-    <div class="our-process-content">
+  <div class="our-process-content">
 
-        <div class="our-process-title">
-            <h2>Nuestro Proceso de Trabajo</h2>
-            <p>Seguimos una metodología estructurada que garantiza el éxito de cada proyecto.</p>
-        </div>
-        
-        <div class="our-process-container">
-            <div class="process" *ngFor="let process of processSteps" data-aos="fade-up">
-                
-                <div class="process-img" [ngStyle]="{ 'background': process.color }">
-                    <img [src]="process.image" alt="" loading="lazy">
-                    <span [ngStyle]="{ 'border': '3px solid ' + process.color  }"></span>
-                </div>
-                
-                <div class="process-description">
-                    <p class="step" [ngStyle]="{ 'color': process.color }">{{ process.number }} <span></span></p>
-                    <h2>{{ process.title}}</h2>
-                    <p>{{ process.description}}</p>
-                    
-                    <ul class="process-details">
-                        <li *ngFor="let detail of process.details">
-                            <img src="/assets/services-page/our-process/check.svg" alt="" loading="lazy" >
-                            <p>{{ detail }}</p>
-                        </li>
-                    </ul>
-
-                    <div class="process-deco">
-                        <div class="process-deco-1" [ngStyle]="{ 'background': process.color }">
-                            <span class="process-deco-2"></span>
-                            <span class="process-deco-3"></span>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-        
+    <div class="our-process-title">
+      <h2>Nuestro Proceso de Trabajo</h2>
+      <p>Seguimos una metodología estructurada que garantiza el éxito de cada proyecto.</p>
     </div>
+
+    <div class="our-process-container">
+      @for (process of processSteps; track process) {
+        <div class="process" data-aos="fade-up">
+          <div class="process-img" [ngStyle]="{ 'background': process.color }">
+            <img [src]="process.image" alt="" loading="lazy">
+            <span [ngStyle]="{ 'border': '3px solid ' + process.color  }"></span>
+          </div>
+          <div class="process-description">
+            <p class="step" [ngStyle]="{ 'color': process.color }">{{ process.number }} <span></span></p>
+            <h2>{{ process.title}}</h2>
+            <p>{{ process.description}}</p>
+            <ul class="process-details">
+              @for (detail of process.details; track detail) {
+                <li>
+                  <img src="/assets/services-page/our-process/check.svg" alt="" loading="lazy" >
+                  <p>{{ detail }}</p>
+                </li>
+              }
+            </ul>
+            <div class="process-deco">
+              <div class="process-deco-1" [ngStyle]="{ 'background': process.color }">
+                <span class="process-deco-2"></span>
+                <span class="process-deco-3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
 
 </section>

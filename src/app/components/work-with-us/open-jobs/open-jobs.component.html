@@ -1,51 +1,51 @@
 <section class="open-jobs-section">
-    
-    <div class="open-jobs-content">
-        
-        <div class="open-jobs-title" data-aos="fade-up">
-            <h2>Descubre nuestras ofertas laborales</h2>
-        </div>
 
-        <div class="open-jobs-arrow" data-aos="fade-up"><img src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha indicando las ofertas de trabajo"></div>
+  <div class="open-jobs-content">
 
-        <div class="job-list-container">
-
-            <ul class="job-list">
-                
-                <li class="job" *ngFor="let job of jobs" data-aos="fade-up">
-                   
-                    <div class="job-info">
-                        <h3>{{ job.title }}</h3>
-                        <p>{{ job.level }}</p>
-                        <div>
-                            <span>{{ job.type }}</span>
-                            <span>{{ job.location }}</span>
-                        </div>
-                    </div>
-                        
-                    <a [routerLink]="['/job-details', job.slug]">
-                        <p>Ver oferta</p>
-                        <img class="link-arrow-1" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta">
-                        <img class="link-arrow-2" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta">
-                    </a>
-                </li>
-            
-            </ul>
-        
-        </div>
-    
+    <div class="open-jobs-title" data-aos="fade-up">
+      <h2>Descubre nuestras ofertas laborales</h2>
     </div>
+
+    <div class="open-jobs-arrow" data-aos="fade-up"><img src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha indicando las ofertas de trabajo"></div>
+
+    <div class="job-list-container">
+
+      <ul class="job-list">
+
+        @for (job of jobs; track job) {
+          <li class="job" data-aos="fade-up">
+            <div class="job-info">
+              <h3>{{ job.title }}</h3>
+              <p>{{ job.level }}</p>
+              <div>
+                <span>{{ job.type }}</span>
+                <span>{{ job.location }}</span>
+              </div>
+            </div>
+            <a [routerLink]="['/job-details', job.slug]">
+              <p>Ver oferta</p>
+              <img class="link-arrow-1" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta">
+              <img class="link-arrow-2" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta">
+            </a>
+          </li>
+        }
+
+      </ul>
+
+    </div>
+
+  </div>
 
 </section>
 
 
 <!-- <li class="job" *ngFor="let job of jobs">
-    <a [routerLink]="['/job-details', job.slug]">
-        <h3>{{ job.title }}</h3>
-        <p>{{ job.level }}</p>
-        <div>
-            <span>{{ job.type }}</span>
-            <span>{{ job.location }}</span>
-        </div>
-    </a>
+<a [routerLink]="['/job-details', job.slug]">
+  <h3>{{ job.title }}</h3>
+  <p>{{ job.level }}</p>
+  <div>
+    <span>{{ job.type }}</span>
+    <span>{{ job.location }}</span>
+  </div>
+</a>
 </li> -->

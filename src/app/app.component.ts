@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
@@ -10,7 +10,7 @@ import { CookiesComponent } from './components/cookies/cookies.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, FooterComponent, CookiesComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, CookiesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   
