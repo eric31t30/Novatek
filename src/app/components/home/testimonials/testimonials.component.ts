@@ -1,15 +1,15 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import 'swiper/css/bundle';
+
+// import 'swiper/css/bundle';
 import Swiper from 'swiper';
 import { Navigation, Pagination, EffectFade, Autoplay } from 'swiper/modules';
-import 'swiper/css/effect-fade';
+// import 'swiper/css/effect-fade';
 
 Swiper.use([Navigation, Pagination, EffectFade, Autoplay]);
 
 @Component({
   selector: 'app-testimonials',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './testimonials.component.html',
   styleUrl: './testimonials.component.css',
 })

@@ -1,7 +1,7 @@
 import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+
 import { RouterModule } from '@angular/router';
 
 import { HeadService } from '../../services/head.service';
@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   standalone: true,
   selector: 'app-job-details',
-  imports: [CommonModule, ReactiveFormsModule, RouterModule],
+  imports: [ReactiveFormsModule, RouterModule],
   templateUrl: './job-details.component.html',
   styleUrls: [ '../../styles/form-styles.css', './job-details.component.css']
 })

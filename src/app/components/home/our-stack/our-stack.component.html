@@ -1,42 +1,43 @@
 <section class="our-stack-section">
 
-    <div class="our-stack-content">
+  <div class="our-stack-content">
 
-        <div class="our-stack-title" data-aos="fade-up">
-            <h2>Nuestras tecnologías</h2>
-            <p>Nuestro equipo domina un stack tecnológico diverso y moderno, 
-                lo que nos permite trabajar en proyectos de distintos tamaños y complejidad, desde 
-                sitios web hasta plataformas completas y escalables.</p>
-        </div>
-
-        <div class="our-stack-swiper" data-aos="fade-up">
-            <div class="swiper stack-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" *ngFor="let tech of frontend">
-                        <img [src]="tech.img" [alt]="tech.name" loading="lazy" draggable="false"/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper stack-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" *ngFor="let tech of backend">
-                        <img [src]="tech.img" [alt]="tech.name" loading="lazy" draggable="false"/>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper stack-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide" *ngFor="let tech of database">
-                        <img [src]="tech.img" [alt]="tech.name" loading="lazy" draggable="false"/>
-                    </div>
-                </div>
-            </div>      
-            
-            <div class="left-border"></div>
-            <div class="right-border"></div>
-        </div>
+    <div class="our-stack-title" data-aos="fade-up">
+      <h2>Nuestras tecnologías</h2>
+      <p>Nuestro equipo domina un stack tecnológico diverso y moderno,
+        lo que nos permite trabajar en proyectos de distintos tamaños y complejidad, desde
+      sitios web hasta plataformas completas y escalables.</p>
     </div>
-    
+
+    <div class="our-stack-swiper" data-aos="fade-up">
+      
+      <div class="swiper stack-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let tech of frontend; trackBy: trackByIndex">
+              <img [src]="tech.img" [alt]="tech.name" />
+            </div>
+        </div>
+      </div>
+
+      <div class="swiper stack-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" *ngFor="let tech of backend; trackBy: trackByIndex">
+            <img [src]="tech.img" [alt]="tech.name" />
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper stack-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" *ngFor="let tech of database; trackBy: trackByIndex">
+            <img [src]="tech.img" [alt]="tech.name" />
+          </div>
+        </div>
+      </div>
+
+      <div class="left-border"></div>
+      <div class="right-border"></div>
+    </div>
+  </div>
+
 </section>

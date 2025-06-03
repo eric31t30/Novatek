@@ -1,214 +1,216 @@
 <section class="job-form-section">
-    
-    <div class="job-form-content">
 
-        <div class="job-form-img" data-aos="fade-up"><img src="/assets/work-with-us-page/job-form/search.svg" alt="" loading="lazy"></div>
+  <div class="job-form-content">
 
-        <h2 data-aos="fade-up">¿No encontraste una posición adecuada para ti?</h2>
-        <p class="dont-worry" data-aos="fade-up">No te preocupes, completa el siguiente formulario y únete a nuestra bolsa de trabajo.</p>
+    <div class="job-form-img" data-aos="fade-up"><img src="/assets/work-with-us-page/job-form/search.svg" alt="" loading="lazy"></div>
 
-        <form class="job-form" [formGroup]="jobForm" (ngSubmit)="submit()" data-aos="fade-up">
+    <h2 data-aos="fade-up">¿No encontraste una posición adecuada para ti?</h2>
+    <p class="dont-worry" data-aos="fade-up">No te preocupes, completa el siguiente formulario y únete a nuestra bolsa de trabajo.</p>
 
-            <div class="split-input-container">
-                <div class="input-form split-input">
-                    <label for="name">Nombre <span>*</span></label>
-                    <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    placeholder="Nombre" 
-                    required
-                    formControlName="name"
-                    #invalidForm>
+    <form class="job-form" [formGroup]="jobForm" (ngSubmit)="submit()" data-aos="fade-up">
 
-                    @if (formSubmitted && hasErrors('name', 'required')) {
-                        <span class="field-error">El nombre es obligatorio</span>
-                    }
-                    @if (formSubmitted && hasErrors('name', 'minlength')) {
-                        <span class="field-error">El nombre debe tener mas de 3 letras</span>
-                    }
-                </div>
+      <div class="split-input-container">
+        <div class="input-form split-input">
+          <label for="name">Nombre <span>*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nombre"
+            required
+            formControlName="name"
+            #invalidForm>
 
-                <div class="input-form split-input">
-                    <label for="last-name">Apellido <span>*</span></label>
-                    <input 
-                    type="text" 
-                    id="last-name" 
-                    name="last-name" 
-                    placeholder="Apellido" 
-                    required
-                    formControlName="lastName">
+            @if (formSubmitted && hasErrors('name', 'required')) {
+              <span class="field-error">El nombre es obligatorio</span>
+            }
+            @if (formSubmitted && hasErrors('name', 'minlength')) {
+              <span class="field-error">El nombre debe tener mas de 3 letras</span>
+            }
+          </div>
 
-                    @if (formSubmitted && hasErrors('lastName', 'required')) {
-                        <span class="field-error">El apellido es obligatorio</span>
-                    }
-                    @if (formSubmitted && hasErrors('lastName', 'minlength')) {
-                        <span class="field-error">El apellido debe tener mas de 3 letras</span>
-                    }
-                </div>
+          <div class="input-form split-input">
+            <label for="last-name">Apellido <span>*</span></label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Apellido"
+              required
+              formControlName="lastName">
+
+              @if (formSubmitted && hasErrors('lastName', 'required')) {
+                <span class="field-error">El apellido es obligatorio</span>
+              }
+              @if (formSubmitted && hasErrors('lastName', 'minlength')) {
+                <span class="field-error">El apellido debe tener mas de 3 letras</span>
+              }
             </div>
-            
-            <div class="split-input-container">
-                <div class="input-form split-input">
-                    <label for="phone">Numero de Telefono <span>*</span></label>
-                    <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    placeholder="Numero de Telefono" 
-                    required
-                    formControlName="phone">
+          </div>
 
-                    @if (formSubmitted && hasErrors('phone', 'required')) {
-                        <span class="field-error">El numero es obligatorio</span>
-                    }
-                    @if (formSubmitted && hasErrors('phone', 'pattern')) {
-                        <span class="field-error">El número debe tener entre 7 y 15 dígitos, solo números</span>
-                    }
+          <div class="split-input-container">
+            <div class="input-form split-input">
+              <label for="phone">Numero de Telefono <span>*</span></label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Numero de Telefono"
+                required
+                formControlName="phone">
+
+                @if (formSubmitted && hasErrors('phone', 'required')) {
+                  <span class="field-error">El numero es obligatorio</span>
+                }
+                @if (formSubmitted && hasErrors('phone', 'pattern')) {
+                  <span class="field-error">El número debe tener entre 7 y 15 dígitos, solo números</span>
+                }
+              </div>
+
+              <div class="input-form split-input">
+                <label for="email">Correo Electronico<span>*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Correo Electronico"
+                  required
+                  formControlName="email">
+
+                  @if (formSubmitted && hasErrors('email', 'required')) {
+                    <span class="field-error">Este campo es obligatorio</span>
+                  }
+                  @if (formSubmitted && hasErrors('email', 'email')) {
+                    <span class="field-error">Formato de correo invalido</span>
+                  }
                 </div>
 
-                <div class="input-form split-input">
-                    <label for="email">Correo Electronico<span>*</span></label>
-                    <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    placeholder="Correo Electronico" 
-                    required
-                    formControlName="email">
+              </div>
 
-                    @if (formSubmitted && hasErrors('email', 'required')) {
-                        <span class="field-error">Este campo es obligatorio</span>
-                    }
-                    @if (formSubmitted && hasErrors('email', 'email')) {
-                        <span class="field-error">Formato de correo invalido</span>
-                    }
-                </div>
-
-            </div>
-
-            <div class="input-form">
+              <div class="input-form">
                 <label for="address">Ciudad y Pais de Residencia <span>*</span></label>
-                <input 
-                type="text" 
-                id="address" 
-                name="address" 
-                placeholder="Ciudad y Pais" 
-                required
-                formControlName="residence">
-                
-                @if (formSubmitted && hasErrors('residence', 'required')) {
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Ciudad y Pais"
+                  required
+                  formControlName="residence">
+
+                  @if (formSubmitted && hasErrors('residence', 'required')) {
                     <span class="field-error">Este campo es obligatorio</span>
-                }
-                @if (formSubmitted && hasErrors('residence', 'minlength')) {
+                  }
+                  @if (formSubmitted && hasErrors('residence', 'minlength')) {
                     <span class="field-error">Este campo debe tener mas de 3 letras</span>
-                }
-            </div>
-
-            <div class="input-form input-file-form">
-                <label for="cv">Adjuntar CV <span>*</span></label>
-                <div class="input-file-container">
-                    
-                    <input 
-                    class="input-file" 
-                    type="file" id="cv" 
-                    name="cv" 
-                    accept=".pdf,.doc,.docx,.jpg,.png,.jpeg" 
-                    required
-                    formControlName="cv"
-                    (change)="fileChange($event)">
-                    <label for="cv" class="custom-file-upload">{{ fileName || 'Seleccionar Archivo' }}<span class="input-file-pointer"></span></label>
-                    
+                  }
                 </div>
 
-                @if (formSubmitted && hasErrors('cv', 'required')) {
-                    <span class="field-error field-error-cv">Adjunta tu CV</span>
-                }
+                <div class="input-form input-file-form">
+                  <label for="cv">Adjuntar CV <span>*</span></label>
+                  <div class="input-file-container">
 
-                
-            </div>
-            
-            <div class="input-form">
-                <label for="linkedin">Perfil de linkedin<span>*</span></label>
-                <input 
-                type="url" 
-                id="linkedin" 
-                name="linkedin" 
-                placeholder="Linkedin" 
-                required
-                formControlName="linkedin">
+                    <input
+                      class="input-file"
+                      type="file" id="cv"
+                      name="cv"
+                      accept=".pdf,.doc,.docx,.jpg,.png,.jpeg"
+                      required
+                      formControlName="cv"
+                      (change)="fileChange($event)">
+                      <label for="cv" class="custom-file-upload">{{ fileName || 'Seleccionar Archivo' }}<span class="input-file-pointer"></span></label>
 
-                @if (formSubmitted && hasErrors('linkedin', 'required')) {
-                    <span class="field-error">Este campo es obligatorio</span>
-                }
-            </div>
+                    </div>
 
-            <div class="input-form">
-                <label for="portafolio">Portafolio</label>
-                <input 
-                type="url" 
-                id="portafolio" 
-                name="portafolio" 
-                placeholder="portafolio">
-            </div>
+                    @if (formSubmitted && hasErrors('cv', 'required')) {
+                      <span class="field-error field-error-cv">Adjunta tu CV</span>
+                    }
 
-            <div class="input-form">
-                <label for="message">Mensaje</label>
-                <textarea 
-                id="message" 
-                name="message" 
-                rows="4" 
-                cols="20" 
-                placeholder="Mensaje"></textarea>
-            </div>
 
-            <div class="input-form checkbox-container">
-                <div class="input-checkbox">
-                    <input 
-                    type="checkbox" 
-                    id="privacy" 
-                    name="privacy" 
-                    required 
-                    aria-describedby="privacy-text"
-                    formControlName="checkbox">
-                    <label for="privacy">
-                        Acepto la <a href="javascript:void(0);">política de privacidad</a>.
-                    </label>
-                </div>
-                <p>Al enviar este formulario, aceptas que <span>Novatek</span> procese tus datos con 
-                    el fin de gestionar tu solicitud. No compartiremos tu información con terceros sin tu 
-                    consentimiento. Puedes solicitar la modificación o eliminación de tus datos en cualquier momento. 
-                    Para más información, consulta nuestra <a href="javascript:void(0);">política de privacidad.</a>
-                </p>
+                  </div>
 
-                @if (formSubmitted && hasErrors('checkbox', 'requiredTrue')) {
-                    <span class="field-error">Debe aceptar la política de privacidad</span>
-                }
-            </div>
+                  <div class="input-form">
+                    <label for="linkedin">Perfil de linkedin<span>*</span></label>
+                    <input
+                      type="url"
+                      id="linkedin"
+                      name="linkedin"
+                      placeholder="Linkedin"
+                      required
+                      formControlName="linkedin">
 
-            <div class="input-form input-form-button">
-                <button class="form-submit" type="submit">Enviar Mensaje</button>
-            </div>
-        
-        </form>
+                      @if (formSubmitted && hasErrors('linkedin', 'required')) {
+                        <span class="field-error">Este campo es obligatorio</span>
+                      }
+                    </div>
 
-        <div 
-        class="form-sent" 
-        [class.form-sent-move-active]="success"
-        #successMessage
-        *ngIf="success">
-            <img src="/assets/work-with-us-page/job-form/check.svg" alt="check" loading="lazy">
-            <div class="form-sent-text">
-                <p>Formulario enviado existosamente</p>
-                <p class="form-sent-contact">Te contactaremos cuando tengamos una oportunidad que se ajuste a tu perfil</p>
-            </div>
-            <span [class.form-sent-border-active]="success"></span>
-        </div>
-        
+                    <div class="input-form">
+                      <label for="portafolio">Portafolio</label>
+                      <input
+                        type="url"
+                        id="portafolio"
+                        name="portafolio"
+                        placeholder="portafolio">
+                      </div>
 
-    </div>
+                      <div class="input-form">
+                        <label for="message">Mensaje</label>
+                        <textarea
+                          id="message"
+                          name="message"
+                          rows="4"
+                          cols="20"
+                        placeholder="Mensaje"></textarea>
+                      </div>
 
-    <div class="job-form-deco-background-1"></div>
-    <div class="job-form-deco-background-2"></div>
+                      <div class="input-form checkbox-container">
+                        <div class="input-checkbox">
+                          <input
+                            type="checkbox"
+                            id="privacy"
+                            name="privacy"
+                            required
+                            aria-describedby="privacy-text"
+                            formControlName="checkbox">
+                            <label for="privacy">
+                              Acepto la <a href="javascript:void(0);">política de privacidad</a>.
+                            </label>
+                          </div>
+                          <p>Al enviar este formulario, aceptas que <span>Novatek</span> procese tus datos con
+                          el fin de gestionar tu solicitud. No compartiremos tu información con terceros sin tu
+                          consentimiento. Puedes solicitar la modificación o eliminación de tus datos en cualquier momento.
+                          Para más información, consulta nuestra <a href="javascript:void(0);">política de privacidad.</a>
+                        </p>
 
-</section>
+                        @if (formSubmitted && hasErrors('checkbox', 'requiredTrue')) {
+                          <span class="field-error">Debe aceptar la política de privacidad</span>
+                        }
+                      </div>
+
+                      <div class="input-form input-form-button">
+                        <button class="form-submit" type="submit">Enviar Mensaje</button>
+                      </div>
+
+                    </form>
+
+                    @if (success) {
+                      <div
+                        class="form-sent"
+                        [class.form-sent-move-active]="success"
+                        #successMessage
+                        >
+                        <img src="/assets/work-with-us-page/job-form/check.svg" alt="check" loading="lazy">
+                        <div class="form-sent-text">
+                          <p>Formulario enviado existosamente</p>
+                          <p class="form-sent-contact">Te contactaremos cuando tengamos una oportunidad que se ajuste a tu perfil</p>
+                        </div>
+                        <span [class.form-sent-border-active]="success"></span>
+                      </div>
+                    }
+
+
+                  </div>
+
+                  <div class="job-form-deco-background-1"></div>
+                  <div class="job-form-deco-background-2"></div>
+
+                </section>

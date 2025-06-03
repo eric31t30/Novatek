@@ -1,13 +1,13 @@
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-contact-form',
-  imports: [ ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './contact-form.component.html',
   styleUrls: ['../../../styles/form-styles.css', './contact-form.component.css',]
 })
