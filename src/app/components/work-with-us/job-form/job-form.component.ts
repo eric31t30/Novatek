@@ -1,11 +1,11 @@
 import { Component, inject, ViewChild, ElementRef } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-job-form',
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './job-form.component.html',
   styleUrls: ['../../../styles/form-styles.css', './job-form.component.css',]
 })

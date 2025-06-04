@@ -1,34 +1,35 @@
 <section class="service-list-section">
 
-    <div class="service-list-content">
+  <div class="service-list-content">
 
-        <div class="service-list-title" data-aos="fade-up">
-            <h2>Servicios que <span>definen</span></h2>
-            <p>Nuestros servicios profesionales te ayudan a agilizar la definición, entrega e implantación de productos digitales que transforman tu negocio.</p>
-        </div>
-
-        <div class="service-list">
-            <div class="service" *ngFor="let service of services" data-aos="fade-up">
-                <h3>{{ service.title }}</h3>
-                <p>{{ service.description }}</p>
-                <div class="service-icon">
-                    <div class="service-icon-cont">
-                        <img [src]="service.icon" alt="" loading="lazy" draggable="false">
-                    </div>
-                </div>
-
-                <div class="service-deco-1"></div>
-                <div class="service-deco-2"></div>
-            </div>
-        </div>
-    
+    <div class="service-list-title" data-aos="fade-up">
+      <h2>Servicios que <span>definen</span></h2>
+      <p>Nuestros servicios profesionales te ayudan a agilizar la definición, entrega e implantación de productos digitales que transforman tu negocio.</p>
     </div>
 
-    <div class="service-list-deco-1"></div>
-    <div class="service-list-deco-2"></div>
-    <div class="service-list-deco-3"></div>
-    
-    <img class="service-list-deco-4" src="/assets/services-page/service-list/ribbon-2.svg" alt="" draggable="false">
+    <div class="service-list">
+      @for (service of services; track service) {
+        <div class="service" data-aos="fade-up">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <div class="service-icon">
+            <div class="service-icon-cont">
+              <img [src]="service.icon" alt="" loading="lazy" draggable="false">
+            </div>
+          </div>
+          <div class="service-deco-1"></div>
+          <div class="service-deco-2"></div>
+        </div>
+      }
+    </div>
+
+  </div>
+
+  <div class="service-list-deco-1"></div>
+  <div class="service-list-deco-2"></div>
+  <div class="service-list-deco-3"></div>
+
+  <img class="service-list-deco-4" src="/assets/services-page/service-list/ribbon-2.svg" alt="" draggable="false">
 
 </section>
 

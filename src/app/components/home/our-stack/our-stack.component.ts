@@ -1,9 +1,10 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import 'swiper/css/bundle';
+
+// import 'swiper/css/bundle';
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
-import 'swiper/css/effect-fade';
+// import 'swiper/css/effect-fade';
 import { STACK } from '../../../data/stack.data';
 
 Swiper.use([Autoplay]);
@@ -11,7 +12,7 @@ Swiper.use([Autoplay]);
 
 @Component({
   selector: 'app-our-stack',
-  imports: [CommonModule],
+  imports: [ CommonModule ],
   templateUrl: './our-stack.component.html',
   styleUrl: './our-stack.component.css'
 })
@@ -21,8 +22,11 @@ export class OurStackComponent implements AfterViewInit{
 
   frontend = [...STACK.frontend, ...STACK.frontend, ...STACK.frontend, ...STACK.frontend];
   backend = [...STACK.backend, ...STACK.backend, ...STACK.backend, ...STACK.backend];
-  database = [...STACK.database, ...STACK.database, ...STACK.database, ...STACK.database];
+  database = [...STACK.database,  ...STACK.database, ...STACK.database, ...STACK.database];
 
+  trackByIndex(index: number, _: any): number {
+    return index;
+  }
   ngAfterViewInit(): void {
 
     const sliders = document.querySelectorAll('.stack-swiper');
