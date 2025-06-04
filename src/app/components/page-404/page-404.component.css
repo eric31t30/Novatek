@@ -1,0 +1,10 @@
+.page-404{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    font-family: var(--primary-font);
+    overflow: hidden;
+}

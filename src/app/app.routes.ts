@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'Inicio', pathMatch: 'full' },
   {
     path: 'Inicio',
     loadComponent: () =>
@@ -18,9 +17,9 @@ export const routes: Routes = [
       import('./components/services/services/services.component').then(m => m.ServicesComponent),
   },
   {
-     path: 'Contacto',
-     loadComponent: () =>
-       import('./components/contact/contact/contact.component').then(m => m.ContactComponent),
+    path: 'Contacto',
+    loadComponent: () =>
+      import('./components/contact/contact/contact.component').then(m => m.ContactComponent),
   },
   {
     path: 'Trabaja-con-nosotros',
@@ -47,4 +46,5 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/cookies-policy/cookies-policy.component').then(m => m.CookiesPolicyComponent),
   },
+  { path: '**', redirectTo: 'Inicio', pathMatch: 'full' },
 ];
