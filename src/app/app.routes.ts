@@ -1,6 +1,13 @@
 import { Routes } from '@angular/router';
+import { Page404Component } from './components/page-404/page-404.component';
 
 export const routes: Routes = [
+
+  {
+    path: '',
+    redirectTo: '/Inicio',
+    pathMatch: 'full',
+  },
   {
     path: 'Inicio',
     loadComponent: () =>
@@ -46,5 +53,6 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/cookies-policy/cookies-policy.component').then(m => m.CookiesPolicyComponent),
   },
-  { path: '**', redirectTo: 'Inicio', pathMatch: 'full' },
+  { path: 'page-404', component: Page404Component },
+  { path: '**', redirectTo: '/page-404' }
 ];
