@@ -1,4 +1,5 @@
-<div class="scroll-to-top">
+<div class="scroll-to-top" [class.scroll-to-top-active]="isVisible" (click)="scrollToTop()">
     <button>
+        <img src="/assets/scroll/arrow.svg" alt="" loading="lazy" />
     </button>
 </div>
