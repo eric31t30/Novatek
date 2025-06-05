@@ -1,0 +1,233 @@
+.page-404{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--background-color-1);
+    font-family: var(--primary-font);
+    overflow: hidden;
+}
+
+.page-404-content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 100px;
+    height: 100vh;
+}
+
+.page-404-title{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    z-index: 5;
+}
+
+.page-404-content h1{
+    font-size: calc(var(--font-size-big) + .5rem);
+    font-weight: 800;
+    background: var(--text-color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-404-content h2{
+    font-size: calc(var(--font-size-medium) - .3rem);
+    font-weight: 400;
+    color: black;
+}
+
+.page-404-content button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--decoration-color-gradient);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    gap: 10px;
+}
+
+.page-404-content button span{
+    font-size: var(--font-size-regular);
+    font-family: var(--primary-font);
+    color: white;
+}
+
+.page-404-content button img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    filter: brightness(0) saturate(100%) invert(99%) sepia(72%) saturate(2%) hue-rotate(232deg) brightness(114%) contrast(100%);
+    transition: all .3s ease-in-out;
+}
+
+.page-404-content button:hover img{
+    transform: rotate(-30deg);
+}
+
+.page-404-content button:hover{
+    transform: scale(1.05);
+}
+
+.page-404-image{
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.page-404-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-404-background{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.page-404-background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .2;
+}
+
+@media (max-width: 399px){
+    
+}
+
+@media (min-width: 400px){
+
+}
+
+@media (min-width: 700px){
+
+    .page-404-content{
+        gap: 150px;
+        height: 90vh;
+    }
+    
+    .page-404-content h1{
+        font-size: calc(var(--font-size-big) + 2rem);
+    }
+    
+    .page-404-content h2{
+        font-size: calc(var(--font-size-medium) + .1rem);
+    }
+
+    .page-404-content button{
+        gap: 15px;
+        padding: 7px 30px;
+    }
+    
+    .page-404-content button span{
+        position: relative;
+        font-size: calc(var(--font-size-medium) - .2rem);
+    }
+
+    .page-404-content button img{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .page-404-content{
+        height: 100vh;
+    }
+
+    .page-404-content h1{
+        font-size: calc(var(--font-size-big) + 3rem);
+    }
+    
+    .page-404-content h2{
+        font-size: calc(var(--font-size-medium) + .1rem);
+        margin-bottom: 20px;
+    }
+    
+    .page-404-content button span{
+        position: relative;
+        font-size: calc(var(--font-size-medium) - .2rem);
+    }
+
+    .page-404-image{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1280px){
+
+    .page-404-content{
+        flex-direction: row;
+        padding-right: 100px;
+    }
+
+    .page-404-content h1{
+        font-size: calc(var(--font-size-big) + 1rem);
+    }
+    
+    .page-404-content h2{
+        font-size: calc(var(--font-size-medium) - .5rem);
+    }
+    
+    .page-404-content button span{
+        position: relative;
+        font-size: calc(var(--font-size-medium) - .8rem);
+    }
+
+    .page-404-title{
+        width: 50%;
+    }
+
+    .page-404-image{
+        width: 40%;
+    }
+
+    .page-404-background{
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (min-width: 1920px){
+
+    .page-404-content{
+        padding-right: 150px;
+    }
+
+    .page-404-image{
+        width: 30%;
+    }
+
+    .page-404-background{
+        width: 80%;
+        height: 80%;
+    }
+} 
