@@ -1,13 +1,15 @@
 <section class="job-details-section">
-
   <div class="job-details-content">
-
     <div class="back-button-container">
-      <a [routerLink]="['/Trabaja-con-nosotros']" routerLinkActive="active" class="back-button">
+      <a
+        [routerLink]="['/Trabaja-con-nosotros']"
+        routerLinkActive="active"
+        class="back-button"
+      >
         <div class="back-button-img">
-          <img src="/assets/job-details/back.svg" alt="" draggable="false">
+          <img src="/assets/job-details/back.svg" alt="" draggable="false" />
         </div>
-        <p>Ver otras ofertas</p>
+        <span>Ver otras ofertas</span>
       </a>
     </div>
 
@@ -32,10 +34,10 @@
         <h3>Responsabilidades</h3>
         <ul>
           @for (responsibility of job?.responsabilities; track responsibility) {
-            <li>
-              <img src="/assets/job-details/point.svg" alt="" as="image">
-              <p>{{ responsibility }}</p>
-            </li>
+          <li>
+            <img src="/assets/job-details/point.svg" alt="" as="image" />
+            <p>{{ responsibility }}</p>
+          </li>
           }
         </ul>
       </div>
@@ -44,12 +46,11 @@
         <h3>Requisitos</h3>
         <ul>
           @for (requirement of job?.requirements; track requirement) {
-            <li>
-              <img src="/assets/job-details/point.svg" alt="" as="image">
-              <p>{{ requirement }}</p>
-            </li>
+          <li>
+            <img src="/assets/job-details/point.svg" alt="" as="image" />
+            <p>{{ requirement }}</p>
+          </li>
           }
-
         </ul>
       </div>
 
@@ -57,20 +58,21 @@
         <h3>¿Que ofrecemos?</h3>
         <ul>
           @for (benefit of job?.benefits; track benefit) {
-            <li>
-              <img src="/assets/job-details/point.svg" alt="" as="image">
-              <p>{{ benefit }}</p>
-            </li>
+          <li>
+            <img src="/assets/job-details/point.svg" alt="" as="image" />
+            <p>{{ benefit }}</p>
+          </li>
           }
         </ul>
       </div>
 
       <div class="what-are-you-waiting">
         <p>¿Qué esperas para unirte a nuestro equipo?</p>
-        <p>Si cumples con los requisitos y estás listo para asumir este emocionante desafío, ¡esperamos tu postulación!</p>
-
+        <p>
+          Si cumples con los requisitos y estás listo para asumir este
+          emocionante desafío, ¡esperamos tu postulación!
+        </p>
       </div>
-
     </div>
 
     <div class="job-details-apply">
@@ -78,172 +80,210 @@
         <div></div>
         <p>Postulate</p>
       </div>
-      <img src="/assets/job-details/arrow.svg" alt="" loading="lazy">
+      <img src="/assets/job-details/arrow.svg" alt="" loading="lazy" />
     </div>
 
     <form class="form-contact" [formGroup]="offerForm" (ngSubmit)="submit()">
-
       <div class="split-input-container">
         <div class="input-form split-input">
           <label for="name">Nombre <span>*</span></label>
           <input
             formControlName="name"
-            type="text" id="name"
+            type="text"
+            id="name"
             name="name"
             placeholder="Nombre"
             required
-            #invalidForm>
+            #invalidForm
+          />
 
-            @if (formSubmitted && hasErrors('name', 'required')) {
-              <span class="field-error">El nombre es obligatorio</span>
-            }
-            @if (formSubmitted && hasErrors('name', 'minlength')) {
-              <span class="field-error">El nombre debe tener mas de 3 letras</span>
-            }
-          </div>
+          @if (formSubmitted && hasErrors('name', 'required')) {
+          <span class="field-error">El nombre es obligatorio</span>
+          } @if (formSubmitted && hasErrors('name', 'minlength')) {
+          <span class="field-error">El nombre debe tener mas de 3 letras</span>
+          }
+        </div>
 
-          <div class="input-form split-input">
-            <label for="last-name">Apellidos <span>*</span></label>
-            <input
-              formControlName="lastName"
-              type="text"
-              id="last-name"
-              name="last-name"
-              placeholder="Apellidos"
-              required>
+        <div class="input-form split-input">
+          <label for="last-name">Apellidos <span>*</span></label>
+          <input
+            formControlName="lastName"
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Apellidos"
+            required
+          />
 
-              @if (formSubmitted && hasErrors('lastName', 'required')) {
-                <span class="field-error">El apellido es obligatorio</span>
-              }
-              @if (formSubmitted && hasErrors('lastName', 'minlength')) {
-                <span class="field-error">El apellido debe tener mas de 3 letras</span>
-              }
-            </div>
-          </div>
+          @if (formSubmitted && hasErrors('lastName', 'required')) {
+          <span class="field-error">El apellido es obligatorio</span>
+          } @if (formSubmitted && hasErrors('lastName', 'minlength')) {
+          <span class="field-error"
+            >El apellido debe tener mas de 3 letras</span
+          >
+          }
+        </div>
+      </div>
 
+      <div class="input-form">
+        <label for="phone">Número de Teléfono <span>*</span></label>
+        <input
+          formControlName="phone"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Numero de Telefono"
+          required
+          pattern="[0-9]{7,15}"
+        />
 
-          <div class="input-form">
-            <label for="phone">Número de Teléfono <span>*</span></label>
-            <input
-              formControlName="phone"
-              type="tel" id="phone"
-              name="phone"
-              placeholder="Numero de Telefono"
-              required
-              pattern="[0-9]{7,15}">
+        @if (formSubmitted && hasErrors('phone', 'required')) {
+        <span class="field-error">El numero es obligatorio</span>
+        } @if (formSubmitted && hasErrors('phone', 'pattern')) {
+        <span class="field-error"
+          >El número debe tener entre 7 y 15 dígitos, solo números</span
+        >
+        }
+      </div>
 
-              @if (formSubmitted && hasErrors('phone', 'required')) {
-                <span class="field-error">El numero es obligatorio</span>
-              }
-              @if (formSubmitted && hasErrors('phone', 'pattern')) {
-                <span class="field-error">El número debe tener entre 7 y 15 dígitos, solo números</span>
-              }
-            </div>
+      <div class="input-form">
+        <label for="email">Correo electrónico <span>*</span></label>
+        <input
+          formControlName="email"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+        />
 
-            <div class="input-form">
-              <label for="email">Correo electrónico <span>*</span></label>
-              <input
-                formControlName="email"
-                type="email" id="email"
-                name="email"
-                placeholder="Correo electrónico"
-                required>
+        @if (formSubmitted && hasErrors('email', 'required')) {
+        <span class="field-error">Este campo es obligatorio</span>
+        } @if (formSubmitted && hasErrors('email', 'email')) {
+        <span class="field-error">Formato de correo invalido</span>
+        }
+      </div>
 
-                @if (formSubmitted && hasErrors('email', 'required')) {
-                  <span class="field-error">Este campo es obligatorio</span>
-                }
-                @if (formSubmitted && hasErrors('email', 'email')) {
-                  <span class="field-error">Formato de correo invalido</span>
-                }
-              </div>
+      <div class="input-form input-file-form">
+        <label for="cv">Adjuntar CV <span>*</span></label>
+        <div class="input-file-container">
+          <input
+            class="input-file"
+            type="file"
+            id="cv"
+            name="cv"
+            accept=".pdf,.doc,.docx,.jpg,.png,.jpeg"
+            required
+            formControlName="cv"
+            (change)="fileChange($event)"
+          />
+          <label for="cv" class="custom-file-upload"
+            >{{ fileName || "Seleccionar Archivo"
+            }}<span class="input-file-pointer"></span
+          ></label>
+        </div>
 
-              <div class="input-form input-file-form">
-                <label for="cv">Adjuntar CV <span>*</span></label>
-                <div class="input-file-container">
+        @if (formSubmitted && hasErrors('cv', 'required')) {
+        <span class="field-error field-error-cv">Adjunta tu CV</span>
+        }
+      </div>
 
-                  <input
-                    class="input-file"
-                    type="file" id="cv"
-                    name="cv"
-                    accept=".pdf,.doc,.docx,.jpg,.png,.jpeg"
-                    required
-                    formControlName="cv"
-                    (change)="fileChange($event)">
-                    <label for="cv" class="custom-file-upload">{{ fileName || 'Seleccionar Archivo' }}<span class="input-file-pointer"></span></label>
+      <div class="input-form">
+        <label for="message">Mensaje</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="20"
+          placeholder="Hablanos un poco sobre ti"
+        ></textarea>
+      </div>
 
-                  </div>
+      <div class="input-form checkbox-container">
+        <div class="input-checkbox">
+          <input
+            type="checkbox"
+            id="privacy"
+            name="privacy"
+            required
+            aria-describedby="privacy-text"
+            formControlName="checkbox"
+          />
+          <label for="privacy">
+            Acepto la <a href="javascript:void(0);">política de privacidad</a>.
+          </label>
+        </div>
+        <p>
+          Al enviar este formulario, aceptas que <span>Novatek</span>
+          use tus datos para gestionar tu solicitud. Para más detalles, revisa
+          nuestra
+          <a href="javascript:void(0);">política de privacidad</a>.
+        </p>
 
-                  @if (formSubmitted && hasErrors('cv', 'required')) {
-                    <span class="field-error field-error-cv">Adjunta tu CV</span>
-                  }
-                </div>
+        @if (formSubmitted && hasErrors('checkbox', 'requiredTrue')) {
+        <span class="field-error">Debe aceptar la política de privacidad</span>
+        }
+      </div>
 
-                <div class="input-form">
-                  <label for="message">Mensaje</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    cols="20"
-                  placeholder="Hablanos un poco sobre ti"></textarea>
-                </div>
+      <div class="input-form input-form-button">
+        <button class="form-submit" type="submit">Enviar Mensaje</button>
+      </div>
+    </form>
 
-                <div class="input-form checkbox-container">
-                  <div class="input-checkbox">
-                    <input
-                      type="checkbox"
-                      id="privacy"
-                      name="privacy"
-                      required
-                      aria-describedby="privacy-text"
-                      formControlName="checkbox">
-                      <label for="privacy">
-                        Acepto la <a href="javascript:void(0);">política de privacidad</a>.
-                      </label>
-                    </div>
-                    <p>Al enviar este formulario, aceptas que <span>Novatek</span>
-                    use tus datos para gestionar tu solicitud. Para más detalles, revisa nuestra
-                    <a href="javascript:void(0);">política de privacidad</a>.
-                  </p>
+    @if (success) {
+    <div
+      class="form-sent"
+      [class.form-sent-move-active]="success"
+      #successMessage
+    >
+      <img
+        src="/assets/work-with-us-page/job-form/check.svg"
+        alt="check"
+        loading="lazy"
+      />
+      <div class="form-sent-text">
+        <p>Formulario enviado existosamente</p>
+        <p class="form-sent-contact">
+          Gracias por postularte. Revisaremos tu solicitud y te contactaremos
+          pronto.
+        </p>
+      </div>
+      <span [class.form-sent-border-active]="success"></span>
+    </div>
+    }
+  </div>
 
-                  @if (formSubmitted && hasErrors('checkbox', 'requiredTrue')) {
-                    <span class="field-error">Debe aceptar la política de privacidad</span>
-                  }
-                </div>
-
-                <div class="input-form input-form-button">
-                  <button class="form-submit" type="submit">Enviar Mensaje</button>
-                </div>
-
-              </form>
-
-              @if (success) {
-                <div
-                  class="form-sent"
-                  [class.form-sent-move-active]="success"
-                  #successMessage
-                  >
-                  <img src="/assets/work-with-us-page/job-form/check.svg" alt="check" loading="lazy">
-                  <div class="form-sent-text">
-                    <p>Formulario enviado existosamente</p>
-                    <p class="form-sent-contact">Gracias por postularte. Revisaremos tu solicitud y te contactaremos pronto.</p>
-                  </div>
-                  <span [class.form-sent-border-active]="success"></span>
-                </div>
-              }
-
-
-
-            </div>
-
-            <img class="job-details-deco-1" src="/assets/job-details/deco-1.svg" alt="" draggable="false">
-
-            <img class="job-details-deco-2 job-details-figure" src="/assets/job-details/deco-2.svg" alt="" draggable="false">
-            <img class="job-details-deco-3 job-details-figure" src="/assets/job-details/deco-2.svg" alt="" draggable="false">
-            <img class="job-details-deco-4 job-details-figure" src="/assets/job-details/deco-2.svg" alt="" draggable="false">
-
-            <div class="job-details-deco-5">
-              <img class="pattern"  src="/assets/job-details/deco-3.svg" alt="" loading="lazy" draggable="false">
-            </div>
-
-          </section>
+  <img
+    class="job-details-deco-1"
+    src="/assets/job-details/deco-1.svg"
+    alt=""
+    draggable="false"
+  />
+  <img
+    class="job-details-deco-2 job-details-figure"
+    src="/assets/job-details/deco-2.svg"
+    alt=""
+    draggable="false"
+  />
+  <img
+    class="job-details-deco-3 job-details-figure"
+    src="/assets/job-details/deco-2.svg"
+    alt=""
+    draggable="false"
+  />
+  <img
+    class="job-details-deco-4 job-details-figure"
+    src="/assets/job-details/deco-2.svg"
+    alt=""
+    draggable="false"
+  />
+  <div class="job-details-deco-5">
+    <img
+      class="pattern"
+      src="/assets/job-details/deco-3.svg"
+      alt=""
+      loading="lazy"
+      draggable="false"
+    />
+  </div>
+</section>
