@@ -79,11 +79,11 @@
     padding: 2px 15px;
     border-radius: 4px;
     gap: 10px;
-    transition: all .5s ease;
+    transition: all .2s ease;
     cursor: pointer;
 }
 
-.services-hero-button p{
+.services-hero-button span{
     font-family: var(--primary-font);
     font-size: calc(var(--font-size-regular));
     color: white;
@@ -101,8 +101,7 @@
 }
 
 .services-hero-button:hover{
-   transform: translateY(-10px);
-   box-shadow: 0px 0px 15px var(--primary-color);
+   transform: translateY(-5px);
 }
 
 .services-hero-img{

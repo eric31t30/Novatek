@@ -59,7 +59,7 @@
     height: 15px;
 }
 
-.back-button p{
+.back-button span{
     position: relative;
     right: 5px;
     font-size: var(--font-size-regular);
