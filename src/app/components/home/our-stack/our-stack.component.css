@@ -65,6 +65,10 @@
     z-index: 5;
 }
 
+.swiper:active{
+    cursor: grab;
+}
+
 .swiper-slide{
     position: relative;
     display: flex;
@@ -191,6 +195,14 @@
     .swiper-slide img{
         width: 70px;
         height: 70px;
+    }
+
+    .left-border{
+        left: 0px;
+    }
+    
+    .right-border{
+        right: 0px;
     }
 
 } 

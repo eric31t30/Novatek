@@ -32,7 +32,7 @@ export class WorkWithUsComponent implements OnInit, AfterViewInit{
 
   ngAfterViewInit(): void {
     this.aosService.initAOS({
-      offset: 170,
+      offset: 250,
     });
     this.aosService.refreshAOS();
   }

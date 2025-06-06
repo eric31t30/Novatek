@@ -9,7 +9,7 @@ export class AOSService {
   private defaultOptions = {
     duration: 1000, 
     once: true,
-    offset: 200,
+    offset: 400,
   };
 
   initAOS(options = {}) {

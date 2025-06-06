@@ -19,7 +19,7 @@ import { OurValuesComponent } from '../our-values/our-values.component';
 export class AboutUsComponent implements OnInit{
 
   constructor(private headService: HeadService) {}
-  private aosServices = inject(AOSService);
+  private aosService = inject(AOSService);
 
   ngOnInit(): void {
     this.headService.preloadImages([
@@ -32,8 +32,11 @@ export class AboutUsComponent implements OnInit{
   }
 
   ngAfterViewInit() {
-    this.aosServices.initAOS();
+    this.aosService.initAOS({
+      offset: 700,
+      duration: 1000
+    });
 
-    this.aosServices.refreshAOS();
+    this.aosService.refreshAOS();
   }
 }
