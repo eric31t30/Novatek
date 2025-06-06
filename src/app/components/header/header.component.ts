@@ -44,4 +44,12 @@ export class HeaderComponent {
     }
   }
 
+  closeNavbar(){
+    
+    if (this.navbarActive) {
+      this.navbarActive = false;
+      this.renderer.removeClass(document.body, 'no-scroll');
+    }
+  }
+
 }
