@@ -12,6 +12,7 @@ import { OurValuesComponent } from '../our-values/our-values.component';
 
 @Component({
   selector: 'app-about-us',
+  standalone: true,
   imports: [WhoWeAreComponent, OurValuesComponent, HistoryComponent, MissionVisionComponent, OurTeamComponent, JoinUsComponent],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'

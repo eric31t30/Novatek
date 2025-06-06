@@ -11,6 +11,7 @@ import { OurProcessComponent } from '../our-process/our-process.component';
 
 @Component({
   selector: 'app-services',
+  standalone: true,
   imports: [ HeroComponent ,ServiceListComponent, OurProcessComponent, ClientsComponent, ProjectContactComponent],
   templateUrl: './services.component.html',
   styleUrl: './services.component.css'

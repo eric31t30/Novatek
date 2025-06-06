@@ -13,10 +13,11 @@ import { AOSService } from '../../../services/aos/aos.service';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
   imports: [HeroComponent, OverviewComponent, StatsCounterComponent, OurStackComponent, TestimonialsComponent, ContactComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  standalone: true
+  
 })
 
 export class HomeComponent implements OnInit, AfterViewInit {
