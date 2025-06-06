@@ -20,7 +20,13 @@ export class ContactComponent implements OnInit {
       '/assets/contact-page/world.svg',
       '/assets/contact-page/clock.svg',
       '/assets/contact-page/email.svg',
-      '/assets/contact-page/phone.svg'
+      '/assets/contact-page/phone.svg',
+      "/assets/contact-page/colombia.svg",
+      "/assets/contact-page/chile.svg",
+      "/assets/contact-page/spain.svg",
+      "/assets/contact-page/mexico.svg",
+      "/assets/contact-page/argentina.svg",
+      "/assets/contact-page/eeuu.svg",
     ]);
   }
 }

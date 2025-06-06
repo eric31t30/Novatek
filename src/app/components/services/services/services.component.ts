@@ -33,7 +33,7 @@ export class ServicesComponent implements OnInit, AfterViewInit{
 
   ngAfterViewInit(): void {
     this.aosServices.initAOS({
-      offset: 220,
+      offset: 350,
     });
 
     this.aosServices.refreshAOS();

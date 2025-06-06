@@ -39,6 +39,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.aosService.initAOS({
+      offset: 170,
       duration: 1000
     });
 

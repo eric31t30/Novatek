@@ -8,11 +8,11 @@
 
         <nav class="navbar navbar-resolution" [class.navbar-active]="navbarActive">
             <ul class="navbar-list">
-                <li><a [routerLink]="['/Inicio']"               >Inicio</a></li>
-                <li><a [routerLink]="['/Nosotros']"             >Nosotros</a></li>
-                <li><a [routerLink]="['/Servicios']"            >Servicios</a></li>
-                <li><a [routerLink]="['/Contacto']"             >Contacto</a></li>
-                <li><a [routerLink]="['/Trabaja-con-nosotros']" >Trabaja con nosotros</a></li>
+                <li><a [routerLink]="['/Inicio']"               routerLinkActive="header-active" (click)="closeNavbar()">Inicio</a></li>
+                <li><a [routerLink]="['/Nosotros']"             routerLinkActive="header-active" (click)="closeNavbar()">Nosotros</a></li>
+                <li><a [routerLink]="['/Servicios']"            routerLinkActive="header-active" (click)="closeNavbar()">Servicios</a></li>
+                <li><a [routerLink]="['/Contacto']"             routerLinkActive="header-active" (click)="closeNavbar()">Contacto</a></li>
+                <li><a [routerLink]="['/Trabaja-con-nosotros']" routerLinkActive="header-active" (click)="closeNavbar()">Trabaja con nosotros</a></li>
             </ul>
     
             
@@ -31,11 +31,6 @@
                 <img src="/assets/header/close.svg" alt="Cerrar menú" draggable="false">
             </button>
         </nav>
-
-        <!-- <div class="navbar-cta">
-            Hablemos
-        </div> -->
-        
         
         <button (click)="activeNavbar()" class="navbar-button" aria-label="Abrir menú">
             <img src="/assets/header/burger-menu-icon.svg" alt="Ícono de menú" draggable="false">
