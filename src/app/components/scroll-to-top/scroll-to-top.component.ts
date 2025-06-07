@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-scroll-to-top',
+  standalone: true,
   imports: [ CommonModule ],
   templateUrl: './scroll-to-top.component.html',
   styleUrl: './scroll-to-top.component.css'

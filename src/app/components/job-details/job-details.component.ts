@@ -9,8 +9,8 @@ import { JOBS } from '../../data/jobs.data';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  standalone: true,
   selector: 'app-job-details',
+  standalone: true,
   imports: [ReactiveFormsModule, RouterModule],
   templateUrl: './job-details.component.html',
   styleUrls: [ '../../styles/form-styles.css', './job-details.component.css']

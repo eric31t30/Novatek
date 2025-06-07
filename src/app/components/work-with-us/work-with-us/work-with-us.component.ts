@@ -11,6 +11,7 @@ import { AOSService } from '../../../services/aos/aos.service';
 
 @Component({
   selector: 'app-work-with-us',
+  standalone: true,
   imports: [HeroComponent, OpenJobsComponent, JobFormComponent, BenefitsComponent, CultureComponent],
   templateUrl: './work-with-us.component.html',
   styleUrl: './work-with-us.component.css'
