@@ -1,10 +1,9 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-// import 'swiper/css/bundle';
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
-// import 'swiper/css/effect-fade';
+
 import { STACK } from '../../../data/stack.data';
 
 Swiper.use([Autoplay]);
