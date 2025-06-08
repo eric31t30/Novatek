@@ -2,7 +2,7 @@ import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core'
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 import { HeadService } from '../../services/head.service';
 import { JOBS } from '../../data/jobs.data';
@@ -28,6 +28,7 @@ export class JobDetailsComponent implements OnInit {
   formBuilder = inject(FormBuilder);
   headService = inject(HeadService);
   route = inject(ActivatedRoute);
+  router = inject(Router);
 
   ngOnInit(): void {
     this.headService.preloadImages([
@@ -39,6 +40,10 @@ export class JobDetailsComponent implements OnInit {
 
     const slug = this.route.snapshot.paramMap.get('slug');
     this.job = JOBS.find(j => j.slug === slug);
+    if (!this.job) {
+      this.router.navigate(['/404']);
+    }
+    
   }
 
   offerForm: FormGroup = this.formBuilder.group({
