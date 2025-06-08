@@ -6,7 +6,7 @@
       <h2>Descubre nuestras ofertas laborales</h2>
     </div>
 
-    <div class="open-jobs-arrow" data-aos="fade-up"><img src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha indicando las ofertas de trabajo"></div>
+    <div class="open-jobs-arrow" data-aos="fade-up"><img src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha indicando las ofertas de trabajo" width="20" height="20"></div>
 
     <div class="job-list-container">
 
@@ -22,10 +22,10 @@
                 <span>{{ job.location }}</span>
               </div>
             </div>
-            <a [routerLink]="['/job-details', job.slug]">
+            <a [routerLink]="['/vacante', job.slug]">
               <p>Ver oferta</p>
-              <img class="link-arrow-1" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta">
-              <img class="link-arrow-2" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta">
+              <img class="link-arrow-1" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta" width="15" height="15">
+              <img class="link-arrow-2" src="/assets/work-with-us-page/open-jobs/arrow.svg" alt="Flecha para entrar en la oferta" width="15" height="15">
             </a>
           </li>
         }

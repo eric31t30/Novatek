@@ -34,7 +34,7 @@ export const routes: Routes = [
       import('./components/work-with-us/work-with-us/work-with-us.component').then(m => m.WorkWithUsComponent),
   },
   {
-    path: 'job-details/:slug',
+    path: 'vacante/:slug',
     loadComponent: () =>
       import('./components/job-details/job-details.component').then(m => m.JobDetailsComponent),
   },

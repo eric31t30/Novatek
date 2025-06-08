@@ -14,7 +14,7 @@
       <div class="swiper stack-swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide" *ngFor="let tech of frontend; trackBy: trackByIndex">
-              <img [src]="tech.img" [alt]="tech.name" />
+              <img [src]="tech.img" [alt]="tech.name" loading="lazy"/>
             </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
       <div class="swiper stack-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide" *ngFor="let tech of backend; trackBy: trackByIndex">
-            <img [src]="tech.img" [alt]="tech.name" />
+            <img [src]="tech.img" [alt]="tech.name" loading="lazy"/>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
       <div class="swiper stack-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide" *ngFor="let tech of database; trackBy: trackByIndex">
-            <img [src]="tech.img" [alt]="tech.name" />
+            <img [src]="tech.img" [alt]="tech.name" loading="lazy"/>
           </div>
         </div>
       </div>

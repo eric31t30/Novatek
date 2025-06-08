@@ -7,7 +7,7 @@
         class="back-button"
       >
         <div class="back-button-img">
-          <img src="/assets/job-details/back.svg" alt="" draggable="false" />
+          <img src="/assets/job-details/back.svg" alt="regresar a ofertas" width="15" height="15" draggable="false" />
         </div>
         <span>Ver otras ofertas</span>
       </a>
@@ -35,7 +35,7 @@
         <ul>
           @for (responsibility of job?.responsabilities; track responsibility) {
           <li>
-            <img src="/assets/job-details/point.svg" alt="" as="image" />
+            <img src="/assets/job-details/point.svg" alt="" width="10" height="10" as="image" />
             <p>{{ responsibility }}</p>
           </li>
           }
@@ -47,7 +47,7 @@
         <ul>
           @for (requirement of job?.requirements; track requirement) {
           <li>
-            <img src="/assets/job-details/point.svg" alt="" as="image" />
+            <img src="/assets/job-details/point.svg" alt="" width="10" height="10" as="image" />
             <p>{{ requirement }}</p>
           </li>
           }
@@ -59,7 +59,7 @@
         <ul>
           @for (benefit of job?.benefits; track benefit) {
           <li>
-            <img src="/assets/job-details/point.svg" alt="" as="image" />
+            <img src="/assets/job-details/point.svg" alt="" width="10" height="10" as="image" />
             <p>{{ benefit }}</p>
           </li>
           }
@@ -80,7 +80,7 @@
         <div></div>
         <p>Postulate</p>
       </div>
-      <img src="/assets/job-details/arrow.svg" alt="" loading="lazy" />
+      <img src="/assets/job-details/arrow.svg" alt="" width="20" height="20" loading="lazy" />
     </div>
 
     <form class="form-contact" [formGroup]="offerForm" (ngSubmit)="submit()">
@@ -239,6 +239,7 @@
       <img
         src="/assets/work-with-us-page/job-form/check.svg"
         alt="check"
+        width="30" height="30"
         loading="lazy"
       />
       <div class="form-sent-text">
@@ -253,37 +254,22 @@
     }
   </div>
 
-  <img
-    class="job-details-deco-1"
-    src="/assets/job-details/deco-1.svg"
-    alt=""
-    draggable="false"
-  />
-  <img
-    class="job-details-deco-2 job-details-figure"
-    src="/assets/job-details/deco-2.svg"
-    alt=""
-    draggable="false"
-  />
-  <img
-    class="job-details-deco-3 job-details-figure"
-    src="/assets/job-details/deco-2.svg"
-    alt=""
-    draggable="false"
-  />
-  <img
-    class="job-details-deco-4 job-details-figure"
-    src="/assets/job-details/deco-2.svg"
-    alt=""
-    draggable="false"
-  />
+  <img class="job-details-deco-1" src="/assets/job-details/deco-1.svg" alt="" width="400" height="400" draggable="false" />
+  
+  <img class="job-details-deco-2 job-details-figure" src="/assets/job-details/deco-2.svg" alt="" width="200" height="200" draggable="false" />
+  <img class="job-details-deco-3 job-details-figure" src="/assets/job-details/deco-2.svg" alt="" width="200" height="200" draggable="false" />
+  <img class="job-details-deco-4 job-details-figure" src="/assets/job-details/deco-2.svg" alt="" width="200" height="200" draggable="false" />
+  
   <div class="job-details-deco-5">
     <img
       class="pattern"
       src="/assets/job-details/deco-3.svg"
       alt=""
+      width="800" height="300"
       loading="lazy"
       draggable="false"
     />
   </div>
+
+  
 </section>

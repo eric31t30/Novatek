@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { JOBS } from '../../../data/jobs.data';
 
@@ -9,8 +9,11 @@ import { JOBS } from '../../../data/jobs.data';
   templateUrl: './open-jobs.component.html',
   styleUrl: './open-jobs.component.css'
 })
-export class OpenJobsComponent {
+export class OpenJobsComponent implements OnInit {
 
   jobs = JOBS;
 
+  ngOnInit(): void {
+    
+  }
 }

@@ -48,6 +48,7 @@
     width: 30px;
     height: 30px;
     transition: all .5s ease;
+    aspect-ratio: 1 / 1;
 }
 
 .navbar-button{
