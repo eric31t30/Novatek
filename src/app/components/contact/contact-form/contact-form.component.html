@@ -1,34 +1,56 @@
 <section class="contact-form-section" id="form-contact-route">
-
   <div class="contact-form-content">
-
     <div class="contact-form-title">
       <h2>Contáctanos</h2>
-      <p>Póngase en contacto con nosotros a través de el siguiente formulario</p>
+      <p>
+        Póngase en contacto con nosotros a través de el siguiente formulario
+      </p>
     </div>
 
     <div class="contact-form-container">
-
       <article class="address-container">
         <h2>¿Tienes algo en mente?</h2>
-        <p>Llena el formulario y uno de nuestros especialistas te contactará.</p>
+        <p>
+          Llena el formulario y uno de nuestros especialistas te contactará.
+        </p>
 
         <div class="address">
-          <img src="/assets/contact-page/clock.svg" alt="Horario de atención: Lunes a Viernes de 7:00 a 20:00">
+          <img
+            src="/assets/contact-page/clock.svg"
+            alt="Horario de atención: Lunes a Viernes de 7:00 a 20:00"
+            width="30"
+            height="30"
+          />
           <p>Lunes a Viernes de 7:00 a 20:00</p>
         </div>
 
         <div class="address">
-          <img src="/assets/contact-page/email.svg" alt="Correo electrónico de contacto: novatek-business@gmail.com">
+          <img
+            src="/assets/contact-page/email.svg"
+            alt="Correo electrónico de contacto: novatek-business@gmail.com"
+            width="30"
+            height="30"
+          />
           <p>novatek-business&#64;gmail.com</p>
         </div>
 
         <div class="address">
-          <img src="/assets/contact-page/phone.svg" alt="Número de teléfono: +55 555 555 5555">
+          <img
+            src="/assets/contact-page/phone.svg"
+            alt="Número de teléfono: +55 555 555 5555"
+            width="30"
+            height="30"
+          />
           <p>+55 555 555 5555</p>
         </div>
 
-        <img class="address-deco" src="/assets/contact-page/world.svg" alt="decoracion de mundo">
+        <img
+          class="address-deco"
+          src="/assets/contact-page/world.svg"
+          alt="decoracion de mundo"
+          width="320"
+          height="348"
+        />
 
         <!-- para mayor resoluciones -->
         <div class="contact-cities-content-big-resolution">
@@ -36,210 +58,369 @@
 
           <div class="contact-cities">
             <ul class="contact-cities">
-              <li><img class="city-icon" src="/assets/contact-page/colombia.svg"   alt="Colombia"        draggable="false" loading="lazy"></li>
-              <li><img class="city-icon" src="/assets/contact-page/chile.svg"      alt="Chile"           draggable="false" loading="lazy"></li>
-              <li><img class="city-icon" src="/assets/contact-page/spain.svg"      alt="España"          draggable="false" loading="lazy"></li>
-              <li><img class="city-icon" src="/assets/contact-page/mexico.svg"     alt="México"          draggable="false" loading="lazy"></li>
-              <li><img class="city-icon" src="/assets/contact-page/argentina.svg"  alt="Argentina"       draggable="false" loading="lazy"></li>
-              <li><img class="city-icon" src="/assets/contact-page/eeuu.svg"       alt="Estados Unidos"  draggable="false" loading="lazy"></li>
+              <li>
+                <img
+                  class="city-icon"
+                  src="/assets/contact-page/colombia.svg"
+                  alt="Colombia"
+                  width="50"
+                  height="50"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  class="city-icon"
+                  src="/assets/contact-page/chile.svg"
+                  alt="Chile"
+                  width="50"
+                  height="50"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  class="city-icon"
+                  src="/assets/contact-page/spain.svg"
+                  alt="España"
+                  width="50"
+                  height="50"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  class="city-icon"
+                  src="/assets/contact-page/mexico.svg"
+                  alt="México"
+                  width="50"
+                  height="50"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  class="city-icon"
+                  src="/assets/contact-page/argentina.svg"
+                  alt="Argentina"
+                  width="50"
+                  height="50"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </li>
+              <li>
+                <img
+                  class="city-icon"
+                  src="/assets/contact-page/eeuu.svg"
+                  alt="Estados Unidos"
+                  width="50"
+                  height="50"
+                  draggable="false"
+                  loading="lazy"
+                />
+              </li>
             </ul>
           </div>
         </div>
-
       </article>
 
-      <form class="form-contact" [formGroup]="contactForm" (ngSubmit)="submit()">
-
+      <form
+        class="form-contact"
+        [formGroup]="contactForm"
+        (ngSubmit)="submit()"
+      >
         <div class="split-input-container">
           <div class="input-form split-input">
             <label for="name">Nombre <span>*</span></label>
             <input
               formControlName="name"
-              type="text" id="name"
+              type="text"
+              id="name"
               name="name"
               placeholder="Nombre"
-              required>
+              required
+            />
 
-              @if (formSubmitted && hasErrors('name', 'required')) {
-                <span class="field-error">El nombre es obligatorio</span>
-              }
-              @if (formSubmitted && hasErrors('name', 'minlength')) {
-                <span class="field-error">El nombre debe tener mas de 3 letras</span>
-              }
-            </div>
+            @if (formSubmitted && hasErrors('name', 'required')) {
+            <span class="field-error">El nombre es obligatorio</span>
+            } @if (formSubmitted && hasErrors('name', 'minlength')) {
+            <span class="field-error"
+              >El nombre debe tener mas de 3 letras</span
+            >
+            }
+          </div>
 
-            <div class="input-form split-input">
-              <label for="last-name">Apellidos <span>*</span></label>
-              <input
-                formControlName="lastName"
-                type="text"
-                id="last-name"
-                name="last-name"
-                placeholder="Apellidos"
-                required>
+          <div class="input-form split-input">
+            <label for="last-name">Apellidos <span>*</span></label>
+            <input
+              formControlName="lastName"
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Apellidos"
+              required
+            />
 
-                @if (formSubmitted && hasErrors('lastName', 'required')) {
-                  <span class="field-error">El apellido es obligatorio</span>
-                }
-                @if (formSubmitted && hasErrors('lastName', 'minlength')) {
-                  <span class="field-error">El apellido debe tener mas de 3 letras</span>
-                }
-              </div>
-            </div>
+            @if (formSubmitted && hasErrors('lastName', 'required')) {
+            <span class="field-error">El apellido es obligatorio</span>
+            } @if (formSubmitted && hasErrors('lastName', 'minlength')) {
+            <span class="field-error"
+              >El apellido debe tener mas de 3 letras</span
+            >
+            }
+          </div>
+        </div>
 
-            <div class="split-input-container">
-              <div class="input-form split-input">
-                <label for="phone">Número de Teléfono <span>*</span></label>
-                <input
-                  formControlName="phone"
-                  type="tel" id="phone"
-                  name="phone"
-                  placeholder="Numero de Telefono"
-                  required
-                  pattern="[0-9]{7,15}">
+        <div class="split-input-container">
+          <div class="input-form split-input">
+            <label for="phone">Número de Teléfono <span>*</span></label>
+            <input
+              formControlName="phone"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Numero de Telefono"
+              required
+              pattern="[0-9]{7,15}"
+            />
 
-                  @if (formSubmitted && hasErrors('phone', 'required')) {
-                    <span class="field-error">El numero es obligatorio</span>
-                  }
-                  @if (formSubmitted && hasErrors('phone', 'pattern')) {
-                    <span class="field-error">El número debe tener entre 7 y 15 dígitos, solo números</span>
-                  }
+            @if (formSubmitted && hasErrors('phone', 'required')) {
+            <span class="field-error">El numero es obligatorio</span>
+            } @if (formSubmitted && hasErrors('phone', 'pattern')) {
+            <span class="field-error"
+              >El número debe tener entre 7 y 15 dígitos, solo números</span
+            >
+            }
+          </div>
 
-                </div>
+          <div class="input-form split-input">
+            <label for="company">Nombre de la empresa <span>*</span></label>
+            <input
+              formControlName="company"
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Empresa"
+              required
+            />
 
-                <div class="input-form split-input">
-                  <label for="company">Nombre de la empresa <span>*</span></label>
-                  <input
-                    formControlName="company"
-                    type="text" id="company"
-                    name="company"
-                    placeholder="Empresa"
-                    required>
+            @if (formSubmitted && hasErrors('company', 'required')) {
+            <span class="field-error">Este campo debe rellenarse</span>
+            } @if (formSubmitted && hasErrors('company', 'minlength')) {
+            <span class="field-error"
+              >El nombre de la empresa debe tener mas de 2 letras</span
+            >
+            }
+          </div>
+        </div>
 
-                    @if (formSubmitted && hasErrors('company', 'required')) {
-                      <span class="field-error">Este campo debe rellenarse</span>
-                    }
-                    @if (formSubmitted && hasErrors('company', 'minlength')) {
-                      <span class="field-error">El nombre de la empresa debe tener mas de 2 letras</span>
-                    }
-                  </div>
-                </div>
+        <div class="input-form">
+          <label for="email"
+            >Correo electrónico profesional <span>*</span></label
+          >
+          <input
+            formControlName="email"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Correo de empresa"
+            required
+          />
 
-                <div class="input-form">
-                  <label for="email">Correo electrónico profesional <span>*</span></label>
-                  <input
-                    formControlName="email"
-                    type="email" id="email"
-                    name="email"
-                    placeholder="Correo de empresa"
-                    required>
+          @if (formSubmitted && hasErrors('email', 'required')) {
+          <span class="field-error">Este campo es obligatorio</span>
+          } @if (formSubmitted && hasErrors('email', 'email')) {
+          <span class="field-error">Formato de correo invalido</span>
+          }
+        </div>
 
-                    @if (formSubmitted && hasErrors('email', 'required')) {
-                      <span class="field-error">Este campo es obligatorio</span>
-                    }
-                    @if (formSubmitted && hasErrors('email', 'email')) {
-                      <span class="field-error">Formato de correo invalido</span>
-                    }
-                  </div>
+        <div class="input-form">
+          <label for="subject">Motivo del contacto <span>*</span></label>
+          <select
+            id="subject"
+            name="subject"
+            required
+            formControlName="subject"
+          >
+            <option class="select-first" value="" disabled selected>
+              Seleccione un servicio
+            </option>
+            <option value="desarrollo_software">Desarrollo de Software</option>
+            <option value="desarrollo_web">Desarrollo Web</option>
+            <option value="desarrollo_movil">
+              Desarrollo de Aplicaciones Móviles
+            </option>
+            <option value="diseño_ui_ux">Diseño UI/UX</option>
+            <option value="consultoria_tech">Consultoría Tecnológica</option>
+            <option value="automatizacion">Automatización de Procesos</option>
+            <option value="soporte_tech">
+              Soporte Técnico y Mantenimiento
+            </option>
+            <option value="seguridad">Ciberseguridad</option>
+            <option value="otro">Otro</option>
+          </select>
 
-                  <div class="input-form">
-                    <label for="subject">Motivo del contacto <span>*</span></label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      required
-                      formControlName="subject">
-                      <option class="select-first" value="" disabled selected>Seleccione un servicio</option>
-                      <option value="desarrollo_software">Desarrollo de Software</option>
-                      <option value="desarrollo_web">Desarrollo Web</option>
-                      <option value="desarrollo_movil">Desarrollo de Aplicaciones Móviles</option>
-                      <option value="diseño_ui_ux">Diseño UI/UX</option>
-                      <option value="consultoria_tech">Consultoría Tecnológica</option>
-                      <option value="automatizacion">Automatización de Procesos</option>
-                      <option value="soporte_tech">Soporte Técnico y Mantenimiento</option>
-                      <option value="seguridad">Ciberseguridad</option>
-                      <option value="otro">Otro</option>
-                    </select>
+          @if (formSubmitted && hasErrors('subject', 'required')) {
+          <span class="field-error">Este campo es obligatorio</span>
+          }
+        </div>
 
-                    @if (formSubmitted && hasErrors('subject', 'required')) {
-                      <span class="field-error">Este campo es obligatorio</span>
-                    }
-                  </div>
+        <div class="input-form">
+          <label for="message">Mensaje <span>*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Mensaje"
+            formControlName="message"
+          ></textarea>
 
-                  <div class="input-form">
-                    <label for="message">Mensaje <span>*</span></label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="4"
-                      cols="50"
-                      placeholder="Mensaje"
-                    formControlName="message"></textarea>
+          @if (formSubmitted && hasErrors('message', 'required')) {
+          <span class="field-error">Este campo debe rellenarse</span>
+          } @if (formSubmitted && hasErrors('message', 'minlength')) {
+          <span class="field-error">Debe tener al menos 10 caracteres</span>
+          }
+        </div>
 
-                    @if (formSubmitted && hasErrors('message', 'required')) {
-                      <span class="field-error">Este campo debe rellenarse</span>
-                    }
-                    @if (formSubmitted && hasErrors('message', 'minlength')) {
-                      <span class="field-error">Debe tener al menos 10 caracteres</span>
-                    }
-                  </div>
+        <div class="input-form checkbox-container">
+          <div class="input-checkbox">
+            <input
+              type="checkbox"
+              id="privacy"
+              name="privacy"
+              required
+              formControlName="checkbox"
+            />
+            <label for="privacy">
+              Acepto la
+              <a href="javascript:void(0);">política de privacidad</a>.
+            </label>
+          </div>
 
-                  <div class="input-form checkbox-container">
-                    <div class="input-checkbox">
-                      <input
-                        type="checkbox" id="privacy"
-                        name="privacy"
-                        required
-                        formControlName="checkbox">
-                        <label for="privacy">
-                          Acepto la <a href="javascript:void(0);">política de privacidad</a>.
-                        </label>
-                      </div>
+          @if (formSubmitted && hasErrors('checkbox', 'requiredTrue')) {
+          <span class="field-error"
+            >Debe aceptar la política de privacidad</span
+          >
+          }
+        </div>
 
-                      @if (formSubmitted && hasErrors('checkbox', 'requiredTrue')) {
-                        <span class="field-error">Debe aceptar la política de privacidad</span>
-                      }
-                    </div>
+        <div class="input-form">
+          <button class="form-submit" type="submit">Enviar Mensaje</button>
+        </div>
+      </form>
+    </div>
 
-                    <div class="input-form">
-                      <button class="form-submit" type="submit">Enviar Mensaje</button>
-                    </div>
+    @if (success) {
+    <div
+      class="form-sent"
+      [class.form-sent-move-active]="success"
+      #successMessage
+    >
+      <img src="/assets/contact-page/check.svg" alt="check" width="30" height="30" loading="lazy" />
+      <div class="form-sent-text">
+        <p>Formulario enviado existosamente</p>
+        <p class="form-sent-contact">Lo contactaremos lo mas pronto posible</p>
+      </div>
+      <span [class.form-sent-border-active]="success"></span>
+    </div>
+    }
 
-                  </form>
+    <div class="contact-cities-content">
+      <p>Porque juntos hacemos el cambio</p>
 
-                </div>
+      <div class="contact-cities">
+        <ul class="contact-cities">
+          <li>
+            <img
+              class="city-icon"
+              src="/assets/contact-page/colombia.svg"
+              alt="Colombia"
+              width="50"
+              height="50"
+              draggable="false"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              class="city-icon"
+              src="/assets/contact-page/chile.svg"
+              alt="Chile"
+              width="50"
+              height="50"
+              draggable="false"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              class="city-icon"
+              src="/assets/contact-page/spain.svg"
+              alt="España"
+              width="50"
+              height="50"
+              draggable="false"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              class="city-icon"
+              src="/assets/contact-page/mexico.svg"
+              alt="México"
+              width="50"
+              height="50"
+              draggable="false"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              class="city-icon"
+              src="/assets/contact-page/argentina.svg"
+              alt="Argentina"
+              width="50"
+              height="50"
+              draggable="false"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              class="city-icon"
+              src="/assets/contact-page/eeuu.svg"
+              alt="Estados Unidos"
+              width="50"
+              height="50"
+              draggable="false"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-                @if (success) {
-                  <div class="form-sent"
-                    [class.form-sent-move-active]="success"
-                    #successMessage
-                    >
-                    <img src="/assets/contact-page/check.svg" alt="check" loading="lazy">
-                    <div class="form-sent-text">
-                      <p>Formulario enviado existosamente</p>
-                      <p class="form-sent-contact">Lo contactaremos lo mas pronto posible</p>
-                    </div>
-                    <span [class.form-sent-border-active]="success"></span>
-                  </div>
-                }
-
-                <div class="contact-cities-content">
-                  <p>Porque juntos hacemos el cambio</p>
-
-                  <div class="contact-cities">
-                    <ul class="contact-cities">
-                      <li><img class="city-icon" src="/assets/contact-page/colombia.svg"   alt="Colombia"        draggable="false" loading="lazy"></li>
-                      <li><img class="city-icon" src="/assets/contact-page/chile.svg"      alt="Chile"           draggable="false" loading="lazy"></li>
-                      <li><img class="city-icon" src="/assets/contact-page/spain.svg"      alt="España"          draggable="false" loading="lazy"></li>
-                      <li><img class="city-icon" src="/assets/contact-page/mexico.svg"     alt="México"          draggable="false" loading="lazy"></li>
-                      <li><img class="city-icon" src="/assets/contact-page/argentina.svg"  alt="Argentina"       draggable="false" loading="lazy"></li>
-                      <li><img class="city-icon" src="/assets/contact-page/eeuu.svg"       alt="Estados Unidos"  draggable="false" loading="lazy"></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <img class="contact-section-deco-1" src="/assets/contact-page/circle.svg"   alt="" draggable="false" loading="lazy">
-              <img class="contact-section-deco-2" src="/assets/contact-page/background-deco.svg"     alt="" draggable="false" loading="lazy">
-
-            </section>
+  <img
+    class="contact-section-deco-1"
+    src="/assets/contact-page/circle.svg"
+    alt=""
+    width="150" height="150"
+    draggable="false"
+    loading="lazy"
+  />
+  <img
+    class="contact-section-deco-2"
+    src="/assets/contact-page/background-deco.svg"
+    alt=""
+    width="150" height="150"
+    draggable="false"
+    loading="lazy"
+  />
+</section>
