@@ -45,8 +45,8 @@
 }
 
 .header-logo-deco{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     transition: all .5s ease;
     aspect-ratio: 1 / 1;
 }
@@ -239,6 +239,11 @@ header.hide-scroll{
         padding: 10px 40px;
     }
 
+    .header-logo-deco{
+        width: 50px;
+        height: 50px;
+    }
+    
     .navbar{
        padding: 80px 20px;
        padding-left: 50px;
@@ -277,6 +282,11 @@ header.hide-scroll{
     .header-content{
         justify-content: space-around;
         padding: 10px 0px;
+    }
+
+    .header-logo-deco{
+        width: 55px;
+        height: 55px;
     }
     
     .navbar-resolution{
@@ -345,8 +355,8 @@ header.hide-scroll{
     }
 
     .header-logo-deco{
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
 
     .navbar-list li a{
