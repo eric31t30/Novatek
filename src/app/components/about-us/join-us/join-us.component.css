@@ -110,7 +110,9 @@
 }
 
 @media (max-width: 399px){
-    
+    .join-us-content{
+        padding: 100px 30px;
+    }
 }
 
 @media (min-width: 400px){
