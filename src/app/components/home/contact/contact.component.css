@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:  linear-gradient(to bottom, #8a2be2 20%, #420252);
     font-family: var(--primary-font);
     padding: 50px 20px;
     overflow: hidden;
@@ -17,18 +16,36 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    margin: 100px 0px;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #420252;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.contact-description{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 70%;
 }
 
 .contact-title{
     position: relative;
-    font-size: var(--font-size-big);
+    font-size: calc(var(--font-size-big) - .7rem);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
-    background-clip: var();
-    color: transparent;
-    text-shadow: 0px 0px 20px var(--primary-color);
+    -webkit-text-fill-color: transparent;
+    z-index: 5;
+}
+
+.contact-description p{
+    font-family: var(--primary-font);
+    font-size: var(--font-size-regular);
+    color: white;
+    z-index: 5;
     margin-bottom: 30px;
 }
 
@@ -36,100 +53,96 @@
     position: relative;
     left:0px;
     top: 0px;
-    background-color: transparent;
+    background: transparent;
     outline: none;
-    border: 3px solid;
-    border-top: 3px solid var(--secondary-color);
-    border-right: 3px solid var(--secondary-color);
-    border-left: 3px solid var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
-    color: var(--primary-color);
+    color: white;
+    border: 2px solid white;
     font-size: var(--font-size-regular);
+    font-family: var(--primary-font);
     font-weight: 600;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: -5px 5px 0px rgba(0, 0, 0, .6);
-    transition: all .2s linear;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all .3s ease-in;
     cursor: pointer;
+    z-index: 5;
 }
 
 .contact-button:hover{
-    left: 2px;
-    top: -2px;
-    box-shadow: -10px 10px 0px rgba(0, 0, 0, .6);
+    top: -10px;
+
 }
 
-.contact-section-deco-rocket{
+.contact-deco-1{
     position: absolute;
-    bottom: -100px;
-    left: 10px;
-    width: 40px;
-    height: 40px;
-}
-
-.contact-section-deco-planet{
-    position: absolute;
-    top: -80px;
-    right: -20px;
-    width: 40px;
-    height: 40px;
-}
-
-.contact-stars{
-    position: absolute;
-    top: 0px;
+    width: 100%;
+    height: 100%;
     left: 0px;
-    width: 3px;
-    height: 3px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0px 0px 30px 2px white;
+    top: 0px;
+    z-index: 0;
+    pointer-events: none;
 }
 
-.contact-star-1{
-    top: 10%;
-    left: 60%;  
+.contact-deco-1 svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: .05;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(307deg) brightness(103%) contrast(101%);
 }
 
-.contact-star-2{
-    top: 20%;
-    left: 20%;  
+.contact-deco-1-block{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(to bottom, #420252 20%, transparent 100%);
+    z-index: 1;
 }
 
-.contact-star-3{
+.contact-deco-2,
+.contact-deco-3,
+.contact-deco-4,
+.contact-deco-5{
+    position: absolute;
+    pointer-events: none;
+    opacity: .8;
+}
+
+.contact-deco-2{
+    width: 200px;
+    height: 200px;
+    right: -80px;
+    bottom: -80px;
+}
+
+.contact-deco-3{
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left: -80px;
+}
+
+.contact-deco-4{
+    width: 100px;
+    height: auto;
+    left: 40%;
     top: 40%;
-    left: 90%;  
+    z-index: 0;
+    object-fit: cover;
 }
 
-.contact-star-4{
-    top: 70%;
-    left: 10%;  
-}
-
-.contact-star-5{
-    top: 90%;
-    left: 70%;  
-}
-
-.contact-star-6{
-    top: 50%;
-    left: 50%;  
-    opacity: .5;
-    box-shadow: 0px 0px 0px 0 white;
-}
-
-.contact-star-7{
-    top: 20%;
-    left: 80%;  
-    opacity: .5;
-    box-shadow: 0px 0px 0px 0 white;
-}
-
-.contact-star-8{
-    top: 90%;
-    left: 30%;  
-    opacity: .5;
-    box-shadow: 0px 0px 0px 0 white;
+.contact-deco-5{
+    width: 200px;
+    height: auto;
+    left: -10%;
+    bottom: -20%;
+    z-index: 1;
+    transform: rotateY(180deg);
+    object-fit: cover;
+    pointer-events: none;
 }
 
 @media (max-width: 399px){
@@ -138,96 +151,94 @@
 
 @media (min-width: 400px){
 
-    
-    
-
-    
 }
 
 @media (min-width: 700px){
 
-    .contact-section-deco-rocket{
-        width: 70px;
-        height: 70px;
+    .contact-section-content{
+        width: 80%;
+        padding: 80px 0px;
     }
 
-    .contact-section-deco-planet{
-        width: 70px;
-        height: 70px;
+    .contact-description{
+        position: relative;
+        left: -25px;
+    }
+
+    .contact-title{
+        font-size: calc(var(--font-size-big) - .2rem);
+    }
+
+    .contact-deco-5{
+        left: auto;
+        right: 10%;
+        transform: rotateY(0deg);
     }
 }
 
 @media (min-width: 1024px){
 
     .contact-section-content{
-        margin: 150px 0px;
+        margin: 20px 0px;
     }
     
-    .contact-title{
-        margin-bottom: 80px;
+    .contact-description{
+        left: 0px;
+        width: 80%;
     }
 
-    .contact-button{
-        padding: 10px;
-        box-shadow: -10px 10px 0px rgba(0, 0, 0, .6);
+    .contact-deco-4{
+        width: 180px;
+        left: 50%;
+        top: 15%;
     }
 
-    .contact-button:hover{
-        left: 2px;
-        top: -2px;
-        box-shadow: -22px 22px 0px rgba(0, 0, 0, .6);
+    .contact-deco-5{
+        right: 20%;
     }
-
     
-    .contact-section-deco-rocket{
-        width: 90px;
-        height: 90px;
-        bottom: -100px;
-        left: -160px;
-    }
-
-    .contact-section-deco-planet{
-        width: 90px;
-        height: 90px;
-        top: -80px;
-        right: -140px;
-    }
 }
 
 @media (min-width: 1280px){
 
-    .contact-title{
-        margin-bottom: 80px;
-    }
-
-    .contact-button{
-        box-shadow: -8px 8px 0px rgba(0, 0, 0, .6);
-    }
-    
-
-    .contact-button:hover{
-        
-        box-shadow: -14px 14px 0px rgba(0, 0, 0, .6);
+    .contact-description p{
+        margin-bottom: 20px;
     }
 }
 
 @media (min-width: 1920px){
 
-    .contact-title{
-        margin-bottom: 80px;
+    .contact-description{
+        left: 0px;
     }
 
-    .contact-section-deco-rocket{
-        width: 90px;
-        height: 90px;
-        bottom: -100px;
-        left: -400px;
+    .contact-description p{
+        margin-bottom: 60px;
     }
 
-    .contact-section-deco-planet{
-        width: 90px;
-        height: 90px;
-        top: -80px;
-        right: -420px;
+    .contact-deco-2{
+        width: 300px;
+        height: 300px;
+        right: -120px;
+        bottom: -120px;
+    }
+    
+    .contact-deco-3{
+        width: 300px;
+        height: 300px;
+        top: -120px;
+        left: -120px;
+    }
+
+    .contact-deco-4{
+        width: 250px;
+        height: auto;
+        left: 40%;
+        top: 15%;
+    }
+    
+    .contact-deco-5{
+        width: 300px;
+        right: 20%;
     }
 }

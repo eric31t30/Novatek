@@ -34,7 +34,7 @@ export class AboutUsComponent implements OnInit{
 
   ngAfterViewInit() {
     this.aosService.initAOS({
-      offset: 700,
+      offset: 400,
       duration: 1000
     });
 

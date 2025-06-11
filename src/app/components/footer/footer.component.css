@@ -37,13 +37,15 @@
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .footer-section-logo h2 img{
-    position: relative;
-    top: 5px;
-    width: 35px;
-    height: 35px;
+    width: 63px;
+    height: 63px;
     aspect-ratio: 1 / 1;
 }
 
@@ -241,11 +243,21 @@ address{
         padding: 50px 60px;
     }
 
+    .footer-section-logo h2 img{
+        width: 55px;
+        height: 55px;
+    }
+
 }
 
 @media (min-width: 1024px){
     .footer-section-cont{
         gap: 50px 0px;
+    }
+
+    .footer-section-logo h2 img{
+        width: 63px;
+        height: 63px;
     }
 
     .footer-section-contact-data-schedule{
@@ -290,6 +302,11 @@ address{
 }
 
 @media (min-width: 1280px){
+
+    .footer-section-logo h2 img{
+        width: 65px;
+        height: 65px;
+    }
 
     .footer-section-pages p img{
         left: 10px;
