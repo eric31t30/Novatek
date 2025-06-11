@@ -14,16 +14,8 @@
 }
 
 .overview-services-card:hover{
-    background-color: rgb(41, 43, 49);
+    transform: translateY(-10px);
     box-shadow: 0px 0px 10px var(--primary-color);
-}
-
-.overview-services-card:hover p{
-    color: var(--background-color-1);
-}
-
-.overview-services-card:hover .overview-icon-card{
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .overview-icon-card{
@@ -86,13 +78,6 @@
     width: 20px;
     height: 20px;
 }
-
-.overview-services-card:hover .overview-deco-1,
-.overview-services-card:hover .overview-deco-2{
-    background-color: rgb(255, 255, 255);
-    opacity: .06;
-}
-
 
 @media (max-width: 399px){
 

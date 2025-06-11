@@ -6,7 +6,7 @@
     align-items: center;
     background-color: var(--background-color-1);
     font-family: var(--primary-font);
-    padding: 40px 30px;
+    padding: 40px;
     overflow: hidden;
 }
 
@@ -16,99 +16,93 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
+    background: linear-gradient(to right, rgb(241, 107, 250), rgb(231, 46, 244));
+    z-index: 5;
+    padding: 100px 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.join-us-description{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    z-index: 5;
     gap: 30px;
-    margin: 150px 0px;
+    width: 100%;
+}
+
+.join-us-description h2{
+    position: relative;
+    font-size: var(--font-size-big);
+    color: white;
+    transition: all .5s ease;
     z-index: 5;
 }
 
-.join-us-content h2{
-    position: relative;
-    font-size: var(--font-size-big);
-    background: var(--text-color-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all .5s ease;
-}
-
-.join-us-content p{
+.join-us-description p{
     font-size: var(--font-size-regular);
+    color: white;
+    z-index: 5;
 }
 
-.join-us-content button{
+.join-us-description button{
     position: relative;
     left:0px;
     top: 0px;
     width: 200px;
     background-color: transparent;
     outline: none;
-    border: 3px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 3px solid white;
+    color: white;
     font-size: var(--font-size-regular);
     font-weight: 600;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: -5px 5px 0px var(--primary-color);
+    box-shadow: -5px 5px 0px white;
     transition: all .3s ease;
     cursor: pointer;
+    z-index: 5;
 }
 
-.join-us-content button:hover{
+.join-us-description button:hover{
     left: 2px;
     top: -2px;
     box-shadow: -10px 10px 0px var(--primary-color);
 }
 
-.join-us-background-deco-1{
+.join-us-background{
     position: absolute;
-    left: 20px;
-    top: 40px;
-    width: 100px;
-    height: 100px;
-    transition: all .5s ease;
-    z-index: 1;
-    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 0;
+    pointer-events: none;
+    object-fit: cover;
 }
 
+.join-us-background-deco-1,
 .join-us-background-deco-2{
     position: absolute;
-    right: 20px;
-    bottom: 30px;
-    width: 100px;
-    height: 100px;
-    transition: all .5s ease;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.join-us-background-deco-1:hover{
-    filter: drop-shadow(0px 0px 20px var(--primary-color));
-    transform: scale(1.06);
-}
-
-.join-us-background-deco-2:hover{
-    filter: drop-shadow(0px 0px 20px var(--secondary-color));
-    transform: scale(1.1);
-}
-
-.join-us-background-deco-3,
-.join-us-background-deco-4{
-    position: absolute;
-    background: var(--text-color-gradient);
     border-radius: 50%;
-    filter: blur(40px);
+    background: var(--decoration-color-gradient);
     z-index: 0;
-    opacity: .4;
+    pointer-events: none;
+    filter: blur(50px);
+    opacity: .6;
 }
 
-.join-us-background-deco-3{
+.join-us-background-deco-1{
     width: 150px;
     height: 150px;
     left: 0%;
     bottom: 10%;
 }
 
-.join-us-background-deco-4{
+.join-us-background-deco-2{
     width: 150px;
     height: 150px;
     right: 0%;
@@ -124,67 +118,45 @@
 }
 
 @media (min-width: 700px){
+
     .join-us-content{
-        margin: 200px 0px;
+        padding: 80px 50px;
+        margin: 100px 0px;
     }
 
-    .join-us-background-deco-1{
-        width: 150px;
-        height: 150px;
-    }
-    
-    .join-us-background-deco-2{
-        width: 150px;
-        height: 150px;
-    }
 }
 
 @media (min-width: 1024px){
 
-    .join-us-content{
-        margin: 260px 0px;
-        gap: 50px;
-    }
-    
-    .join-us-background-deco-1{
-        left: 60px;
-        top: 100px;
-        width: 200px;
-        height: 200px;
-    }
-    
-    .join-us-background-deco-2{
-        right: 60px;
-        bottom: 30px;
-        width: 200px;
-        height: 200px;
+    .join-us-description p{
+        font-size: calc(var(--font-size-regular) + .2rem);
+        width: 80%;
     }
 
     .join-us-content button{
-        width: 260px;
-        padding: 14px;
-        font-size: calc(var(--font-size-regular) + 0.5rem);
+        width: 240px;
+        padding: 10px;
     }
 
     .join-us-content button:hover{
         left: 6px;
         top: -6px;
-        box-shadow: -18px 18px 0px var(--primary-color);
+        box-shadow: -10px 14px 0px white;
     }
 }
 
 @media (min-width: 1280px){
     
+    .join-us-content{
+        padding: 80px;
+        margin: 100px 0px;
+        width: 90%;
+    }
 }
 
 @media (min-width: 1920px){
-    .join-us-background-deco-1{
-        left: 120px;
-        top: 100px;
-    }
-    
-    .join-us-background-deco-2{
-        right: 120px;
-        bottom: 30px;
+    .join-us-background{
+        width: 50%;
+        height: 100%;
     }
 } 
