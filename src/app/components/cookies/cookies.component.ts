@@ -22,7 +22,7 @@ export class CookiesComponent implements OnInit {
     if (this.showCookiesBanner) {
       setTimeout(() => {
         this.showBanner = true;
-      }, 5000);
+      }, 3000);
     }
   }
   

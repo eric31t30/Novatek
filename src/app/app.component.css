@@ -44,10 +44,6 @@
 
 @media (min-width: 1024px){
     :host{
-        /* --font-size-h2: 3.6rem;
-        --font-size-h3: 2.5rem;
-        --font-size-p: 1.5rem; */
-        
         --font-size-small: 1rem;
         --font-size-regular: 1.3rem;
         --font-size-medium: 2rem;
