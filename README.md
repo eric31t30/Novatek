@@ -20,7 +20,7 @@
 - Angular
 - TypeScript, HTML y CSS
 
-Puedes ver la demostración con **[Netlify](https://Novatek.netlify.app/)**.
+Puedes ver la demostración con **[Netlify](https://novatek-web.netlify.app/)**.
 
 <div id="header" align="center">
     <img src="./public/novatek-img.png" alt="Captura de pantalla del sitio Novatek">
