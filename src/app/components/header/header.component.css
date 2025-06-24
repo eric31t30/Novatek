@@ -28,7 +28,6 @@
     text-align: center;
     vertical-align: middle;
     gap: 3px;
-    cursor: pointer;
     user-select: none;
 }
 
@@ -50,6 +49,16 @@
     height: 37px;
     transition: all .5s ease;
     aspect-ratio: 1 / 1;
+}
+
+.header-route-logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .navbar-button{
