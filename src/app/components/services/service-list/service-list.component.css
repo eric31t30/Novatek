@@ -28,6 +28,7 @@
 .service-list-title span{
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -84,6 +85,7 @@
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

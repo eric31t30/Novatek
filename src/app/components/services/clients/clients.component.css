@@ -26,6 +26,7 @@
     font-size: var(--font-size-medium);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -67,6 +68,7 @@
 .company-logo-join p{
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

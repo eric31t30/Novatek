@@ -26,6 +26,7 @@
     font-weight: 600;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -37,6 +38,7 @@
     padding: 5px 15px;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: auto;
 }

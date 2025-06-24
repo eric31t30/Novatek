@@ -37,6 +37,7 @@
     font-size: var(--font-size-big);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
