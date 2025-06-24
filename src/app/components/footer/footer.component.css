@@ -36,6 +36,7 @@
     font-size: var(--font-size-big);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
     justify-content: center;
@@ -84,6 +85,7 @@ address{
     font-size: var(--font-size-medium);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -133,6 +135,7 @@ address{
     font-size: var(--font-size-medium);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -159,6 +162,7 @@ address{
     font-weight: 700;
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

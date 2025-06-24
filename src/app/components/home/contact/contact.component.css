@@ -37,6 +37,7 @@
     font-size: calc(var(--font-size-big) - .7rem);
     background: var(--text-color-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 5;
 }
